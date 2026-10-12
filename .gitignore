@@ -1,0 +1,20 @@
+# Python byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+
+# Generated high-DPI page images (keep .gitkeep)
+extractions/page_images/*
+!extractions/page_images/.gitkeep
