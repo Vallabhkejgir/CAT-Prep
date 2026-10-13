@@ -1,0 +1,37 @@
+{
+  "document": "DILR_Slot_1_CAT_2025_1__c8ca237ed1e4129e7d4039f17d8206b8",
+  "source_pdf": "docs\\pyqs\\2025\\DILR_Slot_1_CAT_2025_1__c8ca237ed1e4129e7d4039f17d8206b8.pdf",
+  "extractor": "pymupdf4llm+fitz",
+  "pages": [
+    {
+      "page": 1,
+      "image_path": "extractions/page_images\\DILR_Slot_1_CAT_2025_1__c8ca237ed1e4129e7d4039f17d8206b8\\page_001.png",
+      "has_visuals": false,
+      "char_count": 2075
+    },
+    {
+      "page": 2,
+      "image_path": "extractions/page_images\\DILR_Slot_1_CAT_2025_1__c8ca237ed1e4129e7d4039f17d8206b8\\page_002.png",
+      "has_visuals": false,
+      "char_count": 1963
+    },
+    {
+      "page": 3,
+      "image_path": "extractions/page_images\\DILR_Slot_1_CAT_2025_1__c8ca237ed1e4129e7d4039f17d8206b8\\page_003.png",
+      "has_visuals": true,
+      "char_count": 1684
+    },
+    {
+      "page": 4,
+      "image_path": "extractions/page_images\\DILR_Slot_1_CAT_2025_1__c8ca237ed1e4129e7d4039f17d8206b8\\page_004.png",
+      "has_visuals": false,
+      "char_count": 1840
+    },
+    {
+      "page": 5,
+      "image_path": "extractions/page_images\\DILR_Slot_1_CAT_2025_1__c8ca237ed1e4129e7d4039f17d8206b8\\page_005.png",
+      "has_visuals": false,
+      "char_count": 1608
+    }
+  ]
+}

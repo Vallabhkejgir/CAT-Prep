@@ -1,0 +1,61 @@
+{
+  "document": "VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38",
+  "source_pdf": "docs\\pyqs\\2025\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38.pdf",
+  "extractor": "pymupdf4llm+fitz",
+  "pages": [
+    {
+      "page": 1,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_001.png",
+      "has_visuals": false,
+      "char_count": 2087
+    },
+    {
+      "page": 2,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_002.png",
+      "has_visuals": false,
+      "char_count": 3792
+    },
+    {
+      "page": 3,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_003.png",
+      "has_visuals": false,
+      "char_count": 2509
+    },
+    {
+      "page": 4,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_004.png",
+      "has_visuals": false,
+      "char_count": 2335
+    },
+    {
+      "page": 5,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_005.png",
+      "has_visuals": false,
+      "char_count": 3046
+    },
+    {
+      "page": 6,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_006.png",
+      "has_visuals": false,
+      "char_count": 2989
+    },
+    {
+      "page": 7,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_007.png",
+      "has_visuals": false,
+      "char_count": 2688
+    },
+    {
+      "page": 8,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_008.png",
+      "has_visuals": false,
+      "char_count": 2746
+    },
+    {
+      "page": 9,
+      "image_path": "extractions/page_images\\VARC_Slot_1_Cat_2025_1__98c9efda803b69159a5015f899f92e38\\page_009.png",
+      "has_visuals": false,
+      "char_count": 756
+    }
+  ]
+}

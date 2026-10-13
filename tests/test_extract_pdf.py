@@ -164,3 +164,61 @@ def test_master_notes_and_high_recall_assets_completeness() -> None:
         assert row["Front_Question_or_Cue"]
         assert row["Back_Formula_Trigger_and_Trap"]
 
+
+def test_cat_2025_pyq_structured_json_and_per_paper_analysis_completeness() -> None:
+    """Verify all 9 CAT 2025 structured JSON files (204 questions) and 10 per-paper analysis files exist and validate."""
+    expected_papers = [
+        ("CAT_2025_QA_Slot_1", "QA", 22),
+        ("CAT_2025_QA_Slot_2", "QA", 22),
+        ("CAT_2025_QA_Slot_3", "QA", 22),
+        ("CAT_2025_DILR_Slot_1", "DILR", 22),
+        ("CAT_2025_DILR_Slot_2", "DILR", 22),
+        ("CAT_2025_DILR_Slot_3", "DILR", 22),
+        ("CAT_2025_VARC_Slot_1", "VARC", 24),
+        ("CAT_2025_VARC_Slot_2", "VARC", 24),
+        ("CAT_2025_VARC_Slot_3", "VARC", 24),
+    ]
+    required_keys = {
+        "question_id",
+        "section",
+        "slot",
+        "question_type",
+        "canonical_topic",
+        "canonical_subtopic",
+        "difficulty",
+        "exam_round_tag",
+        "derived_answer",
+        "answer_source",
+        "verification_notes",
+        "core_concept_tested",
+        "mental_trigger",
+        "first_principles_method",
+        "speed_shortcut",
+        "boundary_conditions_and_traps",
+    }
+
+    total_questions = 0
+    for base, section, expected_count in expected_papers:
+        json_path = REPO_ROOT / "extractions" / "structured_pyqs" / f"{base}_questions.json"
+        md_path = REPO_ROOT / "insights" / "per_paper" / f"{base}_analysis.md"
+        assert json_path.is_file(), f"Missing structured PYQ JSON: {json_path}"
+        assert md_path.is_file(), f"Missing per-paper analysis Markdown: {md_path}"
+
+        questions = json.loads(json_path.read_text(encoding="utf-8"))
+        assert len(questions) == expected_count, f"Expected {expected_count} questions in {base}, got {len(questions)}"
+        total_questions += len(questions)
+
+        for q in questions:
+            missing = required_keys - set(q.keys())
+            assert not missing, f"Question {q.get('question_id')} missing keys: {missing}"
+            assert q["section"] == section
+            assert q["question_type"] in {"MCQ", "TITA"}
+            assert q["difficulty"] in {"Easy", "Medium", "Hard"}
+            assert q["exam_round_tag"] in {"Round_1_Sitter", "Round_2_Doable", "Round_3_TimeSink_Skip"}
+            assert q["derived_answer"]
+
+    assert total_questions == 204
+    master_index = REPO_ROOT / "insights" / "per_paper" / "CAT_2025_Master_Answer_Key_and_Slot_Comparison.md"
+    assert master_index.is_file(), "Missing master answer key & slot comparison Markdown"
+
+
