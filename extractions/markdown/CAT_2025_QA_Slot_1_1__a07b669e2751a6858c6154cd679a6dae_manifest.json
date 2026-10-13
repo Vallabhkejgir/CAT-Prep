@@ -1,0 +1,31 @@
+{
+  "document": "CAT_2025_QA_Slot_1_1__a07b669e2751a6858c6154cd679a6dae",
+  "source_pdf": "docs\\pyqs\\2025\\CAT_2025_QA_Slot_1_1__a07b669e2751a6858c6154cd679a6dae.pdf",
+  "extractor": "pymupdf4llm+fitz",
+  "pages": [
+    {
+      "page": 1,
+      "image_path": "extractions/page_images\\CAT_2025_QA_Slot_1_1__a07b669e2751a6858c6154cd679a6dae\\page_001.png",
+      "has_visuals": true,
+      "char_count": 2199
+    },
+    {
+      "page": 2,
+      "image_path": "extractions/page_images\\CAT_2025_QA_Slot_1_1__a07b669e2751a6858c6154cd679a6dae\\page_002.png",
+      "has_visuals": true,
+      "char_count": 1833
+    },
+    {
+      "page": 3,
+      "image_path": "extractions/page_images\\CAT_2025_QA_Slot_1_1__a07b669e2751a6858c6154cd679a6dae\\page_003.png",
+      "has_visuals": false,
+      "char_count": 2143
+    },
+    {
+      "page": 4,
+      "image_path": "extractions/page_images\\CAT_2025_QA_Slot_1_1__a07b669e2751a6858c6154cd679a6dae\\page_004.png",
+      "has_visuals": false,
+      "char_count": 820
+    }
+  ]
+}

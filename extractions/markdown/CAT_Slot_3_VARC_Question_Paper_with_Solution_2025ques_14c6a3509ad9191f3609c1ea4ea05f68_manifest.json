@@ -1,0 +1,109 @@
+{
+  "document": "CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68",
+  "source_pdf": "docs\\pyqs\\2025\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68.pdf",
+  "extractor": "pymupdf4llm+fitz",
+  "pages": [
+    {
+      "page": 1,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_001.png",
+      "has_visuals": false,
+      "char_count": 662
+    },
+    {
+      "page": 2,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_002.png",
+      "has_visuals": false,
+      "char_count": 2249
+    },
+    {
+      "page": 3,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_003.png",
+      "has_visuals": false,
+      "char_count": 2241
+    },
+    {
+      "page": 4,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_004.png",
+      "has_visuals": false,
+      "char_count": 2063
+    },
+    {
+      "page": 5,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_005.png",
+      "has_visuals": false,
+      "char_count": 2189
+    },
+    {
+      "page": 6,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_006.png",
+      "has_visuals": false,
+      "char_count": 2396
+    },
+    {
+      "page": 7,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_007.png",
+      "has_visuals": false,
+      "char_count": 1383
+    },
+    {
+      "page": 8,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_008.png",
+      "has_visuals": true,
+      "char_count": 1867
+    },
+    {
+      "page": 9,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_009.png",
+      "has_visuals": true,
+      "char_count": 2022
+    },
+    {
+      "page": 10,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_010.png",
+      "has_visuals": false,
+      "char_count": 1913
+    },
+    {
+      "page": 11,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_011.png",
+      "has_visuals": false,
+      "char_count": 1972
+    },
+    {
+      "page": 12,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_012.png",
+      "has_visuals": false,
+      "char_count": 2623
+    },
+    {
+      "page": 13,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_013.png",
+      "has_visuals": false,
+      "char_count": 1666
+    },
+    {
+      "page": 14,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_014.png",
+      "has_visuals": false,
+      "char_count": 2204
+    },
+    {
+      "page": 15,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_015.png",
+      "has_visuals": false,
+      "char_count": 2013
+    },
+    {
+      "page": 16,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_016.png",
+      "has_visuals": false,
+      "char_count": 1806
+    },
+    {
+      "page": 17,
+      "image_path": "extractions/page_images\\CAT_Slot_3_VARC_Question_Paper_with_Solution_2025ques_14c6a3509ad9191f3609c1ea4ea05f68\\page_017.png",
+      "has_visuals": false,
+      "char_count": 1402
+    }
+  ]
+}

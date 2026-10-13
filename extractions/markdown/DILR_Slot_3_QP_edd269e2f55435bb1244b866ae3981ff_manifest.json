@@ -1,0 +1,49 @@
+{
+  "document": "DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff",
+  "source_pdf": "docs\\pyqs\\2025\\DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff.pdf",
+  "extractor": "pymupdf4llm+fitz",
+  "pages": [
+    {
+      "page": 1,
+      "image_path": "extractions/page_images\\DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff\\page_001.png",
+      "has_visuals": true,
+      "char_count": 1620
+    },
+    {
+      "page": 2,
+      "image_path": "extractions/page_images\\DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff\\page_002.png",
+      "has_visuals": false,
+      "char_count": 1769
+    },
+    {
+      "page": 3,
+      "image_path": "extractions/page_images\\DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff\\page_003.png",
+      "has_visuals": false,
+      "char_count": 1451
+    },
+    {
+      "page": 4,
+      "image_path": "extractions/page_images\\DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff\\page_004.png",
+      "has_visuals": true,
+      "char_count": 1260
+    },
+    {
+      "page": 5,
+      "image_path": "extractions/page_images\\DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff\\page_005.png",
+      "has_visuals": true,
+      "char_count": 793
+    },
+    {
+      "page": 6,
+      "image_path": "extractions/page_images\\DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff\\page_006.png",
+      "has_visuals": false,
+      "char_count": 1269
+    },
+    {
+      "page": 7,
+      "image_path": "extractions/page_images\\DILR_Slot_3_QP_edd269e2f55435bb1244b866ae3981ff\\page_007.png",
+      "has_visuals": false,
+      "char_count": 171
+    }
+  ]
+}
