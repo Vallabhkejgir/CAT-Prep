@@ -99,3 +99,68 @@ def test_batch_extract_processes_docs_directory(tmp_path: Path) -> None:
     assert len(results) == 1
     assert (md_dir / "sample_paper.md").is_file()
     assert os.path.isfile(img_dir / "sample_paper" / "page_001.png")
+
+
+def test_master_notes_and_high_recall_assets_completeness() -> None:
+    """Verify all 28 high-recall study notes, mistake manuals, cheat sheets, and flashcards exist."""
+    import csv
+
+    expected_quant = [
+        "01_arithmetic_percentages_pl_sici.md",
+        "02_arithmetic_ratios_averages_mixtures_alligations.md",
+        "03_arithmetic_time_work_tsd_races_circular_tracks.md",
+        "04_algebra_equations_polynomials_inequalities_modulus.md",
+        "05_algebra_functions_graphs_logs_surds.md",
+        "06_algebra_sequences_series_maxima_minima.md",
+        "07_geometry_triangles_circles_polygons.md",
+        "08_geometry_mensuration_3d_coordinate_trig.md",
+        "09_number_system_divisibility_factors_hcflcm_remainders_bases.md",
+        "10_modern_math_pnc_probability_set_theory.md",
+    ]
+    for fname in expected_quant:
+        path = REPO_ROOT / "insights" / "topic_summaries" / "quant" / fname
+        assert path.is_file(), f"Missing QA note: {fname}"
+        text = path.read_text(encoding="utf-8")
+        assert "<details><summary>Q10:" in text, f"Missing 10 active-recall drills in {fname}"
+
+    expected_dilr = [
+        "01_set_selection_and_5min_scanning_framework.md",
+        "02_quantitative_di_tables_charts_and_growth_traps.md",
+        "03_arrangements_matrix_grids_and_scheduling.md",
+        "04_games_and_tournaments_knockout_and_round_robin.md",
+        "05_venn_diagrams_and_4set_maxima_minima.md",
+        "06_networks_routes_flows_and_quant_lr_puzzles.md",
+    ]
+    for fname in expected_dilr:
+        path = REPO_ROOT / "insights" / "topic_summaries" / "dilr" / fname
+        assert path.is_file(), f"Missing DILR playbook: {fname}"
+
+    expected_varc = [
+        "01_rc_reading_architecture_and_genre_guides.md",
+        "02_rc_question_types_and_7_distractor_traps.md",
+        "03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+        "04_va_parasummary_and_sentence_placement.md",
+    ]
+    for fname in expected_varc:
+        path = REPO_ROOT / "insights" / "topic_summaries" / "varc" / fname
+        assert path.is_file(), f"Missing VARC playbook: {fname}"
+
+    assert (REPO_ROOT / "insights" / "coverage_matrix.md").is_file()
+    assert (REPO_ROOT / "insights" / "mistakes_and_edge_cases" / "quant_pitfalls.md").is_file()
+    assert (REPO_ROOT / "insights" / "mistakes_and_edge_cases" / "dilr_traps.md").is_file()
+    assert (REPO_ROOT / "insights" / "mistakes_and_edge_cases" / "varc_traps.md").is_file()
+    assert (REPO_ROOT / "insights" / "high_recall" / "cheat_sheets" / "QA_Formula_and_Trigger_Book.md").is_file()
+    assert (REPO_ROOT / "insights" / "high_recall" / "cheat_sheets" / "DILR_Archetype_Templates.md").is_file()
+    assert (REPO_ROOT / "insights" / "high_recall" / "cheat_sheets" / "VARC_Elimination_and_VA_Rules.md").is_file()
+
+    anki_csv = REPO_ROOT / "insights" / "high_recall" / "anki_flashcards.csv"
+    assert anki_csv.is_file()
+    with anki_csv.open(encoding="utf-8", newline="") as f:
+        reader = list(csv.DictReader(f))
+    assert len(reader) >= 150
+    for row in reader:
+        assert row["Section"] in {"QA", "DILR", "VARC"}
+        assert row["Topic"]
+        assert row["Front_Question_or_Cue"]
+        assert row["Back_Formula_Trigger_and_Trap"]
+
