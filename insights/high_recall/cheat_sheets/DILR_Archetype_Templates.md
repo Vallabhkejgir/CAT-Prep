@@ -74,3 +74,18 @@ $$\text{(3) Surplus Identity (Eq 2 } - \text{ Eq 1):} \quad \mathbf{E_2 + 2E_3 +
 - **Unique Partition Sums from $\{1..9\}$**:
   - 2 numbers: $3=\{1,2\}$, $4=\{1,3\}$, $16=\{7,9\}$, $17=\{8,9\}$.
   - 3 numbers: $6=\{1,2,3\}$, $7=\{1,2,4\}$, $23=\{6,8,9\}$, $24=\{7,8,9\}$.
+
+---
+
+## 6. CAT 2025 Newly Surfaced DILR Set Templates & Triggers
+
+| CAT 2025 Set | Archetype Variant | Instant Equation / Grid Setup & Trap Guard |
+| :--- | :--- | :--- |
+| `CAT2025_S1_DILR_SET1` & `S3_SET4` | Circular 7-Chair Ring / Modular Buck Game | Index seats $0..6 \pmod 7$; clockwise $+k$ and counterclockwise $-k$ satisfy $+3 \equiv -4 \pmod 7$ |
+| `CAT2025_S1_DILR_SET3` | Radar + Bar Bilateral Tariff Charts | $\text{Export}(Y \to X) = \text{Import}(X \leftarrow Y) = \frac{\text{Tariff Revenue}_{X \leftarrow Y}}{\text{Tariff Rate}_{X \leftarrow Y}}$ |
+| `CAT2025_S1_DILR_SET4` | 5-Station Train Segment Flow ($A\text{--}E$) | Segment occupancy $F(B\text{--}C) = F(A\text{--}B) - \text{Alight}(B) + \text{Board}(B)$; destination sum $\sum_{O} f(O, D) = \text{Alight}(D)$ |
+| `CAT2025_S2_DILR_SET1` | Ball-Hoop Threshold Interval Ordering | Pass without ping $\implies d_B < d_H$; Ping $\implies d_B = d_H$; Stuck $\implies d_B > d_H$; sort rows/cols by ping/pass counts |
+| `CAT2025_S2_DILR_SET3` | 4-Author Multi-Paper Hypergraph | $\sum_{\text{authors}} (\text{papers with } k \text{ authors}) = k \times (\text{Total } k\text{-author papers})$ |
+| `CAT2025_S3_DILR_SET1` | Bipartite Call-Flow Conservation Table | $\sum \text{Out}(X \to Y) = \sum \text{In}(Y \leftarrow X)$ and $\sum \text{Out}(X \to X) = \sum \text{In}(X \leftarrow X)$ |
+| `CAT2025_S3_DILR_SET3` | Cumulative Step-Function Progress Charts | Vertical slice at $t = t_0$ gives cumulative solved count; matching step-up timestamps between Total and Category charts identifies task type |
+| `CAT2025_S3_DILR_SET5` | Normalized Trade Balance (NTB) Matrix | $\text{NTB} = \frac{E - I}{E + I} = k \implies \frac{E}{I} = \frac{1+k}{1-k}$ and $\sum_{\text{all}} (E_i - I_i) = 0$ |

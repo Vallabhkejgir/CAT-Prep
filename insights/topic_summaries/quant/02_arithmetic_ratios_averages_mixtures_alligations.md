@@ -173,3 +173,86 @@ A: H + L = 2*45 + 18*(45 - 42) = 90 + 54 = 144. Given H - L = 110 -> H = (144 + 
 <details><summary>Q10: From a container of pure acid, 10 L is replaced with water, and then 10 L of mixture is replaced with water again, leaving acid and water in ratio 9:16. Find the container capacity V.</summary>
 A: Final acid fraction = 9 / (9 + 16) = 9/25. Thus (1 - 10/V)^2 = 9/25 -> 1 - 10/V = 3/5 -> 10/V = 2/5 -> V = 25 L.
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **Alternating Dilution & Enrichment Replacement Operator (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q20`)**: When water replacement (dilution) alternates with pure-acid replacement (enrichment), track the **complement component** during enrichment so both steps become pure multiplicative scaling ($\times \frac{2}{3}$ per step).
+- **Two-Vessel Symmetric Swap Conservation (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q03`)**: Moving $x$ liters from pure vessel $A$ ($V_A$) to pure vessel $B$ ($V_B$) and returning $x$ liters of the mixture yields a final ratio in $A$ equal to $V_B : x$ directly.
+- **Sliding-Window Prefix/Suffix Sum Difference (`CAT_2025_QA_Slot_2` / `CAT2025_S2_QA_Q08`)**: $\text{Sum}(1..9) - \text{Sum}(2..9)$ isolates Day 1 in a single subtraction without solving for individual intermediate days.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S1_QA_Q13 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Averages, Mixtures & Alligations — *Two-component linear mixture / alligation*
+- **Verified Answer**: `15` (Value of B and C = 3300 - 10*120 = 2100 across 20 shares. 90b + 150(20 - b) = 2100 => 60b = 900 => b = 15.)
+- **Mental Trigger (`See X -> Do Y`)**: Subtract fixed component A (1200) first, then apply Alligation on the remaining 20 shares at average price 2100/20 = 105 between B (90) and C (150).
+- **First-Principles Method**: 10*120 + 90b + 150(20 - b) = 3300 => 4200 - 60b = 3300 => b = 15.
+- **30-Second Exam-Hall Speed Shortcut**: If all 20 shares were C (150), value would be 3000. Excess = 3000 - 2100 = 900. Each swap from C to B saves 60, so B = 900 / 60 = 15.
+- **Trap Alert & Boundary Condition**: None; straightforward 20-second sitter.
+
+#### CAT2025_S1_QA_Q17 (`CAT_2025_QA_Slot_1` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Ratio, Proportion, Variation & Partnerships — *Total-invariance under internal transfer and cross-multiplication in ratios*
+- **Verified Answer**: `(D) 99` (Initial 13x : 9x (sum 22x); after internal transfer of 21, ratio is 19 : 14 (sum 33y). Equating total: LCM(22, 33) = 66k => 39k - 38k = 21 => k = 21 => shifts become 798 and 588. Adding 3m and 8m gives (798+3m)/(588+8m) = 5/4 => m = 9 => total joined = 11m = 99.)
+- **Mental Trigger (`See X -> Do Y`)**: New students join in ratio 3 : 8, so total new students MUST be a multiple of 3 + 8 = 11 (eliminating B=12). Also internal transfer keeps total students constant!
+- **First-Principles Method**: (13x - 21)/(9x + 21) = 19/14 => x = 63, so shifts have 798 and 588 students. Next, (798 + 3m)/(588 + 8m) = 5/4 => 3192 + 12m = 2940 + 40m => 28m = 252 => m = 9. Total new students = 11m = 99.
+- **30-Second Exam-Hall Speed Shortcut**: Scale 13:9 (sum 22) by 3 -> 39:27 (sum 66) and 19:14 (sum 33) by 2 -> 38:28 (sum 66). 1 unit = 21 students! Then 38*21 = 798, 28*21 = 588, and 11m = 99.
+- **Trap Alert & Boundary Condition**: Report 11m = 99 (total new students), not m = 9.
+
+#### CAT2025_S1_QA_Q20 (`CAT_2025_QA_Slot_1` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Averages, Mixtures & Alligations — *Alternating dilution (water) and enrichment (pure acid) replacement operations*
+- **Verified Answer**: `(B) 27` (Initial acid = 30%. After 20% water replacement: 30% * 0.8 = 24%. After 10% pure acid replacement: 24% * 0.9 + 10% = 31.6%. After 15% water replacement: 31.6% * 0.85 = 26.86%, nearest to 27%.)
+- **Mental Trigger (`See X -> Do Y`)**: When replacing with pure acid, track WATER fraction (which gets multiplied by 0.9), or add 10% directly to 0.9 * c_acid; ignore the 200L volume completely!
+- **First-Principles Method**: Start with c0 = 30%. Step 1 (replace 20% with water): c1 = 30% * 0.8 = 24%. Step 2 (replace 10% with 100% acid): c2 = 24% * 0.9 + 100% * 0.1 = 31.6%. Step 3 (replace 15% with water): c3 = 31.6% * 0.85 = 26.86%, nearest to 27.
+- **30-Second Exam-Hall Speed Shortcut**: Never multiply by 200 litres; work purely in percentages: 30 -> 24 -> 31.6 -> 26.86 -> 27.
+- **Trap Alert & Boundary Condition**: In Step 2, replacing 10% of solution with pure acid does NOT multiply acid by 1.10 (which would give 26.4 * 0.85 = 22.44 -> trap D=23).
+
+#### CAT2025_S2_QA_Q05 (`CAT_2025_QA_Slot_2` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Ratio, Proportion, Variation & Partnerships — *Chained ratio scaling with Income = Expenditure + Savings*
+- **Verified Answer**: `(B) 3 : 5` (Set E_L = 14, E_M = 21 (ratio 2:3). Then I_L = (6/7)*E_M = 18. Saving S_L = I_L - E_L = 18 - 14 = 4. Since S_L : S_M = 4 : 9, S_M = 9. Thus I_M = E_M + S_M = 21 + 9 = 30. Ratio I_L : I_M = 18 : 30 = 3 : 5.)
+- **Mental Trigger (`See X -> Do Y`)**: Since E_L : E_M = 2 : 3 and I_L : E_M = 6 : 7, scale E_M to LCM(3, 7) = 21 so all quantities are integers!
+- **First-Principles Method**: Let E_M = 21k. Then E_L = 14k and I_L = 18k. Lakshmi's savings S_L = 18k - 14k = 4k. Since S_L : S_M = 4 : 9, S_M = 9k. Meenakshi's income I_M = E_M + S_M = 21k + 9k = 30k. Ratio I_L : I_M = 18k : 30k = 3 : 5.
+- **30-Second Exam-Hall Speed Shortcut**: With E_M = 21, E_L = 14, I_L = 18 => S_L = 4 => S_M = 9 => I_M = 30 => 18:30 = 3:5.
+- **Trap Alert & Boundary Condition**: Read carefully that 6 : 7 is the ratio of Income of Lakshmi to Expenditure of Meenakshi (not Income of Lakshmi to Income of Meenakshi).
+
+#### CAT2025_S2_QA_Q08 (`CAT_2025_QA_Slot_2` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Averages, Mixtures & Alligations — *Sliding-window average difference (Sum(1..9) - Sum(2..9) = Day 1)*
+- **Verified Answer**: `49` (Sum(1..7) = 420, Sum(1..8) = 504 => Day 8 = 84. Day 9 = 84 - 11 = 73. Sum(1..9) = 504 + 73 = 577. Given Sum(2..9) = 8 * 66 = 528. Thus Day 1 = 577 - 528 = 49.)
+- **Mental Trigger (`See X -> Do Y`)**: Day 8 raises the 7-day average from 60 to 63 (+3 across 8 days) => Day 8 = 60 + 8*3 = 84; then shifting the 8-day window from (1..8) to (2..9) raises average from 63 to 66 (+3 across 8 days) => Day 9 - Day 1 = 8*3 = 24!
+- **First-Principles Method**: S_7 = 420, S_8 = 504 => d_8 = 84 => d_9 = 73. Also S_{2..9} = 8 * 66 = 528. Therefore d_1 = S_8 + d_9 - S_{2..9} = 504 + 73 - 528 = 49.
+- **30-Second Exam-Hall Speed Shortcut**: d_8 = 60 + 8(3) = 84 => d_9 = 73. Window shift (2..9) vs (1..8): d_9 - d_1 = 8(66 - 63) = 24 => d_1 = 73 - 24 = 49!
+- **Trap Alert & Boundary Condition**: Days 2 to 9 inclusive is 8 days (not 7 or 9 days).
+
+#### CAT2025_S2_QA_Q20 (`CAT_2025_QA_Slot_2` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Averages, Mixtures & Alligations — *Linear interpolation of mixture cost vs concentration*
+- **Verified Answer**: `(B) 5` (Cost increases linearly with coffee%: from 16% (Rs 240) to 36% (Rs 320), a 20% increase in coffee raises price by Rs 80 (Rs 4 per 1% coffee). At Rs 376 (+Rs 56 above 320), coffee% = 36% + 56/4 = 50%. In 10 kg, coffee = 5 kg.)
+- **Mental Trigger (`See X -> Do Y`)**: Mixture cost is an affine function of concentration: Delta(Price)/Delta(Coffee%) = (320 - 240)/(36 - 16) = Rs 4 per 1% coffee.
+- **First-Principles Method**: Let pure coffee cost C and pure cocoa cost K. Then 0.16C + 0.84K = 240 and 0.36C + 0.64K = 320 => C - K = 400 and K = 176. For a mixture costing 376: K + p(C - K) = 176 + 400p = 376 => p = 0.50. In 10 kg, coffee = 0.50 * 10 = 5 kg.
+- **30-Second Exam-Hall Speed Shortcut**: Slope is Rs 4 per 1% coffee. From Rs 320 (36%) to Rs 376 (+56), add 56/4 = 14% -> 50% of 10 kg = 5 kg.
+- **Trap Alert & Boundary Condition**: Notice 376 > 320 means the new mixture has a higher coffee percentage than both given mixtures (an external alligation / pure ingredient extrapolation).
+
+#### CAT2025_S3_QA_Q03 (`CAT_2025_QA_Slot_3` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Averages, Mixtures & Alligations — *Two-vessel symmetric transfer invariant (final ratio in A equals 60 : v)*
+- **Verified Answer**: `16` (After pouring v litres of alcohol from A into B (60L water), B has v alcohol and 60 water, which is in ratio v : 60. When v litres of this mixture are poured back into A, the ratio of alcohol to water in A is 60 : v. Given 60 : v = 15 : 4 => v = 16.)
+- **Mental Trigger (`See X -> Do Y`)**: When v litres are transferred from pure vessel A (volume V) to pure vessel B (volume V) and v litres are transferred back, the final ratio of A-liquid to B-liquid in A is ALWAYS V : v!
+- **First-Principles Method**: After step 1, A has (60 - v) alcohol; B has v alcohol and 60 water. Step 2 transfers v*(60/(60+v)) water into A, leaving 60v/(60+v) water and 3600/(60+v) alcohol in A. Their ratio is 3600 : 60v = 60 : v = 15 : 4 => v = 16.
+- **30-Second Exam-Hall Speed Shortcut**: By the V : v symmetric transfer identity, 60 : v = 15 : 4 => v = 16 in 5 seconds!
+- **Trap Alert & Boundary Condition**: Do not use the repeated-replacement formula (which applies when vessel A stays at constant volume 60 during both steps); here B's volume temporarily becomes 60 + v.
+
+#### CAT2025_S3_QA_Q09 (`CAT_2025_QA_Slot_3` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Ratio, Proportion, Variation & Partnerships — *Total-invariance scaling in two-box internal transfers*
+- **Verified Answer**: `272` (Initial ratio 17:7 (sum 24); after shifting 108, ratio is 37:20 (sum 57). Scale to LCM(24, 57) = 456: initial is 17*19 : 7*19 = 323 : 133; after shift is 37*8 : 20*8 = 296 : 160. Shift of 323 - 296 = 27 units = 108 coins => 1 unit = 4 coins. To reach 1:1 (228 : 228), shift 296 - 228 = 68 units = 68 * 4 = 272 coins.)
+- **Mental Trigger (`See X -> Do Y`)**: Equate total units before and after internal transfer: 17+7 = 24, 37+20 = 57; LCM(24, 57) = 456 (since 24=3*8, 57=3*19), and 1:1 target is 456/2 = 228 units!
+- **First-Principles Method**: (17x - 108)/(7x + 108) = 37/20 => 81x = 6156 => x = 76. Total coins = 24 * 76 = 1824, so 1:1 means 912 coins each. Box A currently has 17(76) - 108 = 1184 coins, so 1184 - 912 = 272 more coins must be shifted.
+- **30-Second Exam-Hall Speed Shortcut**: In 456-unit scale: A drops from 323 -> 296 (27 units = 108 => 1 unit = 4 coins) and needs to reach 228 (68 units * 4 = 272 coins).
+- **Trap Alert & Boundary Condition**: The question asks how many coins need to be shifted FURTHER (272), not total shifted from the start (108 + 272 = 380).
+
+#### CAT2025_S3_QA_Q20 (`CAT_2025_QA_Slot_3` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Averages, Mixtures & Alligations — *Weighted percentage contribution to overall mean shift*
+- **Verified Answer**: `(B) 54000` (A 20% increase in managers' total salary raises the overall company salary bill by 5%, so managers account for 5% / 20% = 1/4 = 25% of the total salary bill, while the 25 engineers account for 75% of the total salary bill (0.75 * 30 * 60000 = 1350000). Average engineer salary = 1350000 / 25 = 54000.)
+- **Mental Trigger (`See X -> Do Y`)**: If a 20% raise for managers produces a 5% raise in the overall mean, managers hold 5/20 = 25% of the total wage pool, so engineers hold 75% of the total wage pool!
+- **First-Principles Method**: Total initial salary = 30 * 60000 = 1800000. Increase = 5% of 1800000 = 90000 = 20% of managers' total salary => managers' total = 450000. Engineers' total = 1800000 - 450000 = 1350000 across 25 engineers => average = 1350000 / 25 = 54000.
+- **30-Second Exam-Hall Speed Shortcut**: Engineers get 75% of total pay while being 25/30 = 5/6 of the headcount, so their average is (3/4) / (5/6) * 60000 = (9/10) * 60000 = 54000!
+- **Trap Alert & Boundary Condition**: None; 15-second sitter.

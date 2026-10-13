@@ -178,3 +178,29 @@ A: Among 2 distinct students: 10! / (5! * 5!) = 252 ways. Into 2 unlabeled bundl
 <details><summary>Q10: Find the dictionary rank of the word 'RANK' when all permutations of its letters are arranged alphabetically.</summary>
 A: Alphabetical order: A(1), K(2), N(3), R(4). For 'RANK': before R are {A, K, N} -> 3 * 3! = 18; next is A (0 * 2! = 0); next is N, before N is K -> 1 * 1! = 1; last is K -> +1. Rank = 18 + 0 + 1 + 1 = 20.
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **3-Set Inclusion-Exclusion Extrema with Strict Positivity Constraint (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q04`)**: When a Venn region $x = |A \cap B \cap C|$ is stated to be *some students* ($x \ge 1$), maximizing an expression in $-x$ requires setting $x = 1$ (NOT $x = 0$) while checking non-negativity of all 7 region expressions.
+- **'Up to $k$' Combinatorial Case Summation (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q08`)**: 'Up to 2 sauces from 10' equals $\binom{10}{0} + \binom{10}{1} + \binom{10}{2} = 1 + 10 + 45 = 56$; never omit the zero-selection case $\binom{n}{0} = 1$.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S1_QA_Q08 (`CAT_2025_QA_Slot_1` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Permutations & Combinations — *Fundamental multiplication rule with 'up to k' combination cases*
+- **Verified Answer**: `(C) 880` (5 sandwiches * 4 breads * 2 sizes * (6C0 + 6C1 + 6C2 sauces) = 40 * (1 + 6 + 15) = 40 * 22 = 880.)
+- **Mental Trigger (`See X -> Do Y`)**: 'Optionally add up to 2 out of 6 sauces' means 0, 1, or 2 sauces: C(6,0) + C(6,1) + C(6,2) = 1 + 6 + 15 = 22.
+- **First-Principles Method**: Choices for sandwich type = 5, bread = 4, size = 2. For sauces, 'up to 2' includes 0 sauces (1 way), 1 sauce (6 ways), or 2 sauces (15 ways), totaling 22 ways. Total orders = 5 * 4 * 2 * 22 = 880.
+- **30-Second Exam-Hall Speed Shortcut**: Since 1 + 6 + 15 = 22 is a multiple of 11, the total number of orders must be divisible by 11. Among (A) 600, (B) 840, (C) 880, (D) 800, only 880 is divisible by 11!
+- **Trap Alert & Boundary Condition**: Forgetting the 0-sauce case ('Optionally... up to 2') gives 40 * 21 = 840 (distractor B).
+
+#### CAT2025_S3_QA_Q04 (`CAT_2025_QA_Slot_3` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Set Theory — *3-Set Inclusion-Exclusion optimization with strict positive intersection constraint*
+- **Verified Answer**: `(C) 35` (Let |P n C| = |C n M| = k, |P n M| = 2k, and |P n M n C| = x >= 1. By Inclusion-Exclusion: 150 = 75 + 111 + 40 - 4k + x => 4k - x = 76. To maximize |P \ M| = 75 - 2k, minimize k. Since x = 4k - 76 >= 1, 4k >= 77 => k >= 20 (at k=20, x=4, all regions >= 0). Thus max(75 - 2k) = 75 - 40 = 35.)
+- **Mental Trigger (`See X -> Do Y`)**: Write |P \ M| = |P| - |P n M| = 75 - 2k; to maximize 75 - 2k, minimize k subject to x = 4k - 76 >= 1!
+- **First-Principles Method**: Sum of singletons = 75 + 111 + 40 = 226. Sum of pairwise intersections = k + k + 2k = 4k. By PIE, 150 = 226 - 4k + x => x = 4k - 76. Since x >= 1 and k is an integer, 4k >= 77 => k >= 20. At k = 20, x = 4, and |P \ M| = 75 - 2(20) = 35.
+- **30-Second Exam-Hall Speed Shortcut**: 4k = 76 + x with x >= 1 => smallest multiple of 4 above 76 is 80 (k = 20, x = 4) => 75 - 2(20) = 35.
+- **Trap Alert & Boundary Condition**: Ignoring 'at least one student chose all three subjects' (x >= 1) sets x = 0, k = 19, giving the trap answer 75 - 38 = 37 (or if k=20 -> 35).

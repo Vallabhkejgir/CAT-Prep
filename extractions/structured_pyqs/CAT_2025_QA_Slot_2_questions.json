@@ -16,7 +16,14 @@
     "mental_trigger": "For ANY 3 consecutive GP terms, a1*a2 + a2*a3 + a3*a1 = a2*(a1 + a2 + a3), so divide the two given sums immediately to get a2 = 624/52 = 12!",
     "first_principles_method": "Let the GP be a, ar, ar^2 with 0 < r < 1. Since a1*a2 + a2*a3 + a3*a1 = ar(a + ar + ar^2), we get ar = 624/52 = 12. Then a + ar^2 = 52 - 12 = 40 => 12/r + 12r = 40 => r = 1/3, a = 36. Infinite sum S = 36/(1 - 1/3) = 54.",
     "speed_shortcut": "Once a2 = 12 and a1 + a3 = 40, spot 36 + 4 = 40 with 36*4 = 12^2 => a1 = 36, r = 1/3 => S = 36 * (3/2) = 54.",
-    "boundary_conditions_and_traps": "Since the GP is decreasing, choose r = 1/3 (not r = 3, for which the infinite sum diverges)."
+    "boundary_conditions_and_traps": "Since the GP is decreasing, choose r = 1/3 (not r = 3, for which the infinite sum diverges).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/06_algebra_sequences_series_maxima_minima.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q02",
@@ -35,7 +42,14 @@
     "mental_trigger": "When tangent segment AB intercepted between two tangents PQ and PR subtends angle AOB at center O, use angle AOB = 90 - (1/2) angle APB => angle APB = 180 - 2 * angle AOB.",
     "first_principles_method": "Let AB touch the circle at M. By tangent symmetry, triangle OQA is congruent to triangle OMA and triangle ORB is congruent to triangle OMB. Thus angle QOR = 2 * angle AOB = 100 deg. Since OQ perp PQ and OR perp PR, angle APB = 180 - 100 = 80 deg.",
     "speed_shortcut": "Apply the standard identity angle APB = 180 - 2(50) = 80 in 5 seconds.",
-    "boundary_conditions_and_traps": "Do not confuse angle AOB (50 deg) with angle QOR (100 deg); taking 180 - 50 = 130 is the classic trap."
+    "boundary_conditions_and_traps": "Do not confuse angle AOB (50 deg) with angle QOR (100 deg); taking 180 - 50 = 130 is the classic trap.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/07_geometry_triangles_circles_polygons.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q03",
@@ -54,7 +68,14 @@
     "mental_trigger": "In a regular hexagon of side 2a, the long diagonal CF has length 4a; since P and Q are midpoints of AB and CD, PQ is the mid-segment of trapezium ABCF, so PQ = (2a + 4a)/2 = 3a!",
     "first_principles_method": "Half the hexagon (trapezium ABCF) has parallel sides AB = 2a and CF = 4a, and area = 3 equilateral triangles = 12 sub-triangles. Since P and Q are midpoints of the slant sides AB and CD (symmetric to BC and AD), PQ has length (2a + 3a)... wait: BC = 2a, AD = 4a, and P, Q are midpoints of AB, CD, so PQ is the midline of trapezium ABCD! Thus PQ = (BC + AD)/2 = 3a, height is half the height of ABCD, and Area(PBCQ)/Area(ABCD) = ((2a + 3a)/2) / ((2a + 4a)/2) * (1/2) = 5/12 of half-hexagon = 5/24 of full hexagon!",
     "speed_shortcut": "Trapezium ABCD is half the hexagon (12/24). Midline PQ divides trapezium ABCD (bases 2 and 4, midline 3) into two strips of area ratio (2+3) : (3+4) = 5 : 7. So PBCQ is (5/12) * (1/2) = 5/24 of the hexagon!",
-    "boundary_conditions_and_traps": "Remember trapezium ABCD is HALF the hexagon (not the whole hexagon), so multiply 5/12 by 1/2 to get 5/24."
+    "boundary_conditions_and_traps": "Remember trapezium ABCD is HALF the hexagon (not the whole hexagon), so multiply 5/12 by 1/2 to get 5/24.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/07_geometry_triangles_circles_polygons.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q04",
@@ -73,7 +94,14 @@
     "mental_trigger": "Isolate b = a(3c - 8)/8; since b > 0, c >= 3. Test c = 3 and c = 4 to minimize a!",
     "first_principles_method": "Rewrite 3ac = 8(a + b) as 8b = a(3c - 8). Since b >= 1, 3c - 8 >= 1 => c >= 3. If c = 3, 8b = a => smallest distinct (a,b,c) is (8,1,3) giving 3(8)+2(1)+3 = 29. If c = 4, 8b = 4a => a = 2b => smallest distinct (a,b,c) is (2,1,4), giving 3(2)+2(1)+4 = 12.",
     "speed_shortcut": "To make a small in 8b = a(3c - 8), pick 3c - 8 to share a large factor with 8: 3c - 8 = 4 (c = 4) gives a = 2, b = 1 -> 3(2) + 2(1) + 4 = 12.",
-    "boundary_conditions_and_traps": "Check that a, b, c are DISTINCT: (2, 1, 4) has three distinct natural numbers."
+    "boundary_conditions_and_traps": "Check that a, b, c are DISTINCT: (2, 1, 4) has three distinct natural numbers.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/09_number_system_divisibility_factors_hcflcm_remainders_bases.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q05",
@@ -92,7 +120,14 @@
     "mental_trigger": "Since E_L : E_M = 2 : 3 and I_L : E_M = 6 : 7, scale E_M to LCM(3, 7) = 21 so all quantities are integers!",
     "first_principles_method": "Let E_M = 21k. Then E_L = 14k and I_L = 18k. Lakshmi's savings S_L = 18k - 14k = 4k. Since S_L : S_M = 4 : 9, S_M = 9k. Meenakshi's income I_M = E_M + S_M = 21k + 9k = 30k. Ratio I_L : I_M = 18k : 30k = 3 : 5.",
     "speed_shortcut": "With E_M = 21, E_L = 14, I_L = 18 => S_L = 4 => S_M = 9 => I_M = 30 => 18:30 = 3:5.",
-    "boundary_conditions_and_traps": "Read carefully that 6 : 7 is the ratio of Income of Lakshmi to Expenditure of Meenakshi (not Income of Lakshmi to Income of Meenakshi)."
+    "boundary_conditions_and_traps": "Read carefully that 6 : 7 is the ratio of Income of Lakshmi to Expenditure of Meenakshi (not Income of Lakshmi to Income of Meenakshi).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q06",
@@ -111,7 +146,14 @@
     "mental_trigger": "Bases 64 = 2^6, 8 = 2^3, 512 = 2^9 are all powers of 2; convert immediately to log_2 and apply AM >= GM.",
     "first_principles_method": "(1/3)log_2(x) + (1/6)log_2(y) + (1/3)log_2(y^(1/2)*z) = (1/3)log_2(xyz) = 4 => log_2(xyz) = 12 => xyz = 2^12. For positive reals, (x + y + z)/3 >= (xyz)^(1/3) = 2^4 = 16, so min(x + y + z) = 48 at x = y = z = 16.",
     "speed_shortcut": "Symmetric minimum among options (24, 36, 96, 48) is 3 * 2^k = 3 * 16 = 48.",
-    "boundary_conditions_and_traps": "Note that in 3*log_512(sqrt(y)*z), the radical covers y only, making the final log product symmetric in x, y, z."
+    "boundary_conditions_and_traps": "Note that in 3*log_512(sqrt(y)*z), the radical covers y only, making the final log product symmetric in x, y, z.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/06_algebra_sequences_series_maxima_minima.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q07",
@@ -130,7 +172,14 @@
     "mental_trigger": "Write 3^(x^2+2x-2) = 3 * 3^(x^2+2x-3) so the equation becomes u^2 - 12u + 27 = 0.",
     "first_principles_method": "Substitute u = 3^(x^2+2x-3) into 9^(x^2+2x-3) - 4*3^(x^2+2x-2) + 27 = 0 to get u^2 - 12u + 27 = 0 => (u - 3)(u - 9) = 0. Equating exponents gives x^2 + 2x - 4 = 0 (Delta = 20 > 0, root product = -4) and x^2 + 2x - 5 = 0 (Delta = 24 > 0, root product = -5). Total product = (-4)(-5) = 20.",
     "speed_shortcut": "Once x^2 + 2x - 3 in {1, 2}, the constant terms of x^2 + 2x - (3+k) = 0 are -4 and -5; their product is (-4)(-5) = 20.",
-    "boundary_conditions_and_traps": "Always verify Discriminant > 0 for both quadratic branches before multiplying Vieta root products."
+    "boundary_conditions_and_traps": "Always verify Discriminant > 0 for both quadratic branches before multiplying Vieta root products.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q08",
@@ -149,7 +198,14 @@
     "mental_trigger": "Day 8 raises the 7-day average from 60 to 63 (+3 across 8 days) => Day 8 = 60 + 8*3 = 84; then shifting the 8-day window from (1..8) to (2..9) raises average from 63 to 66 (+3 across 8 days) => Day 9 - Day 1 = 8*3 = 24!",
     "first_principles_method": "S_7 = 420, S_8 = 504 => d_8 = 84 => d_9 = 73. Also S_{2..9} = 8 * 66 = 528. Therefore d_1 = S_8 + d_9 - S_{2..9} = 504 + 73 - 528 = 49.",
     "speed_shortcut": "d_8 = 60 + 8(3) = 84 => d_9 = 73. Window shift (2..9) vs (1..8): d_9 - d_1 = 8(66 - 63) = 24 => d_1 = 73 - 24 = 49!",
-    "boundary_conditions_and_traps": "Days 2 to 9 inclusive is 8 days (not 7 or 9 days)."
+    "boundary_conditions_and_traps": "Days 2 to 9 inclusive is 8 days (not 7 or 9 days).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q09",
@@ -168,7 +224,14 @@
     "mental_trigger": "Notice 594 = 550 * 1.08 and 1000 * 1.08 - 530 = 550! Always test Year-1 balance (1000*(1+r) - 530)*(1+r) = 594.",
     "first_principles_method": "After 1 year at rate r, balance is 1000(1 + r) - 530. After 2 years, (1000(1 + r) - 530)(1 + r) = 594. Testing r = 0.08 gives (1080 - 530)(1.08) = 550 * 1.08 = 594.",
     "speed_shortcut": "Factor 594 = 54 * 11 = 27 * 22. Since 1 + r = 1 + R/100 has factor 27 when R = 8 (1.08 = 27/25), R = 8% is immediate!",
-    "boundary_conditions_and_traps": "Never equate simple sum of installments to 1000*(1+r)^2; each installment is discounted by its own time period."
+    "boundary_conditions_and_traps": "Never equate simple sum of installments to 1000*(1+r)^2; each installment is discounted by its own time period.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/01_arithmetic_percentages_pl_sici.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q10",
@@ -187,7 +250,14 @@
     "mental_trigger": "Test x = -4 (gives 16 - 5 - 4 = 7 > 0) and x = -10 (gives 100 - 1 - 10 = 89 > 0) to eliminate 3 options in 10 seconds!",
     "first_principles_method": "For x >= -9, |x + 9| = x + 9, so x^2 - x - 9 + x = x^2 - 9 > 0 => x in [-9, -3) U (3, inf). For x < -9, |x + 9| = -x - 9, so x^2 + 2x + 9 = (x+1)^2 + 8 > 0 for all x < -9. Combining both regions gives (-inf, -3) U (3, inf).",
     "speed_shortcut": "Plug x = -4: 16 - 5 - 4 = 7 > 0 (eliminates A). Plug x = 4: 16 - 13 + 4 = 7 > 0 (eliminates B). Plug x = -10: 100 - 1 - 10 = 89 > 0 (eliminates D). Only (C) remains!",
-    "boundary_conditions_and_traps": "Students who forget to include the x < -9 branch pick distractor (A) or (D)."
+    "boundary_conditions_and_traps": "Students who forget to include the x < -9 branch pick distractor (A) or (D).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q11",
@@ -206,7 +276,14 @@
     "mental_trigger": "Eliminate r^2 between 3r^2 - 5r + p = 0 and 2r^2 - 2r + q = 0 to get 2r directly in terms of p and q!",
     "first_principles_method": "Let r be the common root, and r1, r2 the other roots. From Vieta, (r + r1) + (r + r2) = 5/3 + 1 = 8/3 => r1 + r2 = 8/3 - 2r. Since 2(3r^2 - 5r + p) - 3(2r^2 - 2r + q) = -4r + 2p - 3q = 0, we have 2r = p - (3/2)q. Substituting gives r1 + r2 = 8/3 - p + (3/2)q.",
     "speed_shortcut": "Set common root r = 0 => p = 0, q = 0, and other roots are 5/3 and 1, summing to 8/3 (eliminates A and D). Set r = 1 => p = 2, q = 0, other roots are 2/3 and 0, summing to 2/3. Plug p=2, q=0 into (B) 14/3 vs (C) 2/3 -> (C) wins!",
-    "boundary_conditions_and_traps": "Setting r = 0 and r = 1 solves any parametric common-root MCQ in under 15 seconds."
+    "boundary_conditions_and_traps": "Setting r = 0 and r = 1 solves any parametric common-root MCQ in under 15 seconds.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q12",
@@ -225,7 +302,14 @@
     "mental_trigger": "Doubling the discount reduces SP (and profit) by exactly 1x the original discount D; then for Profit% = Discount% = k%, use k = 100*(MP - CP)/(MP + CP)!",
     "first_principles_method": "Initial profit = 0.20 * 1650 = 330. Doubling discount reduces profit from 330 to 110, so initial discount D = 220 and MP = 1650 + 330 + 220 = 2200. Equating CP(1 + k/100) = MP(1 - k/100) gives k = 100*(2200 - 1650)/(2200 + 1650) = 100/7 = 14.285%, nearest to 14.",
     "speed_shortcut": "Universal identity: Profit% = Discount% = k% <=> k = 100*(MP - CP)/(MP + CP) = 100*(4 - 3)/(4 + 3) = 100/7 = 14.28%.",
-    "boundary_conditions_and_traps": "Remember profit% is on CP (1650) while discount% is on MP (2200)."
+    "boundary_conditions_and_traps": "Remember profit% is on CP (1650) while discount% is on MP (2200).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/01_arithmetic_percentages_pl_sici.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q13",
@@ -244,7 +328,14 @@
     "mental_trigger": "Set Total = 100 and compute shares sequentially: P = 20, M = 32, S = 16 => R = 32.",
     "first_principles_method": "With Total = 100, P = 20, M = 0.40 * (100 - 20) = 32, S = 0.80 * 20 = 16, leaving R = 100 - 68 = 32. Thus P : R = 20 : 32 = 5 : 8.",
     "speed_shortcut": "10-second mental arithmetic with Total = 100 -> 20 : 32 = 5 : 8.",
-    "boundary_conditions_and_traps": "Meena gets 40% of the REMAINING amount (40% of 80 = 32), not 40% of total."
+    "boundary_conditions_and_traps": "Meena gets 40% of the REMAINING amount (40% of 80 = 32), not 40% of total.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/01_arithmetic_percentages_pl_sici.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q14",
@@ -263,7 +354,14 @@
     "mental_trigger": "For h(x) = f(g(x)) + g(f(x)), exclude singularities of inner functions (x = 1/2, x = 1) AND pre-images where inner function equals outer singularity (g(x) = 1/2 and f(x) = 1).",
     "first_principles_method": "Singularities are: (1) 2x - 1 = 0 => x = 1/2; (2) x - 1 = 0 => x = 1; (3) 2*g(x) - 1 = 0 => 2x/(x-1) = 1 => x = -1; (4) f(x) - 1 = 0 => x/(2x-1) = 1 => x = 1. Total excluded set: {-1, 1/2, 1}.",
     "speed_shortcut": "Solve x/(x-1) = 1/2 => 2x = x - 1 => x = -1. Only Option (D) contains -1!",
-    "boundary_conditions_and_traps": "Never simplify a composite fraction before recording the denominator exclusions of the inner function."
+    "boundary_conditions_and_traps": "Never simplify a composite fraction before recording the denominator exclusions of the inner function.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/05_algebra_functions_graphs_logs_surds.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q15",
@@ -282,7 +380,14 @@
     "mental_trigger": "Mod 3: prime 3 must have exponent 0; prime 7 == 1 mod 3 is free (3 choices); primes 2 and 5 are both -1 mod 3, so their exponents (a, c) must have the same parity!",
     "first_principles_method": "For d = 2^a * 3^b * 5^c * 7^d to be of form 3r + 1: b must be 0 (1 way); d can be 0, 1, 2 (3 ways); and (-1)^a * (-1)^c = 1 => a + c is even. With a in {0..6} (4 even, 3 odd) and c in {0..3} (2 even, 2 odd), there are 4*2 + 3*2 = 14 pairs. Total = 3 * 14 = 42.",
     "speed_shortcut": "Whenever one factor has an even number of exponent choices (here 5^c has 4 choices: 0,1,2,3), exactly HALF of all (a,c) pairs have even sum: (7 * 4)/2 = 14. Multiply by 3 choices for 7^d -> 14 * 3 = 42!",
-    "boundary_conditions_and_traps": "Do not include b >= 1 (any multiple of 3 is 0 mod 3, never 3r + 1)."
+    "boundary_conditions_and_traps": "Do not include b >= 1 (any multiple of 3 is 0 mod 3, never 3r + 1).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/09_number_system_divisibility_factors_hcflcm_remainders_bases.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q16",
@@ -301,7 +406,14 @@
     "mental_trigger": "Convert 625 = 5^4 and 128 = 2^7, pair min(260, 252) = 252 powers into 10^252 (which only adds zeros), and sum the digits of 5^8 = 390625.",
     "first_principles_method": "625^65 * 128^36 = (5^4)^65 * (2^7)^36 = 5^260 * 2^252 = 5^8 * (5*2)^252 = 390625 * 10^252. The sum of digits is 3 + 9 + 0 + 6 + 2 + 5 = 25.",
     "speed_shortcut": "5^4 = 625 => 5^8 = 625^2 = (600 + 25)^2 = 390625 -> sum of digits = 25.",
-    "boundary_conditions_and_traps": "Remember squaring a number ending in 25: 625^2 = (62 * 63) concatenated with 25? Wait: for N = 100a + 25, N^2 = 10000a(a+0.5) + 625 -> for 625, 6 * 6.5 = 39 -> 390625!"
+    "boundary_conditions_and_traps": "Remember squaring a number ending in 25: 625^2 = (62 * 63) concatenated with 25? Wait: for N = 100a + 25, N^2 = 10000a(a+0.5) + 625 -> for 625, 6 * 6.5 = 39 -> 390625!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/09_number_system_divisibility_factors_hcflcm_remainders_bases.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q17",
@@ -320,7 +432,14 @@
     "mental_trigger": "Assign the slowest worker (Chandan) efficiency = 1 unit/day so Total Work numerically equals Chandan's solo days!",
     "first_principles_method": "Let rates of C, B, A be 1, 2, 4 units/day. All three work for 20 days (20 * 7 = 140 units) and A + C work for the remaining 40 days (40 * 5 = 200 units). Total work = 340 units, so C alone needs 340/1 = 340 days.",
     "speed_shortcut": "A and C work all 60 days: 60*(4+1) = 300. B works 20 days: 20*2 = 40. Total = 340.",
-    "boundary_conditions_and_traps": "'Completed in 60 days' means 60 days in total (40 days after Bipin leaves), not 60 days after Bipin leaves."
+    "boundary_conditions_and_traps": "'Completed in 60 days' means 60 days in total (40 days after Bipin leaves), not 60 days after Bipin leaves.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/03_arithmetic_time_work_tsd_races_circular_tracks.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q18",
@@ -339,7 +458,14 @@
     "mental_trigger": "'m and n are integers' (not just positive integers!) means you MUST test negative factor pairs (-9, -3) of 27!",
     "first_principles_method": "Let u = m + 2n and v = 2m + n. Since u + v = 3(m + n) is a multiple of 3 and u*v = 27, both u and v are multiples of 3: (u, v) in {(3, 9), (9, 3), (-3, -9), (-9, -3)}. For (u, v) = (-9, -3), m = 1 and n = -5, giving 2m - 3n = 2(1) - 3(-5) = 17.",
     "speed_shortcut": "Positive factor pair (3, 9) gives (m, n) = (5, -1) -> 2m - 3n = 13 and (-1, 5) -> 2m - 3n = -17. Negating (m, n) to (1, -5) flips -17 to +17!",
-    "boundary_conditions_and_traps": "Ignoring negative integers gives the classic trap answer (B) 13."
+    "boundary_conditions_and_traps": "Ignoring negative integers gives the classic trap answer (B) 13.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/09_number_system_divisibility_factors_hcflcm_remainders_bases.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q19",
@@ -358,7 +484,14 @@
     "mental_trigger": "Intersecting cevians AD and BE with given internal ratios AT:TD and BT:TE -> apply Mass Point Geometry (note that point F with DF || BE is a red herring!).",
     "first_principles_method": "Since DF || BE, by Thales theorem in triangle BCE, EF : FC = BD : CD, and in triangle ADF, TE || DF gives AT : TD = AE : EF = 3 : 1. Alternatively by Mass Points: AT/TD = (m_B + m_C)/m_A = 3/1 and BT/TE = (m_A + m_C)/m_B = 4/1. Solving gives m_A : m_B : m_C = 20 : 16 : 44 = 5 : 4 : 11, so BD : CD = m_C : m_B = 11 : 4.",
     "speed_shortcut": "Using DF || BE: let AT = 3, TD = 1 => AE = 3x, EF = x. Then in triangle BCE, DF / BE = 1/3? No, in triangle ADF, TE/DF = AT/AD = 3/4, and BT/TE = 4/1 => BT : TE : DF = 12 : 3 : 4 => BE : DF = 15 : 4 => BC : DC = 15 : 4 => BD : CD = (15 - 4) : 4 = 11 : 4!",
-    "boundary_conditions_and_traps": "BC : CD is 15 : 4 (distractor A), whereas the question asks for BD : CD = (15 - 4) : 4 = 11 : 4 (Option B)!"
+    "boundary_conditions_and_traps": "BC : CD is 15 : 4 (distractor A), whereas the question asks for BD : CD = (15 - 4) : 4 = 11 : 4 (Option B)!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/07_geometry_triangles_circles_polygons.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q20",
@@ -377,7 +510,14 @@
     "mental_trigger": "Mixture cost is an affine function of concentration: Delta(Price)/Delta(Coffee%) = (320 - 240)/(36 - 16) = Rs 4 per 1% coffee.",
     "first_principles_method": "Let pure coffee cost C and pure cocoa cost K. Then 0.16C + 0.84K = 240 and 0.36C + 0.64K = 320 => C - K = 400 and K = 176. For a mixture costing 376: K + p(C - K) = 176 + 400p = 376 => p = 0.50. In 10 kg, coffee = 0.50 * 10 = 5 kg.",
     "speed_shortcut": "Slope is Rs 4 per 1% coffee. From Rs 320 (36%) to Rs 376 (+56), add 56/4 = 14% -> 50% of 10 kg = 5 kg.",
-    "boundary_conditions_and_traps": "Notice 376 > 320 means the new mixture has a higher coffee percentage than both given mixtures (an external alligation / pure ingredient extrapolation)."
+    "boundary_conditions_and_traps": "Notice 376 > 320 means the new mixture has a higher coffee percentage than both given mixtures (an external alligation / pure ingredient extrapolation).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q21",
@@ -396,7 +536,14 @@
     "mental_trigger": "Test integer stream speed u = 1 km/h first: 14/5 - 14/7 = 2.8 - 2.0 = 0.8 hrs = 48 min!",
     "first_principles_method": "Sneha: 14/(6-u) - 14/(6+u) = 4/5 => 28u/(36 - u^2) = 4/5 => u = 1 km/h. Rita's upstream speed is 5 - 1 = 4 km/h and downstream speed is 5 + 1 = 6 km/h. Average speed for round trip = 2*4*6/(4+6) = 4.8 km/h. Total distance in 100/60 hrs = 4.8 * (5/3) = 8 km.",
     "speed_shortcut": "Spot u = 1 km/h by inspection (14/5 - 14/7 = 4/5 hr). Then Rita's round-trip average speed is 2(4)(6)/10 = 4.8 km/h; for 5/3 hr, total distance = 4.8 * 5/3 = 8 km.",
-    "boundary_conditions_and_traps": "The question asks for the TOTAL distance Rita will cover (upstream + downstream = 2d = 8 km), not the one-way distance d = 4 km."
+    "boundary_conditions_and_traps": "The question asks for the TOTAL distance Rita will cover (upstream + downstream = 2d = 8 km), not the one-way distance d = 4 km.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/03_arithmetic_time_work_tsd_races_circular_tracks.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_QA_Q22",
@@ -415,6 +562,13 @@
     "mental_trigger": "Cluster all 4 integers as close to 46/4 = 11.5 as possible: {11, 11, 12, 12}, and set a = 11 or 12!",
     "first_principles_method": "Notice (a-b) + (a-c) + (a-d) = 4a - (a+b+c+d) = 4a - 46. Closest multiple of 4 to 46 is 44 (a = 11) or 48 (a = 12), making the sum of the 3 integer differences equal to -2 or +2. The minimum sum of squares of 3 integers summing to 2 is 1^2 + 1^2 + 0^2 = 2 (e.g., a=12, b=11, c=11, d=12).",
     "speed_shortcut": "Divide 46 as evenly as possible into 4 integers: 12, 12, 11, 11. Pick a = 12: (12-11)^2 + (12-11)^2 + (12-12)^2 = 1 + 1 + 0 = 2.",
-    "boundary_conditions_and_traps": "Do not assume a, b, c, d must be distinct (the problem only states 'a, b, c and d are integers')."
+    "boundary_conditions_and_traps": "Do not assume a, b, c, d must be distinct (the problem only states 'a, b, c and d are integers').",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/06_algebra_sequences_series_maxima_minima.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   }
 ]

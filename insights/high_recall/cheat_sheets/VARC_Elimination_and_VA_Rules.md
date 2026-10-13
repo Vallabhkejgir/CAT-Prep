@@ -65,3 +65,16 @@ When down to 2 options, scan both options for these 7 mechanical defects:
    - **Unbreakable adjacent pairs** (cross out those slots immediately!).
    - **The jarring gap / orphan pronoun** where a transition or antecedent is missing.
 2. Verify both **Bridge In** (hooks into preceding sentence) and **Bridge Out** (sets up following sentence).
+
+---
+
+## 5. CAT 2025 Newly Surfaced VARC Tie-Breakers & VA Traps
+
+| CAT 2025 Source | Question / Trap Variant | Instant Elimination / Solving Rule |
+| :--- | :--- | :--- |
+| `CAT2025_S2_VARC_Q03` & `Q18` | Double-Negative Stem (*'if false, would contradict... EXCEPT'*) | Cancel double negatives before reading options (`False -> Contradict` = `True`; with `EXCEPT`, find the option that **contradicts** the passage) |
+| `CAT2025_S1_VARC_Q17` & `S3_Q19` | 4-Term Sequential Conceptual Mapping | Map P1, P2, P3, P4 core nouns in order; eliminate options via **Last-Word Poison** (e.g., *Revenge* vs *Responsibility*) |
+| `CAT2025_S2_VARC_Q05` & `S3_Q18` | Complementarity vs Replacement / Unauthorized Comparison | *'No less real than'* $\neq$ *'can replace'*; *'smaller, though not inconsequential, dams'* $\neq$ *'safer than large dams'* |
+| `CAT2025_S3_VARC_Q04` | Half-Right Philosophical Label Swap | Check that the named doctrine (*utilitarian* vs *prioritarian*) matches the definition that follows the comma |
+| `CAT2025_S3_VARC_Q10` | Pronoun Hijack in 5-Sentence Odd-One-Out | Lock correlative bridge *'don't only [X]'* (S5) $\to$ *'they also [Y]'* (S2); eliminate the intruder sentence planted to hijack *'they'* |
+| `CAT2025_S2_VARC_Q14`, `Q20`, `S3_Q12` | Protecting Unbreakable Pairs in 4-Slot Sentence Placement | Never insert the missing sentence into a gap followed by *'In other words'* or a direct chronological expansion of the preceding sentence |

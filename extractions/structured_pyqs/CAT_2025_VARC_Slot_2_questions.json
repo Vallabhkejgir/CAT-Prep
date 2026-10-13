@@ -16,7 +16,14 @@
     "mental_trigger": "Look at the final thesis sentence ('the old idea of humans as antithetical to nature is also wrong-headed, and that rosy visions of thriving, human-free environments are more imaginary than real') — only Option (1) captures BOTH this closing thesis AND the ecological mosaic / Holocene evidence!",
     "first_principles_method": "Map the paragraph: 1) Millennia of human ecological mosaics supporting diverse life; 2) Holocene finding that human presence was equally likely to increase or reduce biodiversity; 3) Conclusion refuting the myth that humans always harm nature and that nature thrives only in human absence. Option (1) covers all three; (2) turns one example (European hay meadows) into the main point.",
     "speed_shortcut": "Only (1) includes 'it thrives in their absence' (matching 'rosy visions of thriving, human-free environments are more imaginary than real').",
-    "boundary_conditions_and_traps": "Option (2) is a classic Example-as-Main-Idea trap (elevating the European hay meadow sentence to the core claim)."
+    "boundary_conditions_and_traps": "Option (2) is a classic Example-as-Main-Idea trap (elevating the European hay meadow sentence to the core claim).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/04_va_parasummary_and_sentence_placement.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q02",
@@ -35,7 +42,15 @@
     "mental_trigger": "Keep the goal ('understand the human condition') and the means ('combining the arts and the sciences') in the right direction! Options (1) and (4) reverse the direction ('studying the human condition -> understand arts and sciences')!",
     "first_principles_method": "In the author's statement, the means is 'bridging disciplines and combining material from both the arts and the sciences' and the end goal is 'to better understand the human condition'. Option (2) preserves this exact means-end relation, whereas (1) and (4) invert it and (3) is word-salad ('bridging of the human condition').",
     "speed_shortcut": "Eliminate means-end reversals (1) and (4) and word-salad (3) -> (2).",
-    "boundary_conditions_and_traps": "Options (1) and (4) are textbook Causal/Means-End Reversal traps (Archetype #3)."
+    "boundary_conditions_and_traps": "Options (1) and (4) are textbook Causal/Means-End Reversal traps (Archetype #3).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q03",
@@ -54,7 +69,15 @@
     "mental_trigger": "Translate 'All of the following, IF FALSE, would contradict the passage, EXCEPT' into: 'Which statement is ALREADY FALSE according to the passage?' -> (3)!",
     "first_principles_method": "If a statement S is part of the passage's argument, then S being false contradicts the passage. If a statement S is the opposite of the passage's argument, then S being false supports (does not contradict) the passage. Statements (1), (2), and (4) align with the passage, whereas (3) says the exact opposite of Paragraph 1. Therefore, (3) is the exception.",
     "speed_shortcut": "Simplify double negative: 'if false, contradicts EXCEPT' = 'which statement is FALSE in the passage?' -> (3) says places are ONLY physical topography with NO emotional interaction!",
-    "boundary_conditions_and_traps": "Never evaluate options under a double-negative stem without rewriting the stem as a positive truth-value check on scratch paper first!"
+    "boundary_conditions_and_traps": "Never evaluate options under a double-negative stem without rewriting the stem as a positive truth-value check on scratch paper first!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q04",
@@ -73,7 +96,15 @@
     "mental_trigger": "Find 'For example, a literary description of place...' in Para 3 line 2: '...how people from different races or classes can experience the same place in different ways' -> (1)!",
     "first_principles_method": "In Para 3, the sentence beginning 'For example, a literary description of place may involve...' explicitly illustrates how people from different backgrounds (races or classes) experience the same place in different ways (1). Option (2) misattributes noises/lights to architects; Option (3) contradicts the passage; Option (4) is a separate point in the next sentence ('Literary texts can also account for...').",
     "speed_shortcut": "Verbatim match with the 'For example, a literary description of place...' sentence in Para 3 -> (1).",
-    "boundary_conditions_and_traps": "Option (4) comes from the NEXT sentence ('Literary texts can also account for the way in which absence...'), not the 'For example, a literary description of place' sentence!"
+    "boundary_conditions_and_traps": "Option (4) comes from the NEXT sentence ('Literary texts can also account for the way in which absence...'), not the 'For example, a literary description of place' sentence!",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q05",
@@ -92,7 +123,15 @@
     "mental_trigger": "The passage says emotional experience is 'no less real than a surveyor's map' and both are necessary in unison — saying it 'can replace a surveyor's map' (4) is a classic Extreme / Unauthorized Replacement trap!",
     "first_principles_method": "Options (1), (2), and (3) are directly stated in the last 4 lines of Paragraph 1 (which was split across the page break). Option (4) distorts 'no less real than a surveyor's map' into 'can replace a surveyor's map'.",
     "speed_shortcut": "'no less real than' != 'can replace' -> (4) is clearly false.",
-    "boundary_conditions_and_traps": "Watch out for complementarity ('both are necessary') being twisted into substitution ('A can replace B')."
+    "boundary_conditions_and_traps": "Watch out for complementarity ('both are necessary') being twisted into substitution ('A can replace B').",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q06",
@@ -111,7 +150,15 @@
     "mental_trigger": "Para 4 line 1: 'veneer of collegial neutrality could lull us into absorbing false or biased responses WITHOUT much critical engagement' -> exact opposite of (2)!",
     "first_principles_method": "Check each claim: (1) Agreed (Para 1: 'I describe this complicity'); (3) Agreed (Para 4: 'its funders still seek a return on their investment... trustworthy collaborators'); (4) Agreed as a plausible observation/concern explored in Para 4; (2) Directly contradicted by 'lull us into absorbing false or biased responses without much critical engagement'.",
     "speed_shortcut": "'without much critical engagement' in Para 4 directly refutes 'conducive to critical thinking' (2)!",
-    "boundary_conditions_and_traps": "None; 10-second direct contradiction."
+    "boundary_conditions_and_traps": "None; 10-second direct contradiction.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q07",
@@ -130,7 +177,15 @@
     "mental_trigger": "(1) = gender bias, (2) = US-centric bias, (4) = pro-Altman bias; (3) is ChatGPT accurately confessing how its rhetoric works!",
     "first_principles_method": "Compare the purpose of the four cited AI outputs: (1), (2), and (4) are examples where the AI produced biased or slanted content (sexism, US-centrism, corporate self-flattery). In (3), ChatGPT gives an accurate, candid explanation of its own communication design ('designed to foster trust... both helpful and potentially misleading'). Thus (3) is the odd one out.",
     "speed_shortcut": "(1), (2), (4) = AI exhibiting bias; (3) = AI admitting its rhetorical strategy -> (3).",
-    "boundary_conditions_and_traps": "Do not group (3) and (4) together just because both are in Paragraph 4; look at what the AI response DOES (bias vs candid admission)."
+    "boundary_conditions_and_traps": "Do not group (3) and (4) together just because both are in Paragraph 4; look at what the AI response DOES (bias vs candid admission).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q08",
@@ -149,7 +204,15 @@
     "mental_trigger": "Quote (2) is about OUR complicity as users ('both victims and beneficiaries'), not about what tech companies claim AI does vs what AI actually does!",
     "first_principles_method": "The prompt asks which quote does NOT affirm the disjunct between corporate claims about AI (neutral, accurate, non-influencing) and AI's actual behavior. Quotes (1), (3), and (4) all highlight AI biases/influence despite claims of neutrality. Quote (2) describes why users allow big tech to harvest human language (because users also benefit from the products).",
     "speed_shortcut": "Quote (2) is about user complicity/trade-off in Para 1, not AI claim-vs-reality disjunct -> (2).",
-    "boundary_conditions_and_traps": "Classic Right-Line, Wrong-Question distinction."
+    "boundary_conditions_and_traps": "Classic Right-Line, Wrong-Question distinction.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q09",
@@ -168,7 +231,15 @@
     "mental_trigger": "The 'beige office building' metaphor in Para 2 is about AI's bland, polite, professional, trust-inducing TONE (1, 2, 3), NOT about blaming training data for bias in Para 4 (4)!",
     "first_principles_method": "Locate 'beige office building' in Paragraph 2: it describes the bland/generic (1), polite/empathetic/collegial (2), professional/safe/trust-building (3) style of chatbot language. Option (4) comes from Paragraph 4 ('it blamed biases in its training data') and is unrelated to the metaphor.",
     "speed_shortcut": "(1), (2), (3) are all in Paragraph 2 around 'beige office building'; (4) is from Paragraph 4 -> (4).",
-    "boundary_conditions_and_traps": "Paragraph-boundary awareness immediately separates Para 2's tone metaphor from Para 4's training-data excuse."
+    "boundary_conditions_and_traps": "Paragraph-boundary awareness immediately separates Para 2's tone metaphor from Para 4's training-data excuse.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q10",
@@ -187,7 +258,15 @@
     "mental_trigger": "Option (4) explicitly says 'in humans and other animals' — it is the baseline problem that cavefish adapted to AVOID ('Yet... cavefish had fewer signs of inflammation')!",
     "first_principles_method": "Options (1), (2), and (3) all describe Mexican tetra cavefish and their adaptive ecology/physiology (surviving on meager cave diets, binge-eating and getting fat when food washes in, eliminating unused eye tissue). Option (4) describes chronic inflammation from bursting fat cells in humans and other animals, before the 'Yet...' pivot to cavefish.",
     "speed_shortcut": "Spot 'in humans and other animals' in (4) -> not an adaptation in Mexican tetra cavefish!",
-    "boundary_conditions_and_traps": "Always read the sentence immediately following a quoted option ('Yet a 2020 study... revealed that... cavefish had fewer signs of inflammation')."
+    "boundary_conditions_and_traps": "Always read the sentence immediately following a quoted option ('Yet a 2020 study... revealed that... cavefish had fewer signs of inflammation').",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q11",
@@ -206,7 +285,15 @@
     "mental_trigger": "Don't pick the falsified initial guess (1: linked to eyelessness); pick the final sentence after 'Instead': 'adaptation to suppress inflammation' (2)!",
     "first_principles_method": "In Paragraph 4, Riddle initially wondered if carotenoids accumulated because cavefish lack eyes (1), tested it by crossing surface and cavefish, found no link to eyes, and concluded: 'Instead, Riddle thinks these carotenoids may be another adaptation to suppress inflammation' (2).",
     "speed_shortcut": "Last sentence of the passage: 'adaptation to suppress inflammation' -> (2).",
-    "boundary_conditions_and_traps": "Option (1) is the "
+    "boundary_conditions_and_traps": "Option (1) is the ",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q12",
@@ -225,7 +312,15 @@
     "mental_trigger": "Riddle inferred 'no link between eye presence and yellow fat (carotenoids)'; to invalidate 'no link', show a strict correlation: 'Only eyeless offspring had yellow fat' (2)!",
     "first_principles_method": "The initial hypothesis was that cavefish accumulate carotenoids (yellow fat) because they don't have eyes. The cross experiment rejected this ('no link') because some eyeless fish had white fat (4). If instead ONLY eyeless offspring had yellow fat (2), eyelessness and carotenoid accumulation would be strongly linked, invalidating Riddle's inference.",
     "speed_shortcut": "To disprove 'no link between eyelessness and yellow fat', pick 'Only eyeless offspring had yellow fat' (2). Note (4) is literally cited in the passage to SUPPORT Riddle's inference!",
-    "boundary_conditions_and_traps": "Option (4) ('Some eyeless offspring had white fat') is stated verbatim in the passage as the evidence FOR Riddle's inference — do not pick it when asked what INVALIDATES her inference!"
+    "boundary_conditions_and_traps": "Option (4) ('Some eyeless offspring had white fat') is stated verbatim in the passage as the evidence FOR Riddle's inference — do not pick it when asked what INVALIDATES her inference!",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q13",
@@ -244,7 +339,15 @@
     "mental_trigger": "Why start making an eye only to destroy it? Because in early embryonic development (like non-cave variants), eye and brain development are completely intertwined (4)! Note (1) is false (cavefish embryos do this in labs too, not because lack of light kills the cells!).",
     "first_principles_method": "Eliminate (1) (genetic/developmental program, not darkness directly killing embryonic cells), (2) (explains sensory compensation, not why embryos grow and shrink eyes), and (3) (explains why keeping adult eyes is costly, not why embryonic eye formation is unavoidable). Option (4) reflects the shared early embryonic development ('Just like non-cave-dwelling members... development of the brain and the eye are completely intertwined').",
     "speed_shortcut": "Eliminate (1) (false Lamarckian claim), (2) and (3) (irrelevant to embryonic eye-brain coupling) -> (4).",
-    "boundary_conditions_and_traps": "Option (1) is a classic scientific distortion trap: darkness does not directly kill the embryo's eye cells; programmed cell death is genetically coupled to brain development."
+    "boundary_conditions_and_traps": "Option (1) is a classic scientific distortion trap: darkness does not directly kill the embryo's eye cells; programmed cell death is genetically coupled to brain development.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q14",
@@ -263,7 +366,14 @@
     "mental_trigger": "Slots (1)-(3) describe the botanical and spinning process (Phuti Karpas cotton -> flower -> fibres -> spun on boats); 'European aristocrats... Marie Antoinette... Jane Austen' right before (4) links directly to 'The region's Western customers' at Slot (4) -> select choice (2) Option 4!",
     "first_principles_method": "1) Never break the Phuti Karpas botanical/spinning chain spanning Slots (1), (2), and (3). 2) The sentence before Slot (4) introduces European aristocrats, Marie Antoinette, Josephine, and Jane Austen, providing the exact topical bridge to 'The region's Western customers found it hard to believe...'. 3) Slot 4 corresponds to choice (2) Option 4.",
     "speed_shortcut": "'European aristocrats... Jane Austen' -> 'The region's Western customers' at Slot (4) -> select (2) Option 4.",
-    "boundary_conditions_and_traps": "Watch the scrambled option numbering: Slot (4) is choice (2) 'Option 4'!"
+    "boundary_conditions_and_traps": "Watch the scrambled option numbering: Slot (4) is choice (2) 'Option 4'!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/04_va_parasummary_and_sentence_placement.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q15",
@@ -282,7 +392,15 @@
     "mental_trigger": "Scalpel (2), Saxophone (3), and Kitchen oven (4) are all active interventional devices/instruments used to manipulate matter or sound; a Milestone (1) is a passive roadside stone!",
     "first_principles_method": "The passage characterizes instruments through active technological embodiment (enhancing perception or intervening in materials, with ongoing technological trajectories). A milestone is a static stone distance marker, making the passage's characterizations least applicable to (1) Milestone.",
     "speed_shortcut": "Odd-object-out: Milestone (1) is a static stone marker, whereas Scalpel, Saxophone, and Kitchen oven are active functional instruments.",
-    "boundary_conditions_and_traps": "Don't overthink 'scientific vs non-scientific': a milestone isn't even an active instrument/device."
+    "boundary_conditions_and_traps": "Don't overthink 'scientific vs non-scientific': a milestone isn't even an active instrument/device.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q16",
@@ -301,7 +419,15 @@
     "mental_trigger": "Laugh at Option (2) twisting 'constant improvements' into 'improvement of scientific constants', and pick the clean paraphrase (1)!",
     "first_principles_method": "The quoted sentence states that astronomy and microbiology ('both disciplines') cannot progress successfully without constant improvements in their instruments. Option (1) restates this accurately. Option (2) puns on 'constant' ('scientific constants'); Option (3) scrambles 'embodied' and 'trajectories'; Option (4) puns on 'respective' ('must be respected')!",
     "speed_shortcut": "Spot the hilarious pun traps in (2) ('constant' -> 'scientific constants') and (4) ('respective' -> 'must be respected') -> (1) wins!",
-    "boundary_conditions_and_traps": "CAT RC frequently creates distractors by punning on words from the stem ('constant improvements' -> 'scientific constants', 'respective' -> 'respected')."
+    "boundary_conditions_and_traps": "CAT RC frequently creates distractors by punning on words from the stem ('constant improvements' -> 'scientific constants', 'respective' -> 'respected').",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q17",
@@ -320,7 +446,15 @@
     "mental_trigger": "Translate 'None of the following, if true, contradicts... EXCEPT' into: 'Which statement CONTRADICTS the passage?' The passage says mathematics was the last scientific discipline to move into TECHNICAL EMBODIMENT, NOT that it lacked a scientific culture until now (4)!",
     "first_principles_method": "Check each statement: (1) Compatible (e.g., space probes in astronomy); (2) Compatible (Newton's gravity theory vs his reflecting telescope optics); (3) Compatible (electron/non-optical microscopy); (4) Contradicts the passage by conflating 'technical embodiment' (computational machinery) with possessing a 'scientific culture'.",
     "speed_shortcut": "(4) conflates 'moving into technical embodiment' with 'beginning to develop a scientific culture'.",
-    "boundary_conditions_and_traps": "De-nest 'None... contradicts EXCEPT' -> 'Which one contradicts?'"
+    "boundary_conditions_and_traps": "De-nest 'None... contradicts EXCEPT' -> 'Which one contradicts?'",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q18",
@@ -339,7 +473,15 @@
     "mental_trigger": "'All may be rejected EXCEPT' = 'Which one is VALID?' Option (1) is the exact thesis of Para 1-2! Note (4) falsely attributes Galileo's observations (phases of Venus, satellites of Jupiter) to Newton!",
     "first_principles_method": "Verify (2)-(4) are false: (2) False (both receptive and interventional styles are forms of 'instrumentally embodied science'); (3) False (Newton remained within optical light; 'new astronomy' began in the 20th century with radio astronomy); (4) False (Galileo observed phases of Venus and satellites of Jupiter). Option (1) is valid.",
     "speed_shortcut": "(1) is the main structural comparison of the entire passage.",
-    "boundary_conditions_and_traps": "Watch for historical swap traps in RC (attributing Galileo's discoveries to Newton in 4, or 20th-century radio astronomy to Newton in 3)."
+    "boundary_conditions_and_traps": "Watch for historical swap traps in RC (attributing Galileo's discoveries to Newton in 4, or 20th-century radio astronomy to Newton in 3).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q19",
@@ -358,7 +500,14 @@
     "mental_trigger": "1 ('at once cinema and literature') + 4 ('Beneath this contradictory notion of... holding dual citizenship in two modes of presentation') is an unbreakable 1-4 opening pair! Then 4 ends with 'studied is literature' -> 2 ('academic studies of adaptation remain stubbornly attached to literature') -> 3 ('It is as if adaptation studies...')!",
     "first_principles_method": "1) 1-4 mandatory pair: 'at once cinema and literature' in 1 is restyled in 4 as 'this contradictory notion of film adaptations as... texts holding dual citizenship in two modes of presentation'. 2) 4-2 link: 4 introduces the assumption that adaptations must be studied within literature; 2 illustrates how academic adaptation studies remain stubbornly attached to literature despite non-literary sources. 3) 2-3 link: 3 ('It is as if adaptation studies, by borrowing the cultural cachet of literature...') diagnoses why academic studies do what 2 describes. Sequence: 1423.",
     "speed_shortcut": "1-4 ('at once cinema and literature' -> 'this contradictory notion... dual citizenship') + 2-3 ('academic studies of adaptation remain stubbornly attached to literature' -> 'It is as if adaptation studies...') = 1423!",
-    "boundary_conditions_and_traps": "Ignore the stray '(1) Option 2...' artifact at the bottom of the PDF page; Q19 asks you to 'key in the sequence of the four numbers as your answer' (1423)."
+    "boundary_conditions_and_traps": "Ignore the stray '(1) Option 2...' artifact at the bottom of the PDF page; Q19 asks you to 'key in the sequence of the four numbers as your answer' (1423).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q20",
@@ -377,7 +526,14 @@
     "mental_trigger": "Never split Sentence 1 ('a crucial but neglected historical change') from Sentence 2 ('Over the course of the seventeenth century and early eighteenth century... the word taste took on a new extension of meaning') across Slot (2)! And in Sentence 2, 'gustatory sensation and the delights of the palate' sets up the missing sentence's 'taste retains a vital link to pleasure, embodiment...' at Slot (3) -> choice (2) Option 3!",
     "first_principles_method": "Slot (2) is an unbreakable historical bridge ('a crucial but neglected historical change' -> 'Over the course of the 17th and early 18th century...'). Sentence 2 introduces taste's shift from 'gustatory sensation and the delights of the palate' to aesthetic/ethical thinking. At Slot (3), the target sentence explains that even as an aesthetic category related to judgment, taste 'retains a vital link to pleasure, embodiment, and personal specificity' (echoing 'gustatory sensation and the delights of the palate'). Then Sentence 3 adds a further benefit ('Tracing the history of taste... also provides...'). Thus Slot 3 = choice (2) Option 3.",
     "speed_shortcut": "Slot (2) is locked by 'historical change' -> '17th and early 18th century'; 'delights of the palate' in Sentence 2 bridges into 'retains a vital link to pleasure, embodiment' at Slot (3) -> select (2) Option 3!",
-    "boundary_conditions_and_traps": "Slot (2) is the #1 trap for hasty readers who match 'taste rather than judgment' in Sentence 1 with 'While taste is related to judgment' without noticing that Sentence 1 ends with 'a crucial but neglected historical change' which MUST be followed immediately by Sentence 2 ('Over the course of the 17th... century')!"
+    "boundary_conditions_and_traps": "Slot (2) is the #1 trap for hasty readers who match 'taste rather than judgment' in Sentence 1 with 'While taste is related to judgment' without noticing that Sentence 1 ends with 'a crucial but neglected historical change' which MUST be followed immediately by Sentence 2 ('Over the course of the 17th... century')!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/04_va_parasummary_and_sentence_placement.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q21",
@@ -396,7 +552,14 @@
     "mental_trigger": "Check who paid the meagre sum ($500): 'They [Parker Brothers] paid Magie only $500 for her patent—without royalties—and credited Darrow as the sole inventor.' Option (2) gets the actors right; Option (3) falsely says Darrow sold it to Parker Brothers for a meagre sum!",
     "first_principles_method": "Eliminate (1) ('Celebrated icons of the gaming industry' — tone reversal) and (4) ('ultimate triumph of individual ingenuity' — tone reversal). Between (2) and (3), (2) accurately attributes the acquisition, minimal compensation ($500 without royalties), and scant recognition to Parker Brothers, whereas (3) misattributes 'for a meagre sum, denying her royalties' to Darrow's sale to Parker Brothers.",
     "speed_shortcut": "(1) and (4) praise Darrow (opposite of passage tone); between (2) and (3), (2) accurately tracks Parker Brothers' actions toward Magie.",
-    "boundary_conditions_and_traps": "Always check pronoun/subject-verb attribution in summaries ('They paid Magie only $500')."
+    "boundary_conditions_and_traps": "Always check pronoun/subject-verb attribution in summaries ('They paid Magie only $500').",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/04_va_parasummary_and_sentence_placement.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q22",
@@ -415,7 +578,14 @@
     "mental_trigger": "2, 4, and 5 all discuss the 'New research / The research / The findings' on how PFAS causes disease via gene activity, with 1 defining the 15,000 PFAS compounds; 3 ('forever chemicals... do not naturally break down in the environment') is an environmental trivia tangent!",
     "first_principles_method": "Sentences 2, 4, and 5 form an unbreakable research-findings triad ('New research suggests... cause changes to gene activity... linked to health problems' -> 'The research may also point toward other diseases...' -> 'The findings are a major step toward determining the mechanism by which the chemicals cause disease...'), and Sentence 1 defines the chemical class ('Pfas are a class of about 15,000 compounds...'). Sentence 3 introduces the 'forever chemicals' environmental breakdown factoid, which plays no role in the gene-activity medical study.",
     "speed_shortcut": "2-4-5 ('New research' -> 'The research' -> 'The findings' on disease) + 1 (definition of Pfas) leaves 3 (environmental 'forever chemicals') as the odd one out!",
-    "boundary_conditions_and_traps": "Wait: could 1-3 be paired ('Pfas are a class...' -> 'These Pfas compounds...')? If you kept 3, you would have to drop 1, leaving 'These Pfas compounds' in 3 referring to 'some common... (Pfas)' in 2 while losing the 15,000-compound scope, whereas 3's environmental persistence has zero connection to gene activity/disease in 2-4-5. Thus 3 is the outlier."
+    "boundary_conditions_and_traps": "Wait: could 1-3 be paired ('Pfas are a class...' -> 'These Pfas compounds...')? If you kept 3, you would have to drop 1, leaving 'These Pfas compounds' in 3 referring to 'some common... (Pfas)' in 2 while losing the 15,000-compound scope, whereas 3's environmental persistence has zero connection to gene activity/disease in 2-4-5. Thus 3 is the outlier.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q23",
@@ -434,7 +604,14 @@
     "mental_trigger": "Spot the two demonstrative pairs immediately: 2->4 ('a scent' -> 'This familiar aroma') and 1->3 ('volatile organic compounds' -> 'These compounds are...') -> 2413 in 10 seconds!",
     "first_principles_method": "1) 2 is the general opener ('Old books carry a scent...'). 2) 4 follows 2 ('This familiar aroma... slow chemical changes'). 3) 1 specifies the chemical changes ('cellulose and lignin... releasing a mix of volatile organic compounds'). 4) 3 lists 'These compounds'. Sequence: 2413.",
     "speed_shortcut": "2-4 + 1-3 = 2413 (fastest sitter in VARC Slot 2).",
-    "boundary_conditions_and_traps": "None; 100% deterministic pronoun/demonstrative chain."
+    "boundary_conditions_and_traps": "None; 100% deterministic pronoun/demonstrative chain.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S2_VARC_Q24",
@@ -453,6 +630,13 @@
     "mental_trigger": "Look at Sentence 3: 'his colour-scouting mission (he hasn't yet found a new one, he admits)' — none of the other sentences mention a mission to find a new colour! Meanwhile 4 ('crayon squiggles') -> 1 ('Torres himself resembles a child's doodle') -> 5 ('what orange sounds like... highly purple behaviour') -> 2 ('makes surreal concepts sound like items on a brunch menu') form a tight 4-sentence block!",
     "first_principles_method": "Pair 4 ('illustrated with crayon squiggles') with 1 ('Torres himself resembles a child's doodle'), followed by 5 (his surreal colour-synesthesia ideas) and 2 (his casual delivery of those surreal concepts). Sentence 3 refers to 'his colour-scouting mission (he hasn't yet found a new one)' which has no antecedent in 1, 2, 4, or 5.",
     "speed_shortcut": "4-1 ('crayon squiggles' -> 'Torres himself resembles a child's doodle') + 5-2 ('interconnected ideas... what orange sounds like' -> 'makes surreal concepts sound like...') leaves 3 ('his colour-scouting mission') as the unanchored outlier!",
-    "boundary_conditions_and_traps": "Note that in the PDF, options '(1) Option 3...' were printed below Q24; whether answered as TITA '3' or MCQ '(1) Option 3', the odd sentence is Sentence 3."
+    "boundary_conditions_and_traps": "Note that in the PDF, options '(1) Option 3...' were printed below Q24; whether answered as TITA '3' or MCQ '(1) Option 3', the odd sentence is Sentence 3.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   }
 ]

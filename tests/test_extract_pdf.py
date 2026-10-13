@@ -165,8 +165,11 @@ def test_master_notes_and_high_recall_assets_completeness() -> None:
         assert row["Back_Formula_Trigger_and_Trap"]
 
 
-def test_cat_2025_pyq_structured_json_and_per_paper_analysis_completeness() -> None:
-    """Verify all 9 CAT 2025 structured JSON files (204 questions) and 10 per-paper analysis files exist and validate."""
+def test_cat_2025_pyq_incremental_insight_enrichment_completeness() -> None:
+    """Verify no per_paper directory exists, all 9 CAT 2025 JSONs have delta triage fields, and all 20 topic notes + 3 mistake manuals contain integrated CAT 2025 PYQ edge examples."""
+    per_paper_dir = REPO_ROOT / "insights" / "per_paper"
+    assert not per_paper_dir.exists(), "insights/per_paper must not exist under the Incremental Insight-Enrichment Architecture"
+
     expected_papers = [
         ("CAT_2025_QA_Slot_1", "QA", 22),
         ("CAT_2025_QA_Slot_2", "QA", 22),
@@ -195,14 +198,16 @@ def test_cat_2025_pyq_structured_json_and_per_paper_analysis_completeness() -> N
         "first_principles_method",
         "speed_shortcut",
         "boundary_conditions_and_traps",
+        "is_new_subtopic_or_variant",
+        "is_mistake_or_trap_worthy",
+        "is_edge_example",
+        "target_insight_files",
     }
 
     total_questions = 0
     for base, section, expected_count in expected_papers:
         json_path = REPO_ROOT / "extractions" / "structured_pyqs" / f"{base}_questions.json"
-        md_path = REPO_ROOT / "insights" / "per_paper" / f"{base}_analysis.md"
         assert json_path.is_file(), f"Missing structured PYQ JSON: {json_path}"
-        assert md_path.is_file(), f"Missing per-paper analysis Markdown: {md_path}"
 
         questions = json.loads(json_path.read_text(encoding="utf-8"))
         assert len(questions) == expected_count, f"Expected {expected_count} questions in {base}, got {len(questions)}"
@@ -216,9 +221,31 @@ def test_cat_2025_pyq_structured_json_and_per_paper_analysis_completeness() -> N
             assert q["difficulty"] in {"Easy", "Medium", "Hard"}
             assert q["exam_round_tag"] in {"Round_1_Sitter", "Round_2_Doable", "Round_3_TimeSink_Skip"}
             assert q["derived_answer"]
+            assert isinstance(q["is_new_subtopic_or_variant"], bool)
+            assert isinstance(q["is_mistake_or_trap_worthy"], bool)
+            assert isinstance(q["is_edge_example"], bool)
+            assert isinstance(q["target_insight_files"], list) and len(q["target_insight_files"]) >= 2
+            for rel_target in q["target_insight_files"]:
+                assert (REPO_ROOT / rel_target).is_file(), f"Target insight file missing: {rel_target}"
 
     assert total_questions == 204
-    master_index = REPO_ROOT / "insights" / "per_paper" / "CAT_2025_Master_Answer_Key_and_Slot_Comparison.md"
-    assert master_index.is_file(), "Missing master answer key & slot comparison Markdown"
+
+    topic_files = list((REPO_ROOT / "insights" / "topic_summaries").rglob("*.md"))
+    assert len(topic_files) == 20
+    for tpath in topic_files:
+        content = tpath.read_text(encoding="utf-8")
+        assert "## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns" in content, f"Missing 2025 PYQ section in {tpath.name}"
+        assert "CAT_2025_" in content and "CAT2025_" in content, f"Missing 2025 PYQ exemplars in {tpath.name}"
+
+    mistake_files = [
+        REPO_ROOT / "insights" / "mistakes_and_edge_cases" / "quant_pitfalls.md",
+        REPO_ROOT / "insights" / "mistakes_and_edge_cases" / "dilr_traps.md",
+        REPO_ROOT / "insights" / "mistakes_and_edge_cases" / "varc_traps.md",
+    ]
+    for mpath in mistake_files:
+        content = mpath.read_text(encoding="utf-8")
+        assert "## CAT 2025 Real PYQ Mistake Triggers & Edge Traps" in content, f"Missing 2025 traps section in {mpath.name}"
+        assert "CAT_2025_" in content and "CAT2025_" in content, f"Missing 2025 trap citations in {mpath.name}"
+
 
 
