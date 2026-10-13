@@ -16,7 +16,14 @@
     "mental_trigger": "Pair 5 ('Freedom is a notoriously complex... notion') with 2 ('But I believe that a type of freedom we can call freedom over death...') as the opening 5-2 pair, followed by 1 ('that freedom... this freedom') and 3 ('but a further step in realising this freedom over death')!",
     "first_principles_method": "Construct the 4-sentence paragraph first: 5 (broad premise on freedom) -> 2 (contrastive definition of 'freedom over death') -> 1 (historical evolution of 'that freedom') -> 3 (normative culmination: 'Legalising assisted dying is but a further step in realising this freedom over death'). Sentence 4 breaks the logical progression by prematurely treating medical assistance in dying as already encompassed in popular opinion.",
     "speed_shortcut": "Chain 5-2-1-3 locks all 4 roles (opener, definition, development, culmination), leaving 4 as the outlier.",
-    "boundary_conditions_and_traps": "Do not eliminate 5 just because it lacks the exact phrase 'freedom over death'; 5 sets up 'this conversation' and the 'But' pivot in 2!"
+    "boundary_conditions_and_traps": "Do not eliminate 5 just because it lacks the exact phrase 'freedom over death'; 5 sets up 'this conversation' and the 'But' pivot in 2!",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q02",
@@ -35,7 +42,15 @@
     "mental_trigger": "When Paragraph 1 lists two numbered skeptical questions '(1)... and (2)...' and Paragraph 4 opens with 'The second objection usually levelled against electronic music...', the entire passage is a defense against those two charges!",
     "first_principles_method": "Map paragraph roles: Para 1 introduces two common objections to electronic music and answers the first via Stravinsky's objective view; Para 2-3 explain the new language of forms; Para 4 refutes the second ('inhuman') objection by listing the composer's human agency. Thus the primary goal is (4).",
     "speed_shortcut": "Match 'two basic questions' (Para 1) + 'The second objection' (Para 4) -> (4) defend electronic music from certain common charges.",
-    "boundary_conditions_and_traps": "Options (1) and (2) are secondary tools used in Para 1-2 (Narrow-Paragraph Trap), while (3) fabricates a conflict with Hiller and Stravinsky."
+    "boundary_conditions_and_traps": "Options (1) and (2) are secondary tools used in Para 1-2 (Narrow-Paragraph Trap), while (3) fabricates a conflict with Hiller and Stravinsky.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q03",
@@ -54,7 +69,15 @@
     "mental_trigger": "Locate the closing sentence of Paragraph 2: '...the barriers between him and the work he faces will be removed' -> the communication barrier is temporary and can be overcome!",
     "first_principles_method": "In Para 2, the 'communication problem' explains why listeners struggle to accept electronic music as music (Question 1 in Para 1) due to unfamiliar structural terms, but explicitly states that once understood, the barriers will be removed. This matches (1).",
     "speed_shortcut": "Eliminate (2) ('cannot see' - too extreme/permanent), (3) ('unrelated' - false), and (4) ('music must be difficult' - absurd) -> (1).",
-    "boundary_conditions_and_traps": "Option (2) is a classic Half-Right, Half-Poisoned trap: it accurately quotes 'language of forms' but reverses the author's optimistic conclusion into 'we cannot see electronic music as music'."
+    "boundary_conditions_and_traps": "Option (2) is a classic Half-Right, Half-Poisoned trap: it accurately quotes 'language of forms' but reverses the author's optimistic conclusion into 'we cannot see electronic music as music'.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q04",
@@ -73,7 +96,15 @@
     "mental_trigger": "Stravinsky broadens music to 'speculation in terms of sound and time' to INCLUDE electronic sounds, not to divide sounds into musical vs non-musical!",
     "first_principles_method": "Check each option against Para 1: (2) True ('since the third decade of our century many composers have preferred more objective definitions' vs 19th century); (3) True (addresses Hiller's question on 'the substance of musical communication'); (4) True ('bring the layman closer to an understanding of... electronic music'); (1) False (never discriminates which sounds are musical vs not).",
     "speed_shortcut": "3-True-1-False verification in Para 1 isolates (1) as the unstated claim.",
-    "boundary_conditions_and_traps": "Do not confuse 'is this type of artistic creation music at all?' with 'which sounds are musical and which are not'."
+    "boundary_conditions_and_traps": "Do not confuse 'is this type of artistic creation music at all?' with 'which sounds are musical and which are not'.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q05",
@@ -92,7 +123,15 @@
     "mental_trigger": "Use the 'Although [traditional], [sui generis]' contrast: the opposite of shared/traditional is unique/particular to the medium itself!",
     "first_principles_method": "Latin 'sui generis' literally means 'of its own kind/unique'. In context, it contrasts with reproducing patterns 'of a traditional nature' and points to languages and forms unique/particular to the new electronic medium, matching (1) Particular.",
     "speed_shortcut": "Direct knowledge of 'sui generis' (unique/particular) + contrast with 'Generic' (2) -> (1) Particular.",
-    "boundary_conditions_and_traps": "Do not be tricked by the Latin root 'generis' into picking its exact antonym (2) Generic!"
+    "boundary_conditions_and_traps": "Do not be tricked by the Latin root 'generis' into picking its exact antonym (2) Generic!",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q06",
@@ -111,7 +150,14 @@
     "mental_trigger": "Sentences 1, 2, and 4 all start with pronoun 'It' — so Sentence 3 ('The panoptic mechanism...') MUST be the opener! Then 3 ends with 'function in a function' which links directly to 1 ('integrated into any function'), followed by summary marker 4 ('In short...') and punchline 2!",
     "first_principles_method": "1) Opener: Only Sentence 3 names the subject ('The panoptic mechanism'), while 1, 2, 4 use 'It'. 2) 3 -> 1 link: 3's 'making power relations function in a function' is directly expanded by 1's 'It can in fact be integrated into any function (education, medical treatment...)'. 3) 1 -> 4 link: 4 opens with 'In short, it arranges things in such a way that the exercise of power is not added on from the outside... to the functions it invests'. 4) 2 is the pithy closing remark. Sequence: 3142.",
     "speed_shortcut": "3 is the unique noun-antecedent opener; 3->1 links 'function' -> 'any function'; 4 ('In short...') summarizes 3-1; 2 closes -> 3142.",
-    "boundary_conditions_and_traps": "Avoid placing 4 ('In short...') before 1; 'In short' synthesizes the concrete function integrations listed in 1."
+    "boundary_conditions_and_traps": "Avoid placing 4 ('In short...') before 1; 'In short' synthesizes the concrete function integrations listed in 1.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q07",
@@ -130,7 +176,14 @@
     "mental_trigger": "The quote 'Everything is old-world, traditional techniques from Mexico' restates 'embrace the ways their great-grandfather built... instruments' and introduces 'Mexico' right before 'When crafting a Mexican guitarron...' at Slot (1)!",
     "first_principles_method": "Pre-gap sentence introduces the sisters embracing their great-grandfather's traditional methods. Slot (1) places Ava's quote ('Everything is old-world, traditional techniques from Mexico') immediately before the specific illustration of crafting a Mexican guitarron with hand tools. Slots (2), (3), and (4) shift to the store's 3-year waitlist, celebrity clients (Los Lobos), and childhood beginnings.",
     "speed_shortcut": "Match 'traditional techniques from Mexico' -> 'When crafting a Mexican guitarron... traditional method' at Slot (1) -> (1) Option 1.",
-    "boundary_conditions_and_traps": "In CAT Sentence Placement MCQs, always verify the mapping between the numbered option and the slot number (here Option (1) = Option 1)."
+    "boundary_conditions_and_traps": "In CAT Sentence Placement MCQs, always verify the mapping between the numbered option and the slot number (here Option (1) = Option 1).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/04_va_parasummary_and_sentence_placement.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q08",
@@ -149,7 +202,14 @@
     "mental_trigger": "Spot the orphan demonstrative 'eroded THIS need' in the very first sentence after Slot (1) — Slot (1) MUST contain the sentence establishing the need for silver display!",
     "first_principles_method": "The sentence after (1) refers to 'this need' (the need for silver as domestic 'show' at the dining table, eroded by electric light and eating in the kitchen). Therefore, the missing sentence must go into Slot (1), which is listed as choice (2) Option 1.",
     "speed_shortcut": "'eroded this need' right after (1) -> Slot 1 -> select choice (2) Option 1!",
-    "boundary_conditions_and_traps": "Watch the scrambled option labels: Slot 1 is choice (2) 'Option 1' (choice 1 is 'Option 4')!"
+    "boundary_conditions_and_traps": "Watch the scrambled option labels: Slot 1 is choice (2) 'Option 1' (choice 1 is 'Option 4')!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/04_va_parasummary_and_sentence_placement.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q09",
@@ -168,7 +228,15 @@
     "mental_trigger": "Spot the double extreme quantifier in (4): 'solely to displaced sports bettors' + 'overriding cause... across assets and time horizons'!",
     "first_principles_method": "Options (1), (2), and (3) accurately state the passage's core arguments on contagion cascades, learning/nonstationarity producing second-order tail events, and heavy-tailed distributions exceeding bell-curve expectations. Option (4) distorts an illustrative example into the 'sole' and 'overriding' cause.",
     "speed_shortcut": "Extreme quantifier 'solely... overriding cause' in an EXCEPT question is false 99% of the time in CAT RC -> (4).",
-    "boundary_conditions_and_traps": "Classic Archetype #1 (Extreme Quantifier Trap) from the 7 Deadly RC Distractors."
+    "boundary_conditions_and_traps": "Classic Archetype #1 (Extreme Quantifier Trap) from the 7 Deadly RC Distractors.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q10",
@@ -187,7 +255,15 @@
     "mental_trigger": "Eliminate (1) 'extreme events are negligible', (3) 'always... invariably profit', and (4) 'rejects applications in markets or public health' -> (2) is the only faithful summary.",
     "first_principles_method": "Compare the 4 options against the passage's core thesis: (1) reverses heavy tails into normal distributions; (3) fabricates guaranteed investor profits; (4) falsely claims nonstationarity is exclusive to parasite-host biology. Option (2) accurately summarizes the entire passage.",
     "speed_shortcut": "Cross-question coherence with Q9, Q11, Q12 immediately confirms (2).",
-    "boundary_conditions_and_traps": "None; all three distractors contain extreme/contradictory claims."
+    "boundary_conditions_and_traps": "None; all three distractors contain extreme/contradictory claims.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q11",
@@ -206,7 +282,15 @@
     "mental_trigger": "To strengthen 'first-order tail event raises probability of further tail events', look for an initial extreme shock followed by a cluster of subsequent extreme shocks -> (3)!",
     "first_principles_method": "Options (1) ('no rise in the frequency or size of later extreme clusters'), (2) ('normal distribution with thin tails'), and (4) ('no aftershock sequence... independence across events') all weaken/contradict the claim. Option (3) shows an initial extreme event (equity crash) triggering elevated frequency of subsequent extreme moves.",
     "speed_shortcut": "(1), (2), and (4) all say 'normal/independent/no rise'; only (3) shows clustered extreme events after a shock!",
-    "boundary_conditions_and_traps": "Notice how (1) and (4) explicitly include 'no rise' and 'no aftershock' to make elimination effortless."
+    "boundary_conditions_and_traps": "Notice how (1) and (4) explicitly include 'no rise' and 'no aftershock' to make elimination effortless.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q12",
@@ -225,7 +309,15 @@
     "mental_trigger": "For an informational intervention (contact-tracing app) to backfire via altered local behavior, agents must react to the information and interact collectively -> (2)!",
     "first_principles_method": "Option (1) ('prevents any predictable change') and Option (4) ('makes interdependence negligible') negate the mechanism; Option (3) ('within one metre... perfectly accurate') is an extreme technical irrelevance. Option (2) supplies the exact behavioral interdependence assumption required for local routing adjustments to aggregate into higher-risk crowding.",
     "speed_shortcut": "Eliminate (1) and (4) (both deny behavioral effects) and (3) ('always... perfectly accurate' extreme trap) -> (2).",
-    "boundary_conditions_and_traps": "Apply the Negation Test to (2): if individuals did NOT base movement choices on observed infections/others, contact-tracing apps could not alter local movement behavior to raise risky interactions."
+    "boundary_conditions_and_traps": "Apply the Negation Test to (2): if individuals did NOT base movement choices on observed infections/others, contact-tracing apps could not alter local movement behavior to raise risky interactions.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q13",
@@ -244,7 +336,14 @@
     "mental_trigger": "3 ('women... keep a lid on their ire') -> 4 ('Many of them... pulling their punches') -> 2 ('Once the taboos have been broken... letting their fists fly') -> 1 ('But man, woman or otherwise...').",
     "first_principles_method": "1) 3-4 mandatory pair: 'women... socialized to keep a lid on their ire' (3) is the antecedent for 'Many of them are so at odds with their aggressive feelings... pulling their punches' (4). 2) 4-2 progression: 'pulling their punches' (4) transitions to 'Once the taboos have been broken, women usually experience letting their fists fly as intensely liberating' (2). 3) 1 zooms out from women/men to 'But man, woman or otherwise...'. Sequence: 3421.",
     "speed_shortcut": "3-4-2-1 is a textbook chronological + zoom-out sequence.",
-    "boundary_conditions_and_traps": "Do not put 1 first: 'But man, woman or otherwise' presupposes the prior comparison between men and women in 3!"
+    "boundary_conditions_and_traps": "Do not put 1 first: 'But man, woman or otherwise' presupposes the prior comparison between men and women in 3!",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q14",
@@ -263,7 +362,14 @@
     "mental_trigger": "Eliminate (1) (incomplete definition only), (2) (omits inflammation & chronic diseases), and (4) ('Dead cells' distortion — zombie cells use energy and are NOT dead!) -> (3)!",
     "first_principles_method": "A valid summary must include the three pillars of the paragraph: (a) reduced apoptosis with age, (b) accumulation of senescent/zombie cells, and (c) resulting chronic inflammation and chronic diseases. Only (3) includes all three.",
     "speed_shortcut": "Only (3) mentions BOTH 'apoptosis/accumulate' AND 'inflammation/chronic diseases'!",
-    "boundary_conditions_and_traps": "Option (2) stops halfway through the paragraph (missing inflammation and chronic diseases entirely)."
+    "boundary_conditions_and_traps": "Option (2) stops halfway through the paragraph (missing inflammation and chronic diseases entirely).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/04_va_parasummary_and_sentence_placement.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q15",
@@ -282,7 +388,15 @@
     "mental_trigger": "Use the quote in Q18 ('Conversely, when a defendant struck officials as unlike themselves...') and the concept list in Q17 ('Empathy') to see that officials connected with defendants like themselves ('middle-class, white, professional men') through empathy and imagination!",
     "first_principles_method": "The passage examines how 19th-century legal and medical officials ('middle-class, white, professional men') assessed criminal responsibility and insanity: when defendants resembled them socially, officials could exercise empathy and imagination to understand their mental state; 'Conversely, when a defendant struck officials as unlike themselves... the precariousness of judgments about mental state was exposed.' Thus (4) Empathy and imagination.",
     "speed_shortcut": "Cross-referencing Q18's 'Conversely, when a defendant struck officials as unlike themselves...' proves the connection among 'middle-class, white, professional men' is (4) Empathy and imagination.",
-    "boundary_conditions_and_traps": "Always use quotes embedded in adjacent RC questions (here Q18) to verify paragraph details!"
+    "boundary_conditions_and_traps": "Always use quotes embedded in adjacent RC questions (here Q18) to verify paragraph details!",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q16",
@@ -301,7 +415,15 @@
     "mental_trigger": "In a passage about insanity pleas and mental state in 19th-century criminal trials, an 'alienist' is a physician studying mental alienation (madness/insanity), NOT immigrants (3) or UFOs (4)!",
     "first_principles_method": "The passage concerns 19th-century judgments of insanity and criminal responsibility (Q17, Q18). An 'alienist' was the 19th-century term for a psychiatrist/physician who specialized in mental illness and testified on insanity, matching (2).",
     "speed_shortcut": "Eliminate pun distractors (3) 'immigrants' and (4) 'extraterrestrials' immediately -> (2).",
-    "boundary_conditions_and_traps": "Distractors (3) and (4) are classic literal-root pun traps on the word 'alien'."
+    "boundary_conditions_and_traps": "Distractors (3) and (4) are classic literal-root pun traps on the word 'alien'.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q17",
@@ -320,7 +442,15 @@
     "mental_trigger": "Check the 4th word of each option: 'Business' (1), 'Patronage' (2), 'Patriotism' (3) are all alien concepts! Only 'Judgement, Insanity, Punishment, Responsibility' (4) has four relevant concepts!",
     "first_principles_method": "In 4-concept mapping questions, test every single noun in each tuple against the passage's core theme (assessing mental state/insanity for criminal responsibility and punishment). Eliminate (1) for 'Business', (2) for 'Patronage', and (3) for 'Patriotism', leaving (4).",
     "speed_shortcut": "Spot the poisoned 4th word in (1) Business, (2) Patronage, (3) Patriotism -> (4) wins in 5 seconds!",
-    "boundary_conditions_and_traps": "CAT loves putting 'Empathy, Prosecution' at the start of (1) and (3) to bait hasty readers who don't read the 4th word ('Business' / 'Patriotism')!"
+    "boundary_conditions_and_traps": "CAT loves putting 'Empathy, Prosecution' at the start of (1) and (3) to bait hasty readers who don't read the 4th word ('Business' / 'Patriotism')!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q18",
@@ -339,7 +469,15 @@
     "mental_trigger": "In the parallel list of demographic/personal attributes 'disease, gender, confession, or race', 'confession' means religious faith/denomination (1)!",
     "first_principles_method": "Analyze the list 'by dint of [by means of] disease, gender, confession, or race': each item is a characteristic that made a defendant socially 'unlike' the white Protestant male officials. 'Confession' in 19th-century historical usage means religious creed/denomination (1). Option (2) misreads the parallel list, Option (3) absurdly claims 'dint' means 'didn't', and Option (4) misreads 'struck officials as unlike' as physical violence.",
     "speed_shortcut": "Parallelism with 'gender... or race' + eliminating the absurd 'dint = didn't' (3) and physical 'struck out' (4) -> (1).",
-    "boundary_conditions_and_traps": "Do not confuse 'confession' (religious faith/denomination) in a list of identity traits with confessing to a crime."
+    "boundary_conditions_and_traps": "Do not confuse 'confession' (religious faith/denomination) in a list of identity traits with confessing to a crime.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q19",
@@ -358,7 +496,14 @@
     "mental_trigger": "Link 3 ('interacted with art visually, kinaesthetically... and physically') -> 5 ('hung at eye level to enable this') -> 2 ('hung in a square... stood in the centre') -> 4 ('That would make it an 11th-century immersive space')! Sentence 1 is the outlier!",
     "first_principles_method": "Build the coherent 4-sentence sequence: 3 introduces embodied/sensory interaction with medieval art; 5 connects via 'to enable this' (hanging at eye level); 2 extends the hanging arrangement ('hung in a square... stood in the centre'); 4 concludes ('That would make it an 11th-century immersive space'). Sentence 1 has no antecedent for 'therefore, an obvious way to tell people about the downfall of the English' and shifts to political history.",
     "speed_shortcut": "3-5 ('enable this') and 2-4 ('stood in the centre' -> 'That would make it an 11th-century immersive space') lock 3-5-2-4, leaving 1 out!",
-    "boundary_conditions_and_traps": "Classic Keyword-Overlap Trap: Sentence 1 mentions 'The Bayeux tapestry' just like Sentence 5, but its aspect is political narrative rather than spatial/kinaesthetic display."
+    "boundary_conditions_and_traps": "Classic Keyword-Overlap Trap: Sentence 1 mentions 'The Bayeux tapestry' just like Sentence 5, but its aspect is political narrative rather than spatial/kinaesthetic display.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/03_va_parajumbles_and_odd_one_out_tita_mastery.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q20",
@@ -377,7 +522,15 @@
     "mental_trigger": "Match Q22's three channels (sunk-cost investment, incentive alignment, concentrated ownership governance) directly to Option (4)'s 'investment, incentive, and governance channels... short-term gains while noting long-term drawbacks'!",
     "first_principles_method": "Option (1) is too vague and judgmental ('misguided'); Option (2) falsely claims the passage overlooks human capital, fertility, and redistribution; Option (3) takes a one-sided advocacy stance ('argues that income inequality accelerates economic growth'). Option (4) accurately summarizes both halves of the passage.",
     "speed_shortcut": "Q22 + Q23 literally name the three channels in Option (4) ('investment, incentive, and governance channels')!",
-    "boundary_conditions_and_traps": "Prefer descriptive, structurally complete summaries (4) over vague polemical ones (1) or one-sided ones (3)."
+    "boundary_conditions_and_traps": "Prefer descriptive, structurally complete summaries (4) over vague polemical ones (1) or one-sided ones (3).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q21",
@@ -396,7 +549,15 @@
     "mental_trigger": "Look at the actual institutional process, not the spin label in the sentence: narrowing suffrage and banning opposition parties (1) is the true opposite of democratization!",
     "first_principles_method": "Democratization broadens voting rights and party competition. Option (1) narrows suffrage and deregisters opposition parties (true de-democratization / autocratization). Options (2), (3), and (4) describe pro-democratic measures (campaign finance limits, participatory budgeting, term limits & judicial review) paired with misleading labels.",
     "speed_shortcut": "'shifted toward authoritarianism as suffrage narrowed and opposition parties were deregistered' (1) is the textbook definition of de-democratization.",
-    "boundary_conditions_and_traps": "Distractors (2), (3), and (4) are clever label-traps where democratic actions are called 'oligarchy', 'totalitarianism', or 'autocratic rule' to trick superficial keyword scanners!"
+    "boundary_conditions_and_traps": "Distractors (2), (3), and (4) are clever label-traps where democratic actions are called 'oligarchy', 'totalitarianism', or 'autocratic rule' to trick superficial keyword scanners!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q22",
@@ -415,7 +576,15 @@
     "mental_trigger": "Eliminate (1) ('in every period and type of economy, regardless of...' extreme trap), (2) (contradicts the capital-market channel), and (4) (reverses concentrated vs dispersed ownership) -> (3)!",
     "first_principles_method": "The three channels show conditional, short-term growth benefits under specific institutional features: high sunk costs (investment channel), incentive alignment (moral hazard channel), and concentrated ownership (corporate governance channel). This matches (3) verbatim.",
     "speed_shortcut": "(1) is an Extreme Quantifier Trap ('every... regardless'); (4) reverses the governance argument (concentrated ownership solves free-rider problems, not dispersed ownership) -> (3).",
-    "boundary_conditions_and_traps": "Notice how Q20 and Q22 mutually reinforce each other."
+    "boundary_conditions_and_traps": "Notice how Q20 and Q22 mutually reinforce each other.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q23",
@@ -434,7 +603,15 @@
     "mental_trigger": "Moral hazard / incentive alignment requires linking pay to verifiable performance/output (1) — watch out for (4), which is the Governance channel (Right Line, Wrong Question)!",
     "first_principles_method": "The incentive (moral hazard) channel argues that unequal rewards tied to performance induce greater effort and innovation from productive workers (1). Option (2) ('without linking pay to results') and Option (3) ('tenure rather than output') destroy incentives, while Option (4) describes the separate corporate-governance channel.",
     "speed_shortcut": "Incentive argument = performance-linked pay (1).",
-    "boundary_conditions_and_traps": "Option (4) is Archetype #4 (True-in-Passage but Answers Wrong Question): it describes the 3rd channel (corporate governance) when the question specifically asks about the 2nd channel (incentive / moral hazard)!"
+    "boundary_conditions_and_traps": "Option (4) is Archetype #4 (True-in-Passage but Answers Wrong Question): it describes the 3rd channel (corporate governance) when the question specifically asks about the 2nd channel (incentive / moral hazard)!",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/01_rc_reading_architecture_and_genre_guides.md",
+      "insights/topic_summaries/varc/02_rc_question_types_and_7_distractor_traps.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_VARC_Q24",
@@ -453,6 +630,13 @@
     "mental_trigger": "Eliminate (2) (too narrow, omits societal consequences of appropriation) and (3) (unsupported claim 'to create works that appeal to all'); choose the option that balances both sides of the inspiration-vs-appropriation contrast.",
     "first_principles_method": "The passage contrasts respectful cross-cultural inspiration (which fosters cultural understanding) with cultural appropriation (borrowing without acknowledgment, leading to negative societal impacts such as commodification, stereotypes, and power imbalances). Option (4) (and closely parallel Option 1) preserves both the navigation metaphor and the two-sided definition.",
     "speed_shortcut": "Eliminate (2) (misses consequences) and (3) ('to appeal to all' scope distortion); (4) balances both definitions (inspiration vs appropriation).",
-    "boundary_conditions_and_traps": "Watch for unsupported purpose clauses like 'to create works that appeal to all' in (3)."
+    "boundary_conditions_and_traps": "Watch for unsupported purpose clauses like 'to create works that appeal to all' in (3).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/varc/04_va_parasummary_and_sentence_placement.md",
+      "insights/mistakes_and_edge_cases/varc_traps.md"
+    ]
   }
 ]

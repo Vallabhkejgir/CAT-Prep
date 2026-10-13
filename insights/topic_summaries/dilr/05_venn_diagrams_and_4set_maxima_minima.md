@@ -153,3 +153,53 @@ A: 'Physics and Chemistry' is P intersect C (includes those who also like Math, 
 <details><summary>Q5: In a 4-set Venn problem with U = 200, E_0 = 10, and |A|+|B|+|C|+|D| = 420, what is the value of E_2 + 2E_3 + 3E_4?</summary>
 A: S - (U - E_0) = 420 - (200 - 10) = 420 - 190 = 230.
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **4-Author Multi-Paper Hypergraph Degree-Sum Conservation (`CAT_2025_DILR_Slot_2` `SET3`)**: In a 4-set/4-author collaboration table where papers have $k \in \{1, 2, 3, 4\}$ co-authors, the sum of $k$-author paper counts across all 4 authors equals $k \times N_k$ ($\sum \text{deg}_k = k N_k$).
+- **3-Set Inclusion-Exclusion Maxima/Minima with Positivity Floor (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q04`)**: Express all 7 Venn regions in terms of the central triple intersection $x = |A \cap B \cap C|$ and enforce $x \ge 1$ when the stem states 'some elements belong to all three'.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S2_DILR_Q10 (`CAT_2025_DILR_Slot_2` | TITA | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Multi-author paper hypergraph degree sum — *Hypergraph degree-sum conservation (sum of k-author paper counts across authors = k * Total_k)*
+- **Verified Answer**: `3` (By Clue 1 & 3, each author wrote >= 1 of each type, and both C and D wrote more 3-author papers than B. With 2 three-author papers ({A,C,D} and {B,C,D}), Brajen wrote 1 three-author paper and 2 two-author papers (equal to his 2 single-author papers by Clue 4). Total 2-author and 3-author papers by Brajen = 2 + 1 = 3. (Note: PDF had placeholder 'image10-13.png').)
+- **Mental Trigger (`See X -> Do Y`)**: For k-author papers, the sum of author credits equals k * N_k; since C and D wrote more 3-author papers than B and B >= 1, B wrote 1 three-author paper and 2 two-author papers (total = 3).
+- **First-Principles Method**: From Clue 1, every author has >= 1 paper in each category (1-author, 2-author, 3-author, 4-author). From Clue 3, n3(C) > n3(B) >= 1 and n3(D) > n3(B) >= 1, so n3(B) = 1 while n3(C) = n3(D) = 2 (from the two triples {A,C,D} and {B,C,D}). From Clue 4, n1(B) = n2(B) = 2. Hence n2(B) + n3(B) = 2 + 1 = 3.
+- **30-Second Exam-Hall Speed Shortcut**: n3(B) = 1 (minimum positive integer < n3(C), n3(D)) and n2(B) = n1(B) = 2 -> 2 + 1 = 3.
+- **Trap Alert & Boundary Condition**: Source PDF had missing image placeholder 'image10-13.png'; deduced from hypergraph degree constraints and cross-question consistency.
+
+#### CAT2025_S2_DILR_Q11 (`CAT_2025_DILR_Slot_2` | MCQ | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Multi-author paper hypergraph degree sum — *Cross-question meta-deduction and degree-sum trade-off*
+- **Verified Answer**: `(D) Only ii` (Q13 explicitly asks 'If Devon wrote more than one two-author papers, then how many two-author papers did Chintan write?', which proves that Chintan's number of two-author papers has two possible cases (2 or 3) depending on Devon's count (so Statement i is NOT necessarily true). Meanwhile, Chintan's single-author paper count is fixed and strictly exceeds Devon's (Statement ii is necessarily true).)
+- **Mental Trigger (`See X -> Do Y`)**: Look at Q13 ('If Devon wrote more than one two-author papers, then how many two-author papers did Chintan write?') — this proves Statement i ('Chintan wrote exactly three two-author papers') is NOT necessarily true!
+- **First-Principles Method**: Because 2-author papers can be distributed between C and D in two ways (D=1, C=3 or D=2, C=2), Statement i is not necessarily true. By Clue 2 (all 4 authors have distinct 1-author counts {1,2,3,4}) and total paper counts, C has more 1-author papers than D (Statement ii is necessarily true).
+- **30-Second Exam-Hall Speed Shortcut**: Cross-reading Q13 immediately falsifies 'NECESSARILY true' for Statement i, eliminating (B) and (C) in 5 seconds!
+- **Trap Alert & Boundary Condition**: In CAT DILR, always read conditional 'If...' questions in the set first — they tell you which variables are NOT uniquely fixed in the base grid!
+
+#### CAT2025_S2_DILR_Q12 (`CAT_2025_DILR_Slot_2` | MCQ | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Multi-author paper hypergraph degree sum — *Logical equivalence of complementary 3-subsets in a 4-element universe*
+- **Verified Answer**: `(C) Both i and ii` (Among the 4 authors {A, B, C, D}, a 3-author paper written by A 'only with C and D' means A never co-authored a 3-author paper with B (i.e., triples {A,B,C} and {A,B,D} have 0 papers). Symmetrically, B co-authored 3-author papers 'only with C and D' iff triples {A,B,C} and {A,B,D} have 0 papers! Since there are 2 three-author papers ({A,C,D} and {B,C,D}) so that C and D have 2 each while A and B have 1 each (Clue 3), both i and ii are necessarily true.)
+- **Mental Trigger (`See X -> Do Y`)**: In a 4-author universe {A, B, C, D}, 'A wrote 3-author papers only with C and D' and 'B wrote 3-author papers only with C and D' are 100% logically identical (both mean no 3-author paper contains {A, B})!
+- **First-Principles Method**: By Clue 3, both C and D wrote more 3-author papers than B, and by Clue 1 each wrote >= 1.With 2 three-author papers in total, they must be {A, C, D} and {B, C, D} (giving C=2, D=2, A=1, B=1). Hence A's only 3-author paper is with C and D (i is true) and B's only 3-author paper is with C and D (ii is true).
+- **30-Second Exam-Hall Speed Shortcut**: Statements i and ii are logically equivalent (both assert that no 3-author paper contains both A and B), so Options (A) Only ii and (D) Only i are mathematically impossible! Since Clue 3 forces {A,C,D} and {B,C,D}, (C) Both i and ii is guaranteed.
+- **Trap Alert & Boundary Condition**: Recognizing logical equivalence between i and ii eliminates (A) and (D) without looking at any chart.
+
+#### CAT2025_S2_DILR_Q13 (`CAT_2025_DILR_Slot_2` | TITA | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Multi-author paper hypergraph degree sum — *Conditional case resolution in degree-constrained graphs*
+- **Verified Answer**: `2` (In the two-case trade-off between Chintan and Devon on two-author papers (referenced in Q11 Statement i), either (D=1, C=3) or (D=2, C=2). When Devon wrote more than one two-author paper (D=2), Chintan wrote 2 two-author papers.)
+- **Mental Trigger (`See X -> Do Y`)**: Q11 Statement i tested C = 3 (which occurs when D = 1); when D > 1 (D = 2), C shifts to 2!
+- **First-Principles Method**: The sum of 2-author credits between C and D is 4, with each >= 1 (Clue 1) and <= 3. Thus (n2(C), n2(D)) is either (3, 1) or (2, 2). Given n2(D) > 1, we have n2(D) = 2 and n2(C) = 2.
+- **30-Second Exam-Hall Speed Shortcut**: Pair Q11 Statement i ('Chintan wrote 3 two-author papers') with Q13 ('If Devon wrote > 1...'): when Devon increases from 1 to 2, Chintan decreases from 3 to 2.
+- **Trap Alert & Boundary Condition**: Note how Q11 and Q13 mutually lock each other.
+
+#### CAT2025_S3_QA_Q04 (`CAT_2025_QA_Slot_3` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Set Theory — *3-Set Inclusion-Exclusion optimization with strict positive intersection constraint*
+- **Verified Answer**: `(C) 35` (Let |P n C| = |C n M| = k, |P n M| = 2k, and |P n M n C| = x >= 1. By Inclusion-Exclusion: 150 = 75 + 111 + 40 - 4k + x => 4k - x = 76. To maximize |P \ M| = 75 - 2k, minimize k. Since x = 4k - 76 >= 1, 4k >= 77 => k >= 20 (at k=20, x=4, all regions >= 0). Thus max(75 - 2k) = 75 - 40 = 35.)
+- **Mental Trigger (`See X -> Do Y`)**: Write |P \ M| = |P| - |P n M| = 75 - 2k; to maximize 75 - 2k, minimize k subject to x = 4k - 76 >= 1!
+- **First-Principles Method**: Sum of singletons = 75 + 111 + 40 = 226. Sum of pairwise intersections = k + k + 2k = 4k. By PIE, 150 = 226 - 4k + x => x = 4k - 76. Since x >= 1 and k is an integer, 4k >= 77 => k >= 20. At k = 20, x = 4, and |P \ M| = 75 - 2(20) = 35.
+- **30-Second Exam-Hall Speed Shortcut**: 4k = 76 + x with x >= 1 => smallest multiple of 4 above 76 is 80 (k = 20, x = 4) => 75 - 2(20) = 35.
+- **Trap Alert & Boundary Condition**: Ignoring 'at least one student chose all three subjects' (x >= 1) sets x = 0, k = 19, giving the trap answer 75 - 38 = 37 (or if k=20 -> 35).

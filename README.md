@@ -31,18 +31,19 @@ CAT-Prep/
 ├── extractions/
 │   ├── markdown/                          # Extracted layout-aware Markdown & JSON manifests
 │   ├── page_images/                       # Rendered 200-DPI page PNGs per paper
-│   └── structured_pyqs/                   # Pass 1 question-level JSON inventories
+│   └── structured_pyqs/                   # Pass 1 question-level JSON inventories + delta triage flags
 ├── insights/
 │   ├── CAT_Self_Audit_Checklist.md        # 40-minute sectional strategy & pre-lock audit checklist
-│   ├── per_paper/                         # Pass 1 human-readable paper breakdowns
+│   ├── coverage_matrix.md                 # Pass 2 canonical syllabus coverage & PYQ frequency matrix
 │   ├── topic_summaries/
-│   │   ├── quant/                         # Pass 3A QA high-recall master notes (10 modules)
-│   │   ├── dilr/                          # Pass 3B DILR archetype playbooks (6 modules)
-│   │   └── varc/                          # Pass 3C VARC reading & elimination playbooks (4 modules)
-│   ├── mistakes_and_edge_cases/           # Pass 4 sectional trap & pitfall compendiums
+│   │   ├── quant/                         # Pass 3A QA master notes + embedded PYQ edge examples (10 modules)
+│   │   ├── dilr/                          # Pass 3B DILR playbooks + embedded PYQ sets (6 modules)
+│   │   └── varc/                          # Pass 3C VARC playbooks + embedded PYQ passages/VA (4 modules)
+│   ├── mistakes_and_edge_cases/           # Pass 4 sectional trap & pitfall compendiums + real PYQ triggers
 │   └── high_recall/
 │       ├── cheat_sheets/                  # Pass 5 ultra-dense last-mile revision sheets
-│       └── active_recall_drills/          # Pass 5 active-recall prompts & flashcard decks
+│       ├── anki_flashcards.csv            # Pass 5 spaced-repetition flashcard deck
+│       └── active_recall_drills/          # Pass 5 active-recall prompts & drills
 ├── scripts/
 │   └── extract_pdf.py                     # Multimodal PDF -> Markdown + 200-DPI PNG extractor
 └── tests/
@@ -74,12 +75,12 @@ pytest
 
 ---
 
-## 5-Pass High-Recall Synthesis Workflow
+## 5-Pass Incremental Insight-Enrichment Workflow
 
-See [`execution_plan.md`](execution_plan.md) for the complete prompt templates and step-by-step instructions:
+See [`execution_plan.md`](execution_plan.md) for the complete architecture and step-by-step instructions. Instead of maintaining separate `per_paper` summary files, each newly extracted PYQ paper directly enriches the canonical topic master notes, mistake manuals, and rapid-revision assets in place:
 
-- **Pass 1 — Deep Per-Paper Question & Set Decomposition**: Decomposes each extracted paper into `extractions/structured_pyqs/<PAPER>_questions.json` and `insights/per_paper/<PAPER>_analysis.md`.
-- **Pass 2 — Syllabus Coverage Audit & Gap-Fill Matrix**: Audits extracted PYQs against `docs/syllabus/canonical_taxonomy.md` to produce `insights/coverage_matrix.md` and mark `< 3` occurrence sub-topics with `[GAP_FILL_REQUIRED]`.
-- **Pass 3 — High-Recall Topic Master Notes**: Generates all 20 modular master note files across `insights/topic_summaries/{quant,dilr,varc}/`.
-- **Pass 4 — Sectional Mistake Patterns & Edge-Case Compendium**: Synthesizes `quant_pitfalls.md`, `dilr_traps.md`, and `varc_traps.md` under `insights/mistakes_and_edge_cases/`.
-- **Pass 5 — High-Recall Revision Assets & Pre-Submission Audit**: Produces rapid cheat sheets, `anki_flashcards.csv`, and `insights/CAT_Self_Audit_Checklist.md`.
+- **Pass 1 — Multimodal Extraction & Delta Triage**: Decomposes each extracted paper into `extractions/structured_pyqs/<PAPER>_questions.json` with dual-method answer verification (`derived_answer`, `answer_source`, `verification_notes`) and delta triage flags (`is_new_subtopic_or_variant`, `is_mistake_or_trap_worthy`, `is_edge_example`, `target_insight_files`).
+- **Pass 2 — Syllabus Coverage & Gap-Fill Audit**: Audits extracted PYQs against `docs/syllabus/canonical_taxonomy.md` to update `insights/coverage_matrix.md`, map question IDs to sub-topics, and flag newly discovered variants or `< 3` occurrence sub-topics.
+- **Pass 3 — In-Place Enrichment of Topic Master Notes**: Updates all 20 modular master note files across `insights/topic_summaries/{quant,dilr,varc}/` with newly surfaced sub-topics, pattern triggers, and solved PYQ edge examples.
+- **Pass 4 — In-Place Enrichment of Sectional Mistake & Trap Manuals**: Updates `quant_pitfalls.md`, `dilr_traps.md`, and `varc_traps.md` under `insights/mistakes_and_edge_cases/` with real PYQ mistake triggers, boundary traps, and distractor tie-breakers.
+- **Pass 5 — High-Recall Cheat Sheets & Flashcard Sync**: Propagates new triggers and edge traps into `insights/high_recall/cheat_sheets/*.md` and `insights/high_recall/anki_flashcards.csv`.

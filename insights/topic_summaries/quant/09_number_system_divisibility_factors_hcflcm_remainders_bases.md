@@ -171,3 +171,70 @@ A: Since 128 = 2^7 has sum of binary digits S_2(128) = 1, E_2(128!) = (128 - 1)/
 <details><summary>Q10: Convert the recurring decimal 0.2353535... (where 35 repeats) into a reduced fraction.</summary>
 A: (235 - 2) / 990 = 233 / 990.
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **Divisors Congruent to $1 \pmod 3$ via Prime-Factor Residue Parity (`CAT_2025_QA_Slot_2` / `CAT2025_S2_QA_Q15`)**: Separate prime factors into $p \equiv 0 \pmod 3$ (excluded), $p \equiv 1 \pmod 3$ (any exponent), and $p \equiv 2 \pmod 3$ (even total exponent required for product $\equiv 1 \pmod 3$).
+- **Integer Factor-Pair Decomposition Including Negative Divisors (`CAT_2025_QA_Slot_2` / `CAT2025_S2_QA_Q18`)**: When variables are **integers** ($\mathbb{Z}$) rather than positive integers, $(a-2)(b+3) = -12$ must be tested across all $2 \times d(12) = 12$ signed divisor pairs.
+- **Decimal Borrow Propagation in $10^m + 10^n - k$ (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q14`)**: For $m > n > \text{digits}(k)$, $10^m$ contributes a single leading digit $1$ while $10^n - k$ produces $(n - d)$ nines followed by the $d$-digit complement $(10^d - k)$.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S1_QA_Q16 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Divisibility & Factor Theory — *Digit classification constraints and prime-factorization divisor count d(N)*
+- **Verified Answer**: `6` (Allowed non-zero digits excluding squares {1,4,9} are {2,3,5,6,7,8}. Since only one digit is prime, the other two must be {6, 8}, and the smallest prime is 2. Minimum 3-digit number is N = 268 = 2^2 * 67^1, which has (2+1)(1+1) = 6 factors.)
+- **Mental Trigger (`See X -> Do Y`)**: Filter digits 1..9 by removing squares {1, 4, 9}, leaving primes {2, 3, 5, 7} and composites {6, 8}.
+- **First-Principles Method**: Non-zero digits not perfect squares: {2, 3, 5, 6, 7, 8}. Four are prime ({2, 3, 5, 7}) and only two are non-prime ({6, 8}). Since N has 3 distinct digits and only one prime, N must use both 6 and 8 plus one prime. To minimize N, pick prime 2 in hundreds place: N = 268 = 4 * 67 = 2^2 * 67. Number of factors = 3 * 2 = 6.
+- **30-Second Exam-Hall Speed Shortcut**: Once composites are forced to be {6, 8}, smallest hundreds digit is 2 => 268 = 4 * 67 => 3 * 2 = 6 factors.
+- **Trap Alert & Boundary Condition**: Remember 1 is a perfect square (1^2 = 1) and is NOT prime.
+
+#### CAT2025_S2_QA_Q04 (`CAT_2025_QA_Slot_2` | TITA | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Divisibility & Factor Theory — *Diophantine divisibility optimization over distinct natural numbers*
+- **Verified Answer**: `12` (3ac = 8(a + b) => b = a(3c - 8)/8. Since a, b, c >= 1 are distinct natural numbers, we need 3c > 8 => c >= 3. For c = 3: b = a/8 => a = 8, b = 1, c = 3 gives 3a + 2b + c = 29. For c = 4: b = 4a/8 = a/2 => a = 2, b = 1, c = 4 (all distinct!) gives 3(2) + 2(1) + 4 = 12.)
+- **Mental Trigger (`See X -> Do Y`)**: Isolate b = a(3c - 8)/8; since b > 0, c >= 3. Test c = 3 and c = 4 to minimize a!
+- **First-Principles Method**: Rewrite 3ac = 8(a + b) as 8b = a(3c - 8). Since b >= 1, 3c - 8 >= 1 => c >= 3. If c = 3, 8b = a => smallest distinct (a,b,c) is (8,1,3) giving 3(8)+2(1)+3 = 29. If c = 4, 8b = 4a => a = 2b => smallest distinct (a,b,c) is (2,1,4), giving 3(2)+2(1)+4 = 12.
+- **30-Second Exam-Hall Speed Shortcut**: To make a small in 8b = a(3c - 8), pick 3c - 8 to share a large factor with 8: 3c - 8 = 4 (c = 4) gives a = 2, b = 1 -> 3(2) + 2(1) + 4 = 12.
+- **Trap Alert & Boundary Condition**: Check that a, b, c are DISTINCT: (2, 1, 4) has three distinct natural numbers.
+
+#### CAT2025_S2_QA_Q15 (`CAT_2025_QA_Slot_2` | MCQ | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Divisibility & Factor Theory — *Modular residue classification of divisors (d == 1 mod 3)*
+- **Verified Answer**: `(A) 42` (Divisor d = 2^a * 3^b * 5^c * 7^d == 1 (mod 3) requires b = 0 (1 choice). Since 7 == 1 (mod 3), d in {0, 1, 2} gives 3 choices. Since 2 == -1 and 5 == -1 (mod 3), (-1)^(a+c) == 1 (mod 3) requires a + c even: 4*2 + 3*2 = 14 choices. Total = 1 * 3 * 14 = 42.)
+- **Mental Trigger (`See X -> Do Y`)**: Mod 3: prime 3 must have exponent 0; prime 7 == 1 mod 3 is free (3 choices); primes 2 and 5 are both -1 mod 3, so their exponents (a, c) must have the same parity!
+- **First-Principles Method**: For d = 2^a * 3^b * 5^c * 7^d to be of form 3r + 1: b must be 0 (1 way); d can be 0, 1, 2 (3 ways); and (-1)^a * (-1)^c = 1 => a + c is even. With a in {0..6} (4 even, 3 odd) and c in {0..3} (2 even, 2 odd), there are 4*2 + 3*2 = 14 pairs. Total = 3 * 14 = 42.
+- **30-Second Exam-Hall Speed Shortcut**: Whenever one factor has an even number of exponent choices (here 5^c has 4 choices: 0,1,2,3), exactly HALF of all (a,c) pairs have even sum: (7 * 4)/2 = 14. Multiply by 3 choices for 7^d -> 14 * 3 = 42!
+- **Trap Alert & Boundary Condition**: Do not include b >= 1 (any multiple of 3 is 0 mod 3, never 3r + 1).
+
+#### CAT2025_S2_QA_Q16 (`CAT_2025_QA_Slot_2` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Factorials, Base Systems & Digits — *Pairing powers of 2 and 5 into trailing zeros 10^k*
+- **Verified Answer**: `25` ((625)^65 * (128)^36 = 5^260 * 2^252 = 5^8 * 10^252 = 390625 * 10^252. Sum of digits = 3 + 9 + 0 + 6 + 2 + 5 = 25.)
+- **Mental Trigger (`See X -> Do Y`)**: Convert 625 = 5^4 and 128 = 2^7, pair min(260, 252) = 252 powers into 10^252 (which only adds zeros), and sum the digits of 5^8 = 390625.
+- **First-Principles Method**: 625^65 * 128^36 = (5^4)^65 * (2^7)^36 = 5^260 * 2^252 = 5^8 * (5*2)^252 = 390625 * 10^252. The sum of digits is 3 + 9 + 0 + 6 + 2 + 5 = 25.
+- **30-Second Exam-Hall Speed Shortcut**: 5^4 = 625 => 5^8 = 625^2 = (600 + 25)^2 = 390625 -> sum of digits = 25.
+- **Trap Alert & Boundary Condition**: Remember squaring a number ending in 25: 625^2 = (62 * 63) concatenated with 25? Wait: for N = 100a + 25, N^2 = 10000a(a+0.5) + 625 -> for 625, 6 * 6.5 = 39 -> 390625!
+
+#### CAT2025_S2_QA_Q18 (`CAT_2025_QA_Slot_2` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Divisibility & Factor Theory — *Integer factor-pair decomposition with negative factor pairs*
+- **Verified Answer**: `(D) 17` (Factor pairs (u, v) of 27 where u = m + 2n and v = 2m + n must satisfy u + v = 3(m + n) == 0 mod 3, so {u, v} in {(3, 9), (9, 3), (-3, -9), (-9, -3)}. Solving gives (m, n) in {(5, -1), (-1, 5), (-5, 1), (1, -5)}. Evaluating 2m - 3n gives {13, -17, -13, 17}, with maximum 17 at (m, n) = (1, -5).)
+- **Mental Trigger (`See X -> Do Y`)**: 'm and n are integers' (not just positive integers!) means you MUST test negative factor pairs (-9, -3) of 27!
+- **First-Principles Method**: Let u = m + 2n and v = 2m + n. Since u + v = 3(m + n) is a multiple of 3 and u*v = 27, both u and v are multiples of 3: (u, v) in {(3, 9), (9, 3), (-3, -9), (-9, -3)}. For (u, v) = (-9, -3), m = 1 and n = -5, giving 2m - 3n = 2(1) - 3(-5) = 17.
+- **30-Second Exam-Hall Speed Shortcut**: Positive factor pair (3, 9) gives (m, n) = (5, -1) -> 2m - 3n = 13 and (-1, 5) -> 2m - 3n = -17. Negating (m, n) to (1, -5) flips -17 to +17!
+- **Trap Alert & Boundary Condition**: Ignoring negative integers gives the classic trap answer (B) 13.
+
+#### CAT2025_S3_QA_Q01 (`CAT_2025_QA_Slot_3` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Factorials, Base Systems & Digits — *Place-value digit constraints and linear parameter variation*
+- **Verified Answer**: `(C) 811` (For 4-digit number THXU: T + H + X = 15, H + X + U = 16 => U = T + 1 (with T >= 1), and X = U + 6 = T + 7 <= 9 => T in {1, 2}. For T = 1: 1682; for T = 2: 2493. Difference = 2493 - 1682 = 811.)
+- **Mental Trigger (`See X -> Do Y`)**: Subtract T + H + X = 15 from H + X + U = 16 immediately to get U = T + 1; then X = U + 6 = T + 7 <= 9 restricts T to {1, 2}!
+- **First-Principles Method**: Let the digits be T, H, X, U. From U - T = 1 and X = U + 6, we have U = T + 1, X = T + 7, and H = 15 - T - (T + 7) = 8 - 2T. Since T >= 1 and X <= 9, T can only be 1 (number = 1682) or 2 (number = 2493). Difference = 2493 - 1682 = 811.
+- **30-Second Exam-Hall Speed Shortcut**: Increasing T by 1 changes H by -2, X by +1, U by +1, so the 4-digit number changes by 1000(1) + 100(-2) + 10(1) + 1(1) = 811!
+- **Trap Alert & Boundary Condition**: T >= 1 since the number is greater than 1000 (so T = 0 giving 0871 is excluded).
+
+#### CAT2025_S3_QA_Q14 (`CAT_2025_QA_Slot_3` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Factorials, Base Systems & Digits — *Decimal borrow propagation in 10^n - k*
+- **Verified Answer**: `(B) 221` (10^25 - 123 consists of twenty-two 9s followed by 877. Adding 10^50 places a leading 1 followed by zeros ahead of those 25 digits. Sum of digits = 1 + 22*9 + 8 + 7 + 7 = 1 + 198 + 22 = 221.)
+- **Mental Trigger (`See X -> Do Y`)**: 10^25 - 123 has 25 digits: (25 - 3) = 22 nines followed by (1000 - 123) = 877; 10^50 just adds a single digit '1' at the front!
+- **First-Principles Method**: 10^25 - 123 = 99...9877 (with twenty-two 9s and 877). Since 10^50 is at the 51st place, 10^50 + (10^25 - 123) has non-zero digits: one 1, twenty-two 9s, one 8, and two 7s. Digit sum = 1 + 22(9) + 8 + 7 + 7 = 221.
+- **30-Second Exam-Hall Speed Shortcut**: Mod 9 check: 10^50 + 10^25 - 123 == 1 + 1 - 6 = -4 == 5 (mod 9). Among (A) 21 (3), (B) 221 (5), (C) 324 (0), (D) 255 (3), ONLY (B) 221 leaves remainder 5 mod 9!
+- **Trap Alert & Boundary Condition**: Digital-root / Modulo-9 invariant solves this question in 5 seconds without counting how many 9s appear!

@@ -196,3 +196,70 @@ A: P * r^2 * (3 + r) = 310 -> 10000 * r^2 * (3 + r) = 310 -> r^2(3 + r) = 0.031 
 <details><summary>Q10: A loan of Rs. 940 is to be repaid in 4 equal annual installments at 5% p.a. Simple Interest. Find each installment X.</summary>
 A: Total due at end of 4 yrs = 940 * (1 + 4 * 0.05) = 940 * 1.20 = 1128. Sum of installments with SI = X[1 + 1.05 + 1.10 + 1.15] = 4.30X. Thus X = 1128 / 4.30 (or for Rs. 860 principal -> 860*1.2/4.3 = 240; here 1128 / 4.3 = Rs. 262.33).
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **Composite Asset Alligation under Linear Allocation Constraints (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q01`)**: When two assets in a portfolio have a fixed allocation ratio (e.g., Bonds $= 25\%$ of Gold $\implies 1:4$), collapse them into a single synthetic asset with weighted return $\frac{1(6\%) + 4(8\%)}{5} = 7.6\%$ and apply 2-component Alligation against the remaining asset.
+- **Discount-Doubling Profit Sensitivity & Equal Rate Equilibrium (`CAT_2025_QA_Slot_2` / `CAT2025_S2_QA_Q12`)**: When doubling the discount amount reduces profit from $P_1$ to $P_2$, the initial discount is exactly $D = P_1 - P_2$; when discount $\%$ equals profit $\%$ ($r$), apply $\frac{\text{CP}}{\text{MP}} = \frac{100-r}{100+r}$ directly.
+- **Semi-Annual CI Extraction from Multi-Period SI Gap (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q04`)**: Extract annual $\text{SI}_1 = \frac{A(t_2)-A(t_1)}{t_2-t_1}$ first, recover Principal $P$ and nominal rate $R\%$, then apply 4-period Pascal expansion $(4, 6, 4, 1)$ at half-yearly rate $R/2\%$.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S1_QA_Q01 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Percentages & Successive Change — *Weighted percentage returns with linear portfolio allocation constraints*
+- **Verified Answer**: `900` (Let Gold = 4B, Bonds = B, Stocks = 100000 - 5B. Total return: 0.10(100000 - 5B) + 0.06B + 0.08(4B) = 8200 => 10000 - 0.12B = 8200 => B = 15000. Bond return = 6% of 15000 = Rs 900.)
+- **Mental Trigger (`See X -> Do Y`)**: When two components have a fixed ratio (Bonds : Gold = 1 : 4), combine them into a single composite asset with weighted return (1*6% + 4*8%)/5 = 7.6% and apply Alligation against Stocks (10%).
+- **First-Principles Method**: Set B = 0.25G => G = 4B and S = 100000 - 5B. Substitute into 0.10S + 0.06B + 0.08G = 8200 to get 10000 - 0.12B = 8200 => B = 15000, so gain from bonds = 0.06 * 15000 = 900.
+- **30-Second Exam-Hall Speed Shortcut**: Composite rate of (Bonds+Gold) in 1:4 ratio is (6+32)/5 = 7.6%. Overall rate is 8.2%. By Alligation between Stocks (10%) and (B+G) (7.6%): weight of (B+G) is (10 - 8.2)/(10 - 7.6) = 1.8/2.4 = 3/4 of 100000 = 75000. Bonds = 1/5 of 75000 = 15000; 6% of 15000 = 900.
+- **Trap Alert & Boundary Condition**: Do not report the bond principal (15000) instead of the bond gain (900). Always re-read the final noun phrase in TITA questions.
+
+#### CAT2025_S1_QA_Q04 (`CAT_2025_QA_Slot_1` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Simple & Compound Interest, Installments — *Simple interest rate extraction followed by semi-annual compound interest accumulation*
+- **Verified Answer**: `(B) 3221` (SI for 3.5 years = 18960 - 13920 = 5040 => SI per year = 1440. Principal P = 13920 - 3(1440) = 9600. Annual rate R = 1440/9600 = 15%. Semi-annual rate = 7.5% for 4 periods: CI = 9600*(1.075^4 - 1) = 3220.50 -> nearest to 3221.)
+- **Mental Trigger (`See X -> Do Y`)**: Difference of two SI amounts divided by difference of times gives annual SI; then for 4 periods at 7.5%, use two successive 2-period effective rates: 7.5 + 7.5 + 0.5625 = 15.5625%, then 15.5625*2 + (15.5625)^2/100 = 33.547%.
+- **First-Principles Method**: SI_1yr = (18960 - 13920)/(6.5 - 3) = 5040/3.5 = 1440. Principal P = 13920 - 3*1440 = 9600. Rate R = (1440/9600)*100 = 15% p.a. Under 6-monthly compounding for 2 years (n=4, r=7.5%), CI = 9600*((1.075)^4 - 1) = 3220.50375, nearest to 3221.
+- **30-Second Exam-Hall Speed Shortcut**: 4-period SI at 7.5% is 2880. Add 6*P*r^2 = 6*9600*(0.075)^2 = 324 -> 3204. Add 4*P*r^3 = 4*9600*(0.00422) = 16.2 -> 3220.2, plus r^4 term ~0.3 -> 3220.5 -> 3221.
+- **Trap Alert & Boundary Condition**: 6 years and 6 months is 6.5 years (not 6.6 years). Compounding every 6 months for 2 years means 4 compounding periods at 7.5%, not 2 periods at 15%.
+
+#### CAT2025_S1_QA_Q07 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Profit, Loss, Discount & Faulty Weights — *Successive multiplying factors combining discount and free-article promotional schemes*
+- **Verified Answer**: `175` (Total CP of 13 chairs = 1300. Total SP for 26% profit = 1300 * 1.26 = 1638. Customer pays discounted price of 12 chairs = 12 * 0.78 * MP = 1638 => MP = 1638 / 9.36 = 175.)
+- **Mental Trigger (`See X -> Do Y`)**: Giving 13 articles for the price of 12 multiplies effective SP per article by 12/13. Apply: CP * (1 + Profit%) = MP * (1 - Discount%) * (12/13).
+- **First-Principles Method**: For 13 chairs, total CP = 13 * 100 = 1300 and required revenue = 1300 * 1.26 = 1638. Revenue equals 12 chairs at 22% discount: 12 * (0.78 * MP) = 1638 => MP = 175.
+- **30-Second Exam-Hall Speed Shortcut**: 100 * (126/100) = MP * (78/100) * (12/13) => MP = (126 * 13) / (78 * 12) * 100 = (21 * 13) / (13 * 12) * 100 = (21/12) * 100 = 175.
+- **Trap Alert & Boundary Condition**: Giving 13 chairs for the price of 12 means the shopkeeper parts with 13 chairs (denominator is 13, not 12).
+
+#### CAT2025_S2_QA_Q09 (`CAT_2025_QA_Slot_2` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Simple & Compound Interest, Installments — *Two-year compound interest amortization schedule*
+- **Verified Answer**: `(C) 8%` (Present value equation: 530/(1+r) + 594/(1+r)^2 = 1000. At r = 8% (1+r = 1.08): after Year 1, principal 1000 grows to 1080; paying 530 leaves 550; after Year 2, 550 * 1.08 = 594, which is paid off exactly!)
+- **Mental Trigger (`See X -> Do Y`)**: Notice 594 = 550 * 1.08 and 1000 * 1.08 - 530 = 550! Always test Year-1 balance (1000*(1+r) - 530)*(1+r) = 594.
+- **First-Principles Method**: After 1 year at rate r, balance is 1000(1 + r) - 530. After 2 years, (1000(1 + r) - 530)(1 + r) = 594. Testing r = 0.08 gives (1080 - 530)(1.08) = 550 * 1.08 = 594.
+- **30-Second Exam-Hall Speed Shortcut**: Factor 594 = 54 * 11 = 27 * 22. Since 1 + r = 1 + R/100 has factor 27 when R = 8 (1.08 = 27/25), R = 8% is immediate!
+- **Trap Alert & Boundary Condition**: Never equate simple sum of installments to 1000*(1+r)^2; each installment is discounted by its own time period.
+
+#### CAT2025_S2_QA_Q12 (`CAT_2025_QA_Slot_2` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Profit, Loss, Discount & Faulty Weights — *Linear sensitivity of profit to discount doubling and equal profit-discount rate equilibrium*
+- **Verified Answer**: `(C) 14` (CP = 1650. Initial profit = 20% of 1650 = 330 (SP = 1980). When discount is doubled, profit drops to 110, so discount amount = 330 - 110 = 220, and MP = 1980 + 220 = 2200. For profit% = discount% = k%: 1650(1 + k/100) = 2200(1 - k/100) => 3(100 + k) = 4(100 - k) => 7k = 100 => k = 14.29% -> 14.)
+- **Mental Trigger (`See X -> Do Y`)**: Doubling the discount reduces SP (and profit) by exactly 1x the original discount D; then for Profit% = Discount% = k%, use k = 100*(MP - CP)/(MP + CP)!
+- **First-Principles Method**: Initial profit = 0.20 * 1650 = 330. Doubling discount reduces profit from 330 to 110, so initial discount D = 220 and MP = 1650 + 330 + 220 = 2200. Equating CP(1 + k/100) = MP(1 - k/100) gives k = 100*(2200 - 1650)/(2200 + 1650) = 100/7 = 14.285%, nearest to 14.
+- **30-Second Exam-Hall Speed Shortcut**: Universal identity: Profit% = Discount% = k% <=> k = 100*(MP - CP)/(MP + CP) = 100*(4 - 3)/(4 + 3) = 100/7 = 14.28%.
+- **Trap Alert & Boundary Condition**: Remember profit% is on CP (1650) while discount% is on MP (2200).
+
+#### CAT2025_S2_QA_Q13 (`CAT_2025_QA_Slot_2` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Percentages & Successive Change — *Successive remainder percentages*
+- **Verified Answer**: `(B) 5 : 8` (Assume Total = 100. Pinu = 20. Remaining = 80; Meena = 40% of 80 = 32. Seema = 0.8 * 20 = 16. Rinu = 100 - (20 + 32 + 16) = 32. Ratio Pinu : Rinu = 20 : 32 = 5 : 8.)
+- **Mental Trigger (`See X -> Do Y`)**: Set Total = 100 and compute shares sequentially: P = 20, M = 32, S = 16 => R = 32.
+- **First-Principles Method**: With Total = 100, P = 20, M = 0.40 * (100 - 20) = 32, S = 0.80 * 20 = 16, leaving R = 100 - 68 = 32. Thus P : R = 20 : 32 = 5 : 8.
+- **30-Second Exam-Hall Speed Shortcut**: 10-second mental arithmetic with Total = 100 -> 20 : 32 = 5 : 8.
+- **Trap Alert & Boundary Condition**: Meena gets 40% of the REMAINING amount (40% of 80 = 32), not 40% of total.
+
+#### CAT2025_S3_QA_Q17 (`CAT_2025_QA_Slot_3` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Profit, Loss, Discount & Faulty Weights — *Weighted revenue aggregation across multi-period discount rates*
+- **Verified Answer**: `(A) 525` (Total units = 120 + 135 + 150 + 165 = 570. Total CP = 570 * 240 = 136800. Total SP = 136800 + 138825 = 275625. Effective MP units sold = 120(0.8) + 135(0.9) + 150(0.95) + 165(1.0) = 96 + 121.5 + 142.5 + 165 = 525. Thus MP = 275625 / 525 = 525.)
+- **Mental Trigger (`See X -> Do Y`)**: Notice monthly sales (120, 135, 150, 165) form an AP with mean 142.5 (total = 4 * 142.5 = 570), and effective MP coefficient is 96 + 121.5 + 142.5 + 165 = 525!
+- **First-Principles Method**: Total Cost = (120 + 135 + 150 + 165) * 240 = 570 * 240 = 136800. Total Revenue = 136800 + 138825 = 275625. Also Total Revenue = MP * (120*0.80 + 135*0.90 + 150*0.95 + 165*1.00) = 525 * MP. Hence MP = 275625 / 525 = 525.
+- **30-Second Exam-Hall Speed Shortcut**: Since 525 * MP = 275625 ends in 25 and 525 = 21 * 25, test MP = 525: 525^2 = (52 * 53) concatenated with 25 = 275625! Exact match!
+- **Trap Alert & Boundary Condition**: Recognizing 275625 = 525^2 via the (n*10 + 5)^2 shortcut makes the final division instantaneous.

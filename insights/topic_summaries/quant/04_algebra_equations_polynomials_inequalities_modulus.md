@@ -192,3 +192,102 @@ A: Since 0 < 3 < 5, the W-graph centered at x = 4 has 4 distinct real roots symm
 <details><summary>Q10: For what range of k does x^2 - (k - 2)x + (k + 1) = 0 have one root strictly less than 2 and the other strictly greater than 2?</summary>
 A: Since leading coefficient a = 1 > 0, condition is f(2) < 0 -> 4 - 2(k - 2) + k + 1 < 0 -> 9 - k < 0 -> k > 9.
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **Reciprocal Power-Sum Newton Recurrence $S_n = S_{n-k}S_k - S_{|n-2k|}$ (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q06`)**: For $x + \frac{1}{x} = c$, compute $S_7 = x^7 + x^{-7}$ via $S_7 = S_4 S_3 - S_1$ in 20 seconds instead of binomial expansion.
+- **Block-Variable Substitution in Underdetermined Linear Systems (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q02`)**: When two equations in $(a, b, c)$ have proportional coefficients on $(b, c)$, collapse the linear combination into a single block variable $Y$ (or set free variable $c = 0$).
+- **Radical-Modulus Discriminant Filtering (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q15`)**: Rewrite $x^2 - 2x + 2|x-1| - 8 = |x-1|^2 + 2|x-1| - 9 = (|x-1|+1)^2 - 10$ to evaluate real roots without case-splitting.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S1_QA_Q02 (`CAT_2025_QA_Slot_1` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Linear Equations & Indeterminate Systems — *Block variable substitution in underdetermined 3-variable linear systems*
+- **Verified Answer**: `(A) 18` (Let X = a and Y = 3b - 3c. Then X - 2Y = 4 and 6X + Y = 50. Solving gives X = 8, Y = 2. Target 2a + 3b - 3c = 2X + Y = 18.)
+- **Mental Trigger (`See X -> Do Y`)**: When 2 equations have 3 variables (a, b, c) and the coefficients of b and c maintain a constant ratio (-6:6 = 3:-3 = -1:1), collapse (3b - 3c) into a single block variable Y.
+- **First-Principles Method**: Define Y = 3b - 3c. The system becomes a - 2Y = 4 and 6a + Y = 50. Multiply the second equation by 2 and add: 13a = 104 => a = 8, Y = 2. Thus 2a + Y = 16 + 2 = 18.
+- **30-Second Exam-Hall Speed Shortcut**: Set c = 0 immediately (since the system holds for all real b, c satisfying the linear relation). Solve a - 6b = 4 and 6a + 3b = 50 => a = 8, 3b = 2 => 2a + 3b = 18.
+- **Trap Alert & Boundary Condition**: Never waste time trying to solve for b and c individually; in indeterminate systems, setting one free variable to 0 is valid whenever the target expression is invariant.
+
+#### CAT2025_S1_QA_Q06 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Quadratic & Higher-Degree Polynomials — *Vieta root-coefficient relations and non-negative integer constraints*
+- **Verified Answer**: `3` (x^2 - 5x + k = 0 has integer roots r1, r2 with r1 + r2 = 5 and r1*r2 = k >= 0. Since k >= 0, both roots are non-negative integers summing to 5: (0,5)->k=0, (1,4)->k=4, (2,3)->k=6. Total 3 values.)
+- **Mental Trigger (`See X -> Do Y`)**: When sum of integer roots is fixed (r1 + r2 = 5) and product k = r1*r2 >= 0, enumerate unordered non-negative integer pairs summing to 5.
+- **First-Principles Method**: By Vieta relations, r1 + r2 = 5 and r1*r2 = k. Since k >= 0 and r1 + r2 > 0, both r1, r2 >= 0. Unordered integer pairs are {0, 5} (k = 0), {1, 4} (k = 4), and {2, 3} (k = 6), giving 3 values of k.
+- **30-Second Exam-Hall Speed Shortcut**: Discriminant 25 - 4k must be a perfect square s^2 with 0 <= 4k <= 25 and s odd: s in {1, 3, 5} => k in {6, 4, 0} -> 3 values.
+- **Trap Alert & Boundary Condition**: The phrase non-negative integer values of k includes k = 0 (roots 0 and 5). Forgetting k = 0 gives the trap answer 2.
+
+#### CAT2025_S1_QA_Q11 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Inequalities & Modulus — *Lattice point counting in triangular inequality regions*
+- **Verified Answer**: `16` (For y = 3, x in {4..10} (7 pairs); y = 4, x in {5..9} (5 pairs); y = 5, x in {6..8} (3 pairs); y = 6, x in {7} (1 pair). Total = 7 + 5 + 3 + 1 = 16.)
+- **Mental Trigger (`See X -> Do Y`)**: Slice by the smaller integer variable y >= 3: for each y, x ranges from y+1 to 13-y, so count is (13 - 2y) decreasing by 2 each step.
+- **First-Principles Method**: For each integer y >= 3, x satisfies y + 1 <= x <= 13 - y, giving (13 - 2y) solutions whenever 2y < 13 (i.e., y in {3, 4, 5, 6}). Summing gives 7 + 5 + 3 + 1 = 16.
+- **30-Second Exam-Hall Speed Shortcut**: Sum of first 4 odd numbers (1 + 3 + 5 + 7) = 4^2 = 16.
+- **Trap Alert & Boundary Condition**: Notice x > y is strict while y >= 3 is weak, and x + y < 14 means x + y <= 13 for integers.
+
+#### CAT2025_S1_QA_Q22 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Linear Equations & Indeterminate Systems — *Linear Diophantine equation with percentage integrality and strict lower bound*
+- **Verified Answer**: `55` (40% girls and 60% boys left => G and B are multiples of 5, with B > 10 => B >= 15. Remaining: 0.6G - 0.4B = 8 => 3G - 2B = 40. Smallest multiple of 5 for B > 10 with (2B + 40) divisible by 3 is B = 25, giving G = 30. Total = 25 + 30 = 55.)
+- **Mental Trigger (`See X -> Do Y`)**: 40% (2/5) and 60% (3/5) of people must be integers, so let B = 5b (with b >= 3 since B > 10) and G = 5g.
+- **First-Principles Method**: Let B = 5b (b >= 3) and G = 5g. Remaining girls = 3g, remaining boys = 2b. Given 3g - 2b = 8 => 3g = 2b + 8. Testing b = 3 (14), b = 4 (16), b = 5 (18 = 3*6 => g = 6). Thus B = 25, G = 30, and B + G = 55.
+- **30-Second Exam-Hall Speed Shortcut**: In 3g - 2b = 8 with b >= 3, b must be 2 mod 3 => smallest b >= 3 is b = 5 => g = 6 => 5(5 + 6) = 55.
+- **Trap Alert & Boundary Condition**: Ignoring B > 10 gives b = 2 (B = 10, G = 20, total = 30), violating 'more than 10 boys'.
+
+#### CAT2025_S2_QA_Q07 (`CAT_2025_QA_Slot_2` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Quadratic & Higher-Degree Polynomials — *Exponential quadratic substitution and Vieta product of roots*
+- **Verified Answer**: `(D) 20` (Let u = 3^(x^2+2x-3). Then u^2 - 12u + 27 = 0 => u = 3 or u = 9. Thus x^2 + 2x - 3 = 1 (x^2 + 2x - 4 = 0, product of roots = -4) or x^2 + 2x - 3 = 2 (x^2 + 2x - 5 = 0, product of roots = -5). Product of all 4 real roots = (-4)*(-5) = 20.)
+- **Mental Trigger (`See X -> Do Y`)**: Write 3^(x^2+2x-2) = 3 * 3^(x^2+2x-3) so the equation becomes u^2 - 12u + 27 = 0.
+- **First-Principles Method**: Substitute u = 3^(x^2+2x-3) into 9^(x^2+2x-3) - 4*3^(x^2+2x-2) + 27 = 0 to get u^2 - 12u + 27 = 0 => (u - 3)(u - 9) = 0. Equating exponents gives x^2 + 2x - 4 = 0 (Delta = 20 > 0, root product = -4) and x^2 + 2x - 5 = 0 (Delta = 24 > 0, root product = -5). Total product = (-4)(-5) = 20.
+- **30-Second Exam-Hall Speed Shortcut**: Once x^2 + 2x - 3 in {1, 2}, the constant terms of x^2 + 2x - (3+k) = 0 are -4 and -5; their product is (-4)(-5) = 20.
+- **Trap Alert & Boundary Condition**: Always verify Discriminant > 0 for both quadratic branches before multiplying Vieta root products.
+
+#### CAT2025_S2_QA_Q10 (`CAT_2025_QA_Slot_2` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Inequalities & Modulus — *Piecewise modulus quadratic inequality*
+- **Verified Answer**: `(C) (-inf, -3) U (3, inf)` (Case 1 (x >= -9): x^2 - (x + 9) + x > 0 => x^2 - 9 > 0 => x in [-9, -3) U (3, inf). Case 2 (x < -9): x^2 + (x + 9) + x > 0 => (x + 1)^2 + 8 > 0, which holds for all x < -9. Union is (-inf, -3) U (3, inf).)
+- **Mental Trigger (`See X -> Do Y`)**: Test x = -4 (gives 16 - 5 - 4 = 7 > 0) and x = -10 (gives 100 - 1 - 10 = 89 > 0) to eliminate 3 options in 10 seconds!
+- **First-Principles Method**: For x >= -9, |x + 9| = x + 9, so x^2 - x - 9 + x = x^2 - 9 > 0 => x in [-9, -3) U (3, inf). For x < -9, |x + 9| = -x - 9, so x^2 + 2x + 9 = (x+1)^2 + 8 > 0 for all x < -9. Combining both regions gives (-inf, -3) U (3, inf).
+- **30-Second Exam-Hall Speed Shortcut**: Plug x = -4: 16 - 5 - 4 = 7 > 0 (eliminates A). Plug x = 4: 16 - 13 + 4 = 7 > 0 (eliminates B). Plug x = -10: 100 - 1 - 10 = 89 > 0 (eliminates D). Only (C) remains!
+- **Trap Alert & Boundary Condition**: Students who forget to include the x < -9 branch pick distractor (A) or (D).
+
+#### CAT2025_S2_QA_Q11 (`CAT_2025_QA_Slot_2` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Quadratic & Higher-Degree Polynomials — *Common root elimination and Vieta sum of roots*
+- **Verified Answer**: `(C) 8/3 - p + (3/2)q` (Let common root be r. By Vieta, the other roots are (5/3 - r) and (1 - r), whose sum is 8/3 - 2r. Also 3r^2 - 5r + p = 0 and 2r^2 - 2r + q = 0. Eliminate r^2: 2(3r^2 - 5r + p) - 3(2r^2 - 2r + q) = 0 => -4r + 2p - 3q = 0 => 2r = p - (3/2)q. Thus sum of other roots = 8/3 - p + (3/2)q.)
+- **Mental Trigger (`See X -> Do Y`)**: Eliminate r^2 between 3r^2 - 5r + p = 0 and 2r^2 - 2r + q = 0 to get 2r directly in terms of p and q!
+- **First-Principles Method**: Let r be the common root, and r1, r2 the other roots. From Vieta, (r + r1) + (r + r2) = 5/3 + 1 = 8/3 => r1 + r2 = 8/3 - 2r. Since 2(3r^2 - 5r + p) - 3(2r^2 - 2r + q) = -4r + 2p - 3q = 0, we have 2r = p - (3/2)q. Substituting gives r1 + r2 = 8/3 - p + (3/2)q.
+- **30-Second Exam-Hall Speed Shortcut**: Set common root r = 0 => p = 0, q = 0, and other roots are 5/3 and 1, summing to 8/3 (eliminates A and D). Set r = 1 => p = 2, q = 0, other roots are 2/3 and 0, summing to 2/3. Plug p=2, q=0 into (B) 14/3 vs (C) 2/3 -> (C) wins!
+- **Trap Alert & Boundary Condition**: Setting r = 0 and r = 1 solves any parametric common-root MCQ in under 15 seconds.
+
+#### CAT2025_S3_QA_Q06 (`CAT_2025_QA_Slot_3` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Quadratic & Higher-Degree Polynomials — *Reciprocal power sum recurrence S_7 = S_3 * S_4 - S_1*
+- **Verified Answer**: `(B) 44853*sqrt(3)` (x^2 + 1/x^2 = 25 => x + 1/x = sqrt(27) = 3*sqrt(3). Then x^3 + 1/x^3 = (3*sqrt(3))^3 - 3(3*sqrt(3)) = 72*sqrt(3), and x^4 + 1/x^4 = 25^2 - 2 = 623. Finally x^7 + 1/x^7 = (x^3 + 1/x^3)(x^4 + 1/x^4) - (x + 1/x) = (72*623 - 3)*sqrt(3) = 44853*sqrt(3).)
+- **Mental Trigger (`See X -> Do Y`)**: Use S_7 = S_3 * S_4 - S_1 and check ONLY the units digit of the coefficient of sqrt(3): 72 * 623 - 3 ends in 6 - 3 = 3!
+- **First-Principles Method**: Let S_k = x^k + 1/x^k. Given S_2 = 25 => S_1 = sqrt(25 + 2) = 3*sqrt(3). Next, S_3 = S_1^3 - 3*S_1 = 81*sqrt(3) - 9*sqrt(3) = 72*sqrt(3), and S_4 = S_2^2 - 2 = 623. Using S_7 = S_3*S_4 - S_1 gives (72*623 - 3)*sqrt(3) = 44853*sqrt(3).
+- **30-Second Exam-Hall Speed Shortcut**: Units digit check on (72 * 623 - 3): 2 * 3 - 3 = 3 -> immediately selects (B) 44853*sqrt(3) without multiplying 72 * 623!
+- **Trap Alert & Boundary Condition**: Forgetting to subtract S_1 = 3*sqrt(3) in S_3 * S_4 = S_7 + S_1 gives the trap answer (D) 44856*sqrt(3)!
+
+#### CAT2025_S3_QA_Q15 (`CAT_2025_QA_Slot_3` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Quadratic & Higher-Degree Polynomials — *Completing the square under a radical and checking discriminant on both modulus branches*
+- **Verified Answer**: `(B) -3` (Let u = x^2 + 3x. Then f(x) + 1 = u(u + 2) + 1 = (u + 1)^2 = (x^2 + 3x + 1)^2. Thus sqrt(f(x) + 1) = |x^2 + 3x + 1| = 9701. For x^2 + 3x + 1 = 9701, Delta > 0 and sum of real roots = -3. For x^2 + 3x + 1 = -9701, x^2 + 3x + 9702 = 0 has Delta < 0 (no real roots). Total sum of real roots = -3.)
+- **Mental Trigger (`See X -> Do Y`)**: u(u + 2) + 1 = (u + 1)^2, so sqrt(f(x) + 1) = |x^2 + 3x + 1|; check which branch has real roots!
+- **First-Principles Method**: Since (x^2 + 3x)(x^2 + 3x + 2) + 1 = (x^2 + 3x + 1)^2, the equation becomes |x^2 + 3x + 1| = 9701. Branch 1: x^2 + 3x - 9700 = 0 has two real roots with sum -3. Branch 2: x^2 + 3x + 9702 = 0 has discriminant 9 - 4(9702) < 0 (no real roots). Thus the sum of all real roots is -3.
+- **30-Second Exam-Hall Speed Shortcut**: The parabola x^2 + 3x + 1 is symmetric about x = -3/2; only the upper horizontal line y = 9701 intersects it (in 2 real points), whose sum is 2*(-3/2) = -3 (Option B).
+- **Trap Alert & Boundary Condition**: Adding the non-real roots of the second branch gives the classic trap answer (C) -6.
+
+#### CAT2025_S3_QA_Q19 (`CAT_2025_QA_Slot_3` | TITA | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Inequalities & Modulus — *Bounded ratio extrema with perfect-square domain endpoints*
+- **Verified Answer**: `397` (Perfect squares r in (150, 500) range from 13^2 = 169 to 22^2 = 484, so S = p + q = 900 - r ranges from 416 (at r=484) to 731 (at r=169). Since 0.3q <= p <= 0.7q, we have (3/13)S <= p <= (7/17)S. Minimum p at S = 416: p >= (3/13)*416 = 96. Maximum p at S = 731: p <= (7/17)*731 = 7 * 43 = 301. Sum = 96 + 301 = 397.)
+- **Mental Trigger (`See X -> Do Y`)**: Convert 0.3q <= p <= 0.7q into fractions of S = p + q: (3/13)S <= p <= (7/17)S! Notice 416 = 900 - 484 is divisible by 13, and 731 = 900 - 169 is divisible by 17!
+- **First-Principles Method**: Since p + q = 900 - r and 3/10 <= p/q <= 7/10, p/(p+q) lies in [3/13, 7/17]. For r in {13^2=169, ..., 22^2=484}: to minimize p, take largest r = 484 (p+q = 416), giving p_min = (3/13)*416 = 96. To maximize p, take smallest r = 169 (p+q = 731), giving p_max = (7/17)*731 = 301. Sum = 96 + 301 = 397.
+- **30-Second Exam-Hall Speed Shortcut**: 900 - 22^2 = 416 = 13 * 32 => p_min = 3 * 32 = 96; 900 - 13^2 = 731 = 17 * 43 => p_max = 7 * 43 = 301. Sum = 397.
+- **Trap Alert & Boundary Condition**: The divisibility of 416 by 13 and 731 by 17 confirms you have the exact intended boundary squares (484 and 169).
+
+#### CAT2025_S3_QA_Q21 (`CAT_2025_QA_Slot_3` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Linear Equations & Indeterminate Systems — *Three-variable linear system optimization with ordering constraint S <= A*
+- **Verified Answer**: `700` (S + A + C = 1500 and 11S + 10A + 8C = 15500. Subtracting 10(S + A + C) = 15000 gives S - 2C = 500 => C = (S - 500)/2. Given S <= A = 1500 - S - C => 2S + (S - 500)/2 <= 1500 => 5S <= 3500 => S <= 700 (achieved at S = 700, A = 700, C = 100).)
+- **Mental Trigger (`See X -> Do Y`)**: Take Rs 1000 (Arts fee) as the assumed baseline: total fee 15,50,000 exceeds 1500 * 1000 by +50,000, so +100*S - 200*C = 50,000 => S - 2C = 500!
+- **First-Principles Method**: Deviation from Rs 1000/student: 100S + 0A - 200C = 50000 => S = 500 + 2C. Since S + A + C = 1500 and S <= A, we have 2S + C <= 1500 => 2(500 + 2C) + C <= 1500 => 5C <= 500 => C <= 100. Thus max S = 500 + 2(100) = 700.
+- **30-Second Exam-Hall Speed Shortcut**: To maximize S with S <= A, set S = A: then 2S + C = 1500 and S - 2C = 500 => C = 100, S = 700.
+- **Trap Alert & Boundary Condition**: 'Not more than' means S <= A (equality S = A = 700 is permitted).

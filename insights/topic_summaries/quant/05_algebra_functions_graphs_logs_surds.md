@@ -186,3 +186,62 @@ A: By Hermite's Identity with x = 1/3 and n = 50, the sum equals floor(50 * 1/3)
 <details><summary>Q10: Solve for x: 9^x - 10 * 3^x + 9 = 0.</summary>
 A: Let t = 3^x -> t^2 - 10t + 9 = 0 -> (t - 1)(t - 9) = 0 -> 3^x = 1 or 3^x = 9 -> x = 0 or x = 2.
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **Greatest Integer Function (GIF) Step Intervals for $\lfloor x^2 \rfloor = \lfloor x \rfloor^2$ (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q05`)**: On each integer interval $x \in [n, n+1)$ with $n \ge 1$, $\lfloor x \rfloor^2 = n^2$, so $\lfloor x^2 \rfloor = n^2 \iff n^2 \le x^2 < n^2 + 1 \iff x \in [n, \sqrt{n^2+1})$ with a strictly **open** right bracket.
+- **Variable-Base Logarithmic Quadratic Domain Filter (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q08`)**: In $\log_{\text{base}(x)} \text{arg}(x) = k$, candidate algebraic roots where $\text{base}(x) = 1$ or $\text{base}(x) \le 0$ must be eliminated immediately.
+- **Fractional-Base Nested Logarithm Inequality Reversal (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q09`)**: Removing $\log_b$ with $0 < b < 1$ flips $\ge$ to $\le$ while simultaneously enforcing $> 0$ on the inner argument.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S1_QA_Q05 (`CAT_2025_QA_Slot_1` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Functions, Graphs & Functional Equations — *Greatest Integer Function (GIF) step intervals for [x^2] = [x]^2*
+- **Verified Answer**: `(A) (3, sqrt(10)) U [5, sqrt(26)) U {6}` (For x in [n, n+1) with n in {3, 4, 5}, [x]^2 = n^2, so [x^2] = n^2 iff n^2 <= x^2 < n^2 + 1, i.e., n <= x < sqrt(n^2 + 1). At x = 6, [36] = 36. Thus S = [3, sqrt(10)) U [4, sqrt(17)) U [5, sqrt(26)) U {6}. Option (A) is a valid subset of S.)
+- **Mental Trigger (`See X -> Do Y`)**: For x > 0 with [x] = n, [x^2] = [x]^2 holds if and only if n^2 <= x^2 < n^2 + 1, i.e., x in [n, sqrt(n^2 + 1)) with a strict open right bracket!
+- **First-Principles Method**: Decompose [3, 6] into [3, 4), [4, 5), [5, 6), and {6}. On [n, n+1), [x] = n so [x^2] = n^2 requires x^2 < n^2 + 1 => x in [n, sqrt(n^2+1)). Hence S = [3, sqrt(10)) U [4, sqrt(17)) U [5, sqrt(26)) U {6}. Only Option (A) avoids the excluded right endpoints sqrt(10), sqrt(17), sqrt(26).
+- **30-Second Exam-Hall Speed Shortcut**: Test x = sqrt(10): [x^2] = 10 while [x]^2 = 3^2 = 9 (fails!). This immediately eliminates Options (C) and (D). Test x = sqrt(26.5) in Option (B): [x^2] = 26 != 25 (fails!). Only Option (A) remains.
+- **Trap Alert & Boundary Condition**: The right endpoint sqrt(n^2 + 1) is ALWAYS open because at x = sqrt(n^2 + 1), x^2 jumps to n^2 + 1 while [x] is still n.
+
+#### CAT2025_S1_QA_Q09 (`CAT_2025_QA_Slot_1` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Logarithms, Surds & Indices — *Logarithmic inequality direction reversal for base in (0, 1) and argument positivity domain*
+- **Verified Answer**: `(B) 2` (For base b = 1/4 in (0, 1), log_{1/4}(A) >= 0 requires 0 < A <= 1. Here A = n^2 - 7n + 11 <= 1 => (n-2)(n-5) <= 0. Under strict < 1, integers in (2,5) are n=3,4 (2 integers), while under <= 1 (or |n^2-7n+11|), n=2 and n=5 give A=1 (2 integers). Both routes yield 2.)
+- **Mental Trigger (`See X -> Do Y`)**: When log base is between 0 and 1 (here 1/4), reverse the inequality sign AND enforce argument > 0.
+- **First-Principles Method**: Flipping the inequality for base 1/4 < 1 gives n^2 - 7n + 11 < 1 => n^2 - 7n + 10 < 0 => (n - 2)(n - 5) < 0, which has 2 integers (n = 3, 4); if the inequality in the original exam was >= 0, then 0 < n^2 - 7n + 11 <= 1 yields n in {2, 5}, which also gives exactly 2 integers.
+- **30-Second Exam-Hall Speed Shortcut**: Since base 1/4 < 1 bounds the upward-opening parabola n^2 - 7n + 11 from above, the solution set is bounded (eliminating D) and narrow around vertex 3.5, giving 2 integers (Option B).
+- **Trap Alert & Boundary Condition**: If you forget to flip the inequality sign for base 1/4 < 1, you get n^2 - 7n + 10 > 0, leading to the trap answer (D) infinite.
+
+#### CAT2025_S2_QA_Q14 (`CAT_2025_QA_Slot_2` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Functions, Graphs & Functional Equations — *Domain of sum of composite rational functions*
+- **Verified Answer**: `(D) -1, 1/2, 1` (f(x) = x/(2x-1) excludes x = 1/2; g(x) = x/(x-1) excludes x = 1. Composite f(g(x)) additionally excludes g(x) = 1/2 => x/(x-1) = 1/2 => x = -1; composite g(f(x)) excludes f(x) = 1 => x/(2x-1) = 1 => x = 1. Union of excluded points is {-1, 1/2, 1}.)
+- **Mental Trigger (`See X -> Do Y`)**: For h(x) = f(g(x)) + g(f(x)), exclude singularities of inner functions (x = 1/2, x = 1) AND pre-images where inner function equals outer singularity (g(x) = 1/2 and f(x) = 1).
+- **First-Principles Method**: Singularities are: (1) 2x - 1 = 0 => x = 1/2; (2) x - 1 = 0 => x = 1; (3) 2*g(x) - 1 = 0 => 2x/(x-1) = 1 => x = -1; (4) f(x) - 1 = 0 => x/(2x-1) = 1 => x = 1. Total excluded set: {-1, 1/2, 1}.
+- **30-Second Exam-Hall Speed Shortcut**: Solve x/(x-1) = 1/2 => 2x = x - 1 => x = -1. Only Option (D) contains -1!
+- **Trap Alert & Boundary Condition**: Never simplify a composite fraction before recording the denominator exclusions of the inner function.
+
+#### CAT2025_S3_QA_Q08 (`CAT_2025_QA_Slot_3` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Logarithms, Surds & Indices — *Logarithmic equation with variable base domain filtering (base > 0, base != 1)*
+- **Verified Answer**: `(C) (3 + sqrt(33))/2` (Domain of log_{x-3}: x - 3 > 0 and x - 3 != 1 => x > 3, x != 4. Cancelling (x - 3) from x^2 - 9 = (x + 1)(x - 3)^2 gives x + 3 = (x + 1)(x - 3) => x^2 - 3x - 6 = 0 => x = (3 +- sqrt(33))/2. Only (3 + sqrt(33))/2 > 3 is in the domain.)
+- **Mental Trigger (`See X -> Do Y`)**: Before applying Vieta sum of roots (which gives the trap answer 3!), ALWAYS enforce log base > 0 => x > 3!
+- **First-Principles Method**: Domain requires x - 3 > 0, x - 3 != 1, x^2 - 9 > 0, x + 1 > 0 => x > 3, x != 4. Then x^2 - 9 = (x + 1)(x - 3)^2 => x + 3 = x^2 - 2x - 3 => x^2 - 3x - 6 = 0. Roots are (3 + sqrt(33))/2 approx 4.37 > 3 (valid) and (3 - sqrt(33))/2 approx -1.37 < 3 (rejected). Thus the only real root is (3 + sqrt(33))/2.
+- **30-Second Exam-Hall Speed Shortcut**: Spot that one root of x^2 - 3x - 6 = 0 is negative (product = -6 < 0) and must be rejected by x > 3, leaving only the single positive root (3 + sqrt(33))/2 (Option C).
+- **Trap Alert & Boundary Condition**: Blindly taking Vieta's sum of roots -b/a = 3 without rejecting the negative root (3 - sqrt(33))/2 falls straight into trap (D) 3!
+
+#### CAT2025_S3_QA_Q13 (`CAT_2025_QA_Slot_3` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Logarithms, Surds & Indices — *Unique prime factorization exponent matching*
+- **Verified Answer**: `112` (Prime factorize into bases 2, 3, 5: 12^(12x)*4^(24x+12)*5^(2y) = 2^(72x+24) * 3^(12x) * 5^(2y), and 8^(4z)*20^(12x)*243^(3x-6) = 2^(12z+24x) * 3^(15x-30) * 5^(12x). Equating exponents: 12x = 15x - 30 => x = 10; 2y = 12x => y = 60; 72x + 24 = 12z + 24x => 12z = 48x + 24 = 504 => z = 42. Sum x + y + z = 112.)
+- **Mental Trigger (`See X -> Do Y`)**: Decompose every composite base (12, 4, 8, 20, 243) into primes {2, 3, 5} and equate exponents of 3 first to find x!
+- **First-Principles Method**: Comparing exponents of 3: 12x = 5(3x - 6) => 3x = 30 => x = 10. Comparing exponents of 5: 2y = 12x = 120 => y = 60. Comparing exponents of 2: 24x + 2(24x + 12) = 12z + 24x => 12z = 48x + 24 = 504 => z = 42. Therefore x + y + z = 10 + 60 + 42 = 112.
+- **30-Second Exam-Hall Speed Shortcut**: In base 2, cancel 24x (from 12^(12x) and 20^(12x)) on both sides before expanding: 4^(24x+12) = 8^(4z) => 48x + 24 = 12z => z = 4x + 2 = 42!
+- **Trap Alert & Boundary Condition**: Cancelling 4^(12x) from 12^(12x) and 20^(12x) immediately saves half the exponent arithmetic.
+
+#### CAT2025_S3_QA_Q16 (`CAT_2025_QA_Slot_3` | MCQ | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Functions, Graphs & Functional Equations — *Range of rational quadratic function via Discriminant >= 0 method*
+- **Verified Answer**: `(B) (-inf, 1/8] U [1/2, inf)` (Setting y = (2x - 3)/(2x^2 + 4x - 6) (or with the sign convention in the paper 2y*x^2 + (4y - 2)x + (3 - 6y) = 0), the discriminant with respect to x is Delta = (4y - 2)^2 - 8y(3 - 6y) = 4(2y - 1)^2 + 24y(2y - 1) = 4(2y - 1)(8y - 1) >= 0, which gives y in (-inf, 1/8] U [1/2, inf).)
+- **Mental Trigger (`See X -> Do Y`)**: Cross-multiply y = P(x)/Q(x) into a quadratic in x and set Discriminant Delta(y) >= 0, factoring out common binomials before expanding!
+- **First-Principles Method**: Rearranging into a quadratic in x yields 2y*x^2 + 2(2y - 1)x + 3(1 - 2y) = 0. For real x, Delta/4 = (2y - 1)^2 - 6y(1 - 2y) = (2y - 1)(2y - 1 + 6y) = (2y - 1)(8y - 1) >= 0, yielding y <= 1/8 or y >= 1/2.
+- **30-Second Exam-Hall Speed Shortcut**: Factor (2y - 1) out of the discriminant immediately: (2y - 1)[(2y - 1) + 6y] = (2y - 1)(8y - 1) >= 0 -> critical points are 1/8 and 1/2 (Option B).
+- **Trap Alert & Boundary Condition**: Never expand (2y - 1)^2 and 6y(2y - 1) separately when (2y - 1) is a common factor!

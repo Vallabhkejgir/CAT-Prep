@@ -184,3 +184,38 @@ A: Right triangle with legs 6, 8 and hypotenuse 10; inradius r = (6 + 8 - 10)/2 
 <details><summary>Q10: A regular tetrahedron has edge length 6 cm. Find its volume.</summary>
 A: V = (sqrt(2)/12) * a^3 = (sqrt(2)/12) * 216 = 18*sqrt(2) cm^3.
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **Parallelogram Diagonal Midpoint Vector Invariance & Section Intercept (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q03`)**: Given cyclic vertices $P, Q, R, S$, the fourth vertex is $S = P + R - Q$, and the x-axis ($y=0$) divides segment $QS$ in the ratio $|y_Q| : |y_S|$.
+- **Rhombus Diagonal-Side Mensuration Identity (`CAT_2025_QA_Slot_1` / `CAT2025_S1_QA_Q18`)**: Combine $d_1^2 + d_2^2 = 4a^2$ and $(d_1 + d_2)^2 - (d_1^2 + d_2^2) = 2d_1 d_2 = 4 \times \text{Area}$ to compute area without solving for $d_1, d_2$ separately.
+- **Tangential Right-Trapezium Incircle Mensuration (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q02`)**: Combine Pitot's theorem ($a + b = h + c$) with Pythagoras $(b - a)^2 + h^2 = c^2$ to solve trapezium perimeter and area.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S1_QA_Q03 (`CAT_2025_QA_Slot_1` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Coordinate Geometry & Trigonometry — *Parallelogram diagonal midpoint invariance and section formula for x-intercept*
+- **Verified Answer**: `(A) 29/9` (P(-3,-2), Q(1,-5), R(9,1). In parallelogram PQRS, S = P + R - Q = (5, 4). Line SQ passes through Q(1,-5) and S(5,4). Setting y = 0 gives a = 1 + 5*(4)/9 = 29/9.)
+- **Mental Trigger (`See X -> Do Y`)**: When 3 vertices of parallelogram PQRS are given in cyclic order, immediately use P + R = Q + S => S = P + R - Q.
+- **First-Principles Method**: Midpoint of PR equals midpoint of QS, so S = (-3 + 9 - 1, -2 + 1 - (-5)) = (5, 4). The equation of line QS through (1, -5) and (5, 4) is (y + 5)/(4 + 5) = (x - 1)/(5 - 1). At y = 0, (x - 1)/4 = 5/9 => x = 29/9.
+- **30-Second Exam-Hall Speed Shortcut**: Since y_Q = -5 and y_S = 4, the x-axis (y = 0) divides segment QS internally in the ratio 5 : 4. Thus a = (5*x_S + 4*x_Q)/(5 + 4) = (5*5 + 4*1)/9 = 29/9.
+- **Trap Alert & Boundary Condition**: Preserve cyclic vertex order P-Q-R-S: opposite vertices are (P, R) and (Q, S), NOT (P, Q).
+
+#### CAT2025_S1_QA_Q18 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Quadrilaterals & Polygons — *Rhombus diagonal-side identity d1^2 + d2^2 = 4a^2 and area (1/2)d1*d2*
+- **Verified Answer**: `60` (In a rhombus, d1^2 + d2^2 = 4a^2 = 4*(36^2) = 5184 and d1*d2 = 2*Area = 792. Thus (d1 - d2)^2 = 5184 - 2(792) = 3600 => |d1 - d2| = 60.)
+- **Mental Trigger (`See X -> Do Y`)**: Whenever rhombus side a and area A are given, use |d1 - d2| = sqrt(4a^2 - 4A) directly without solving for d1 and d2 separately.
+- **First-Principles Method**: Since diagonals of a rhombus bisect each other at 90 deg, (d1/2)^2 + (d2/2)^2 = a^2 => d1^2 + d2^2 = 4a^2 = 5184. Also (1/2)d1*d2 = 396 => 2d1*d2 = 1584. Hence (d1 - d2)^2 = 5184 - 1584 = 3600 => |d1 - d2| = 60.
+- **30-Second Exam-Hall Speed Shortcut**: |d1 - d2| = 2*sqrt(a^2 - A) = 2*sqrt(1296 - 396) = 2*sqrt(900) = 60.
+- **Trap Alert & Boundary Condition**: Memorize |d1 - d2| = 2*sqrt(a^2 - Area) and d1 + d2 = 2*sqrt(a^2 + Area) for any rhombus.
+
+#### CAT2025_S3_QA_Q02 (`CAT_2025_QA_Slot_3` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Quadrilaterals & Polygons — *Tangential right-trapezium properties (Pitot's theorem AB + CD = AD + BC)*
+- **Verified Answer**: `(C) 48` (Height AD = 2r = 6 cm. Let DC = x, AB = 3x. By Pitot's theorem for tangential quadrilateral ABCD, BC + AD = AB + DC => BC = 4x - 6. By Pythagoras on right triangle with legs 6 and 2x: (4x - 6)^2 = 36 + 4x^2 => 12x^2 - 48x = 0 => x = 4. Area = 0.5*(4 + 12)*6 = 48.)
+- **Mental Trigger (`See X -> Do Y`)**: In ANY right trapezium circumscribing a circle of radius r with parallel bases a and b, the perpendicular leg is h = 2r and harmonic mean of bases is 2ab/(a+b) = 2r? Even faster: Drop tangents from C and B to get r + x? Wait: at right angles A and D, tangent lengths from A and D along AB and DC are r = 3! So DC = 3 + t1 and AB = 3 + t2 with t1*t2 = r^2 = 9!
+- **First-Principles Method**: Height AD = 2r = 6. Let DC = x and AB = 3x. Since a circle is inscribed in ABCD, opposite sides sum equally: AB + DC = AD + BC => 4x = 6 + BC => BC = 4x - 6. Dropping an altitude from C to AB gives (4x - 6)^2 = 6^2 + (2x)^2 => 12x^2 = 48x => x = 4. Area = 0.5*(16)*6 = 48.
+- **30-Second Exam-Hall Speed Shortcut**: Since AD perp AB and DC, tangent segments at A and D have length r = 3. Let remaining tangent segments at C and B be t1, t2; then t1*t2 = r^2 = 9, DC = 3 + t1, AB = 3 + t2 = 3(3 + t1) => t1 = 1, t2 = 9 => DC = 4, AB = 12 => Area = 8 * 6 = 48!
+- **Trap Alert & Boundary Condition**: Remember the identity t1 * t2 = r^2 for the two non-perpendicular corners of a right tangential trapezium.

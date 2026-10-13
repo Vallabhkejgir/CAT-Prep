@@ -81,3 +81,20 @@ Ultra-dense, single-pass reference of every high-yield CAT Quantitative Ability 
   - Derangements: $D_1 = 0, D_2 = 1, D_3 = 2, D_4 = 9, D_5 = 44, D_6 = 265$.
   - Grid ($m \times n$ squares): Rectangles $= \binom{m+1}{2}\binom{n+1}{2}$; Squares $= \sum (m-k+1)(n-k+1)$.
   - $k$-Set Intersection Minimum (Surplus Rule): $\max\big(0,\; \sum_{i=1}^k |A_i| - (k-1)|U|\big)$.
+
+---
+
+## 5. CAT 2025 Newly Surfaced QA Triggers & Edge Traps
+
+| CAT 2025 Source | Pattern / Trigger Seen in Question | Instant 30-Second Action & Trap Guard |
+| :--- | :--- | :--- |
+| `CAT2025_S1_QA_Q05` (`CAT_2025_QA_Slot_1`) | $\lfloor x^2 \rfloor = \lfloor x \rfloor^2$ on $[3, 6]$ | On $[n, n+1)$, solution is $[n, \sqrt{n^2+1})$ with an **open** right bracket at $\sqrt{10}, \sqrt{17}, \sqrt{26}$ |
+| `CAT2025_S1_QA_Q09` (`CAT_2025_QA_Slot_1`) | Nested log inequality with base $b \in (0, 1)$ | Flip inequality direction at every $0<b<1$ layer AND enforce inner argument $> 0$ |
+| `CAT2025_S3_QA_Q08` (`CAT_2025_QA_Slot_3`) | Variable base in $\log_{g(x)} f(x) = k$ | Solve $f(x) = g(x)^k$, then **discard** any root where $g(x) \le 0$ or $g(x) = 1$ |
+| `CAT2025_S3_QA_Q06` (`CAT_2025_QA_Slot_3`) | $x + \frac{1}{x} = 4\sqrt{3}$, find $x^7 + \frac{1}{x^7}$ | Use Newton recurrence $S_7 = S_3 S_4 - S_1$ ($S_2=46, S_3=180\sqrt{3}, S_4=2114$) |
+| `CAT2025_S2_QA_Q01` (`CAT_2025_QA_Slot_2`) | 3-term GP with $\sum a_i$ and $\sum_{i<j} a_i a_j$ given | Divide directly: $\frac{a_1 a_2 + a_2 a_3 + a_3 a_1}{a_1 + a_2 + a_3} = a_2$ (since $a_1 a_3 = a_2^2$) |
+| `CAT2025_S2_QA_Q06` (`CAT_2025_QA_Slot_2`) | $\log_4 x + \log_8 y + \log_{16} z$ with AM-GM | Reduce all bases to $2^k$ ($\frac{1}{2}\log_2 x + \frac{1}{3}\log_2 y + \frac{1}{4}\log_2 z$) before AM-GM |
+| `CAT2025_S2_QA_Q15` (`CAT_2025_QA_Slot_2`) | Count divisors of $N$ of form $3r+1$ | Drop $3^k$; primes $\equiv 1 \pmod 3$ take any exponent; primes $\equiv 2 \pmod 3$ require an **even** total exponent |
+| `CAT2025_S2_QA_Q18` (`CAT_2025_QA_Slot_2`) | Integer solutions $(a, b \in \mathbb{Z})$ to $ab + 3a - 2b = 18$ | Factor $(a-2)(b+3) = 12$ (or $-12$) and test **both positive and negative** divisor pairs |
+| `CAT2025_S3_QA_Q02` (`CAT_2025_QA_Slot_3`) | Right trapezium circumscribing a circle of radius $r$ | Height $h = 2r$ and Pitot theorem $AB + CD = h + BC$; use $(CD-AB)^2 + h^2 = BC^2$ |
+| `CAT2025_S3_QA_Q04` (`CAT_2025_QA_Slot_3`) | 3-Set Venn optimization with 'some students in all 3' | Express regions in terms of $x = |A \cap B \cap C|$ and enforce **$x \ge 1$** (not $x = 0$) |

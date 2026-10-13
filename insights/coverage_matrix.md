@@ -63,17 +63,20 @@ This matrix audits **100% of the Canonical CAT Syllabus Taxonomy** (`docs/syllab
 
 ---
 
-## 4. Cross-Sectional Audit & High-Recall Assets Verification
+## 4. Cross-Sectional Audit & Incremental Insight-Enrichment Verification
 
 | Asset Type | File Path | Status |
 | :--- | :--- | :---: |
-| **CAT 2025 Structured PYQ Inventory (9 JSONs, 204 Qs)** | `extractions/structured_pyqs/CAT_2025_*_Slot_*_questions.json` | Complete |
-| **CAT 2025 Per-Paper Pass 1 Analyses (9 Papers + Master Key)** | `insights/per_paper/CAT_2025_*_analysis.md` & `CAT_2025_Master_Answer_Key_and_Slot_Comparison.md` | Complete |
-| **QA Pitfalls Manual** | `insights/mistakes_and_edge_cases/quant_pitfalls.md` | Complete |
-| **DILR Traps Manual** | `insights/mistakes_and_edge_cases/dilr_traps.md` | Complete |
-| **VARC Traps Manual** | `insights/mistakes_and_edge_cases/varc_traps.md` | Complete |
-| **QA Formula & Trigger Book** | `insights/high_recall/cheat_sheets/QA_Formula_and_Trigger_Book.md` | Complete |
-| **DILR Archetype Templates** | `insights/high_recall/cheat_sheets/DILR_Archetype_Templates.md` | Complete |
-| **VARC Elimination & VA Rules** | `insights/high_recall/cheat_sheets/VARC_Elimination_and_VA_Rules.md` | Complete |
-| **Spaced-Repetition Deck (150+ Cards)** | `insights/high_recall/anki_flashcards.csv` | Complete |
-| **40-Min Execution & Self-Audit Checklist** | `insights/CAT_Self_Audit_Checklist.md` | Complete |
+| **Pass 1 — CAT 2025 Structured PYQ Inventory & Delta Triage (9 JSONs, 204 Qs)** | `extractions/structured_pyqs/CAT_2025_*_Slot_*_questions.json` | Complete (`204/204` Delta-Triaged) |
+| **Pass 2 — Syllabus Coverage & Gap-Fill Audit Matrix** | `insights/coverage_matrix.md` | Complete (`100%` Sub-Topic Coverage) |
+| **Pass 3A — QA Master Notes with Embedded 2025 PYQ Edge Examples (10 Modules)** | `insights/topic_summaries/quant/01_*.md` .. `10_*.md` | Complete (`66` QA PYQs Integrated) |
+| **Pass 3B — DILR Playbooks with Embedded 2025 PYQ Sets (6 Modules)** | `insights/topic_summaries/dilr/01_*.md` .. `06_*.md` | Complete (`15` DILR Sets / `66` Qs Integrated) |
+| **Pass 3C — VARC Playbooks with Embedded 2025 PYQ Passages & VA (4 Modules)** | `insights/topic_summaries/varc/01_*.md` .. `04_*.md` | Complete (`12` RC Passages + `24` VA Qs Integrated) |
+| **Pass 4 — QA Pitfalls Manual with 2025 PYQ Mistake Triggers** | `insights/mistakes_and_edge_cases/quant_pitfalls.md` | Complete |
+| **Pass 4 — DILR Traps Manual with 2025 PYQ Mistake Triggers** | `insights/mistakes_and_edge_cases/dilr_traps.md` | Complete |
+| **Pass 4 — VARC Traps Manual with 2025 PYQ Mistake Triggers** | `insights/mistakes_and_edge_cases/varc_traps.md` | Complete |
+| **Pass 5 — QA Formula & Trigger Book** | `insights/high_recall/cheat_sheets/QA_Formula_and_Trigger_Book.md` | Complete |
+| **Pass 5 — DILR Archetype Templates** | `insights/high_recall/cheat_sheets/DILR_Archetype_Templates.md` | Complete |
+| **Pass 5 — VARC Elimination & VA Rules** | `insights/high_recall/cheat_sheets/VARC_Elimination_and_VA_Rules.md` | Complete |
+| **Pass 5 — Spaced-Repetition Deck (180+ Cards)** | `insights/high_recall/anki_flashcards.csv` | Complete |
+| **Pass 5 — 40-Min Execution & Self-Audit Checklist** | `insights/CAT_Self_Audit_Checklist.md` | Complete |

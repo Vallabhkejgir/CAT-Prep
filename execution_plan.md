@@ -32,7 +32,6 @@ Create the directory structure:
 ```bash
 mkdir -p docs/syllabus docs/pyqs \
   extractions/markdown extractions/page_images extractions/structured_pyqs \
-  insights/per_paper \
   insights/topic_summaries/quant insights/topic_summaries/dilr insights/topic_summaries/varc \
   insights/mistakes_and_edge_cases \
   insights/high_recall/cheat_sheets insights/high_recall/active_recall_drills \
@@ -77,33 +76,39 @@ python scripts/extract_pdf.py
 
 ---
 
-## 4. Multi-Pass Execution Pipeline
+## 4. 5-Pass Incremental Insight-Enrichment Pipeline
 
-Execute these passes in order. Each pass builds on structured outputs from the prior pass to guarantee **high recall** and **100% topic coverage**.
+Execute these passes in order whenever new CAT PYQ papers are added. Instead of generating redundant `per_paper` markdown summaries, every newly extracted PYQ paper directly enriches the canonical topic master notes, mistake & trap manuals, and high-recall revision assets in place.
 
-### Pass 1: Deep Per-Paper Question & Set Decomposition
+### Pass 1: Multimodal Extraction & Delta Triage (`extractions/structured_pyqs/<PAPER>_questions.json`)
 For every extracted paper `<PAPER>` in `extractions/markdown/`:
 
-1. `extractions/structured_pyqs/<PAPER>_questions.json` — a complete inventory of EVERY question/set in the paper with fields:
-   - `question_id`, `section` (`QA|DILR|VARC`), `question_type` (`MCQ|TITA`)
+1. `extractions/structured_pyqs/<PAPER>_questions.json` — a complete question-level inventory of EVERY question/set in the paper with autonomous dual-method answer derivation and **Insight-Enrichment Delta Triage**:
+   - `question_id`, `section` (`QA|DILR|VARC`), `slot`, `question_type` (`MCQ|TITA`)
    - `canonical_topic` & `canonical_subtopic` (mapped to `docs/syllabus/canonical_taxonomy.md`)
    - `difficulty` (`Easy|Medium|Hard`) & `exam_round_tag` (`Round_1_Sitter | Round_2_Doable | Round_3_TimeSink_Skip`)
+   - `derived_answer`, `answer_source`, `verification_notes` (dual-method cross-checked solution)
    - `core_concept_tested`
    - `mental_trigger` (`When you see ... -> Immediately do ...`)
    - `first_principles_method` vs `speed_shortcut`
    - `boundary_conditions_and_traps` (domain limits, TITA trap, distractor design)
-2. `insights/per_paper/<PAPER>_analysis.md` — a human-readable master breakdown of the paper:
-   - Section-wise difficulty, ideal attempt targets for 99/99.5/99.9%ile, and set-selection ranking for DILR & RC.
-   - Detailed question-by-question & set-by-set high-recall notes.
+   - **Insight-Enrichment Delta Fields**:
+     - `is_new_subtopic_or_variant` (`bool`): `True` if the question tests a sub-topic, cross-topic hybrid, or angle not yet explicitly covered in `insights/topic_summaries/`.
+     - `is_mistake_or_trap_worthy` (`bool`): `True` if the question contains a high-probability exam-hall mistake, domain restriction trap, TITA rounding/sign trap, DILR constraint trap, or VARC 2-option tie-breaker trap.
+     - `is_edge_example` (`bool`): `True` if the question is a high-yield boundary/edge exemplar that must be embedded directly into the corresponding topic master note.
+     - `target_insight_files` (`list[str]`): Exact repo-relative paths in `insights/topic_summaries/` and `insights/mistakes_and_edge_cases/` that this question enriches.
 
-### Pass 2: Syllabus Coverage Audit & Gap-Fill Matrix
-Compare `docs/syllabus/canonical_taxonomy.md` against all files in `extractions/structured_pyqs/` and `docs/syllabus/` to create `insights/coverage_matrix.md` containing:
+### Pass 2: Syllabus Coverage & Gap-Fill Audit (`insights/coverage_matrix.md`)
+Compare `docs/syllabus/canonical_taxonomy.md` against all files in `extractions/structured_pyqs/` to update `insights/coverage_matrix.md` containing:
 1. A complete table of every Canonical Topic & Sub-Topic across QA, DILR, and VARC.
 2. Exact PYQ frequency count and question IDs mapped to each sub-topic.
 3. Priority Tier (Tier 1 High-Yield, Tier 2 Medium-Yield, Tier 3 Rare-but-Tested).
-4. Explicit `[GAP_FILL_REQUIRED]` markers on any sub-topic with `< 3` PYQ instances so Pass 3 generates full concept + synthetic CAT-grade exemplar coverage for those topics.
+4. Newly discovered sub-topic variants and explicit `[GAP_FILL_REQUIRED]` / `[GAP_FILLED]` markers on any sub-topic with `< 3` PYQ instances so Pass 3 maintains 100% syllabus coverage.
 
-### Pass 3: High-Recall Topic Master Notes (`insights/topic_summaries/`)
+### Pass 3: In-Place Enrichment of Topic Master Notes (`insights/topic_summaries/{quant,dilr,varc}/`)
+Instead of creating separate per-paper markdown files, directly enrich the 20 modular topic master notes in place using questions flagged with `is_new_subtopic_or_variant` or `is_edge_example`:
+- Add any newly surfaced sub-topics, cross-topic hybrid variants, and `IF YOU SEE [Trigger] -> THINK [Shortcut]` rows.
+- Maintain a dedicated **`## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns`** section in each of the 20 topic modules containing actual solved PYQ edge examples (with question ID, problem statement/set structure, First-Principles derivation, 30-Second Exam-Hall Shortcut, and Trap Alert).
 
 #### 3A. Quantitative Ability Master Notes (`insights/topic_summaries/quant/`)
 - `01_arithmetic_percentages_pl_sici.md`
@@ -131,14 +136,16 @@ Compare `docs/syllabus/canonical_taxonomy.md` against all files in `extractions/
 - `03_va_parajumbles_and_odd_one_out_tita_mastery.md`
 - `04_va_parasummary_and_sentence_placement.md`
 
-### Pass 4: Sectional Mistake Patterns & Edge-Case Compendium (`insights/mistakes_and_edge_cases/`)
+### Pass 4: In-Place Enrichment of Sectional Mistake & Trap Manuals (`insights/mistakes_and_edge_cases/`)
+Using all questions flagged with `is_mistake_or_trap_worthy`, enrich the sectional mistake manuals in place with a dedicated **`## CAT 2025 Real PYQ Mistake Triggers & Edge Traps`** section citing the exact PYQ question IDs, naive trap answers, and prevention rules:
 1. `insights/mistakes_and_edge_cases/quant_pitfalls.md` — Complete catalogue of algebraic/geometric/number-theory domain traps, non-unique case omissions, and TITA traps.
 2. `insights/mistakes_and_edge_cases/dilr_traps.md` — Complete catalogue of constraint misinterpretations (`must be` vs `can be`, `only` placement, hidden zero/empty cases, unstated uniqueness assumptions).
 3. `insights/mistakes_and_edge_cases/varc_traps.md` — Complete catalogue of option-elimination traps, scope creeps, extreme qualifiers, and TITA para-jumble ordering illusions.
 
-### Pass 5: High-Recall Revision Assets & Pre-Submission Audit (`insights/high_recall/`)
+### Pass 5: High-Recall Cheat Sheets & Flashcard Sync (`insights/high_recall/`)
+Propagate newly discovered pattern triggers and edge traps into the last-mile rapid-revision assets:
 1. `insights/high_recall/cheat_sheets/QA_Formula_and_Trigger_Book.md` — Ultra-dense rapid-revision compendium of every CAT Quant formula, shortcut, Pythagorean/number triplet, fraction-percentage table, and `See X -> Do Y` trigger.
 2. `insights/high_recall/cheat_sheets/DILR_Archetype_Templates.md` — 1-page-per-archetype scratchpad templates, equations, and set-selection checklist.
 3. `insights/high_recall/cheat_sheets/VARC_Elimination_and_VA_Rules.md` — Rapid checklist for RC option elimination and VA TITA solving.
-4. `insights/high_recall/anki_flashcards.csv` — A 300+ card CSV (`Section,Topic,Front_Question_or_Cue,Back_Formula_Trigger_and_Trap`) ready for direct import into Anki/RemNote/Quizlet for daily active recall.
+4. `insights/high_recall/anki_flashcards.csv` — Spaced-repetition CSV (`Section,Topic,Front_Question_or_Cue,Back_Formula_Trigger_and_Trap`) ready for direct import into Anki/RemNote/Quizlet for daily active recall.
 5. `insights/CAT_Self_Audit_Checklist.md` — The 40-minute per-section exam-hall execution & pre-submission double-check protocol.

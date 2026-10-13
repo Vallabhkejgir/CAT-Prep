@@ -16,7 +16,14 @@
     "mental_trigger": "Subtract T + H + X = 15 from H + X + U = 16 immediately to get U = T + 1; then X = U + 6 = T + 7 <= 9 restricts T to {1, 2}!",
     "first_principles_method": "Let the digits be T, H, X, U. From U - T = 1 and X = U + 6, we have U = T + 1, X = T + 7, and H = 15 - T - (T + 7) = 8 - 2T. Since T >= 1 and X <= 9, T can only be 1 (number = 1682) or 2 (number = 2493). Difference = 2493 - 1682 = 811.",
     "speed_shortcut": "Increasing T by 1 changes H by -2, X by +1, U by +1, so the 4-digit number changes by 1000(1) + 100(-2) + 10(1) + 1(1) = 811!",
-    "boundary_conditions_and_traps": "T >= 1 since the number is greater than 1000 (so T = 0 giving 0871 is excluded)."
+    "boundary_conditions_and_traps": "T >= 1 since the number is greater than 1000 (so T = 0 giving 0871 is excluded).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/09_number_system_divisibility_factors_hcflcm_remainders_bases.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q02",
@@ -35,7 +42,15 @@
     "mental_trigger": "In ANY right trapezium circumscribing a circle of radius r with parallel bases a and b, the perpendicular leg is h = 2r and harmonic mean of bases is 2ab/(a+b) = 2r? Even faster: Drop tangents from C and B to get r + x? Wait: at right angles A and D, tangent lengths from A and D along AB and DC are r = 3! So DC = 3 + t1 and AB = 3 + t2 with t1*t2 = r^2 = 9!",
     "first_principles_method": "Height AD = 2r = 6. Let DC = x and AB = 3x. Since a circle is inscribed in ABCD, opposite sides sum equally: AB + DC = AD + BC => 4x = 6 + BC => BC = 4x - 6. Dropping an altitude from C to AB gives (4x - 6)^2 = 6^2 + (2x)^2 => 12x^2 = 48x => x = 4. Area = 0.5*(16)*6 = 48.",
     "speed_shortcut": "Since AD perp AB and DC, tangent segments at A and D have length r = 3. Let remaining tangent segments at C and B be t1, t2; then t1*t2 = r^2 = 9, DC = 3 + t1, AB = 3 + t2 = 3(3 + t1) => t1 = 1, t2 = 9 => DC = 4, AB = 12 => Area = 8 * 6 = 48!",
-    "boundary_conditions_and_traps": "Remember the identity t1 * t2 = r^2 for the two non-perpendicular corners of a right tangential trapezium."
+    "boundary_conditions_and_traps": "Remember the identity t1 * t2 = r^2 for the two non-perpendicular corners of a right tangential trapezium.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/07_geometry_triangles_circles_polygons.md",
+      "insights/topic_summaries/quant/08_geometry_mensuration_3d_coordinate_trig.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q03",
@@ -54,7 +69,14 @@
     "mental_trigger": "When v litres are transferred from pure vessel A (volume V) to pure vessel B (volume V) and v litres are transferred back, the final ratio of A-liquid to B-liquid in A is ALWAYS V : v!",
     "first_principles_method": "After step 1, A has (60 - v) alcohol; B has v alcohol and 60 water. Step 2 transfers v*(60/(60+v)) water into A, leaving 60v/(60+v) water and 3600/(60+v) alcohol in A. Their ratio is 3600 : 60v = 60 : v = 15 : 4 => v = 16.",
     "speed_shortcut": "By the V : v symmetric transfer identity, 60 : v = 15 : 4 => v = 16 in 5 seconds!",
-    "boundary_conditions_and_traps": "Do not use the repeated-replacement formula (which applies when vessel A stays at constant volume 60 during both steps); here B's volume temporarily becomes 60 + v."
+    "boundary_conditions_and_traps": "Do not use the repeated-replacement formula (which applies when vessel A stays at constant volume 60 during both steps); here B's volume temporarily becomes 60 + v.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q04",
@@ -73,7 +95,15 @@
     "mental_trigger": "Write |P \\ M| = |P| - |P n M| = 75 - 2k; to maximize 75 - 2k, minimize k subject to x = 4k - 76 >= 1!",
     "first_principles_method": "Sum of singletons = 75 + 111 + 40 = 226. Sum of pairwise intersections = k + k + 2k = 4k. By PIE, 150 = 226 - 4k + x => x = 4k - 76. Since x >= 1 and k is an integer, 4k >= 77 => k >= 20. At k = 20, x = 4, and |P \\ M| = 75 - 2(20) = 35.",
     "speed_shortcut": "4k = 76 + x with x >= 1 => smallest multiple of 4 above 76 is 80 (k = 20, x = 4) => 75 - 2(20) = 35.",
-    "boundary_conditions_and_traps": "Ignoring 'at least one student chose all three subjects' (x >= 1) sets x = 0, k = 19, giving the trap answer 75 - 38 = 37 (or if k=20 -> 35)."
+    "boundary_conditions_and_traps": "Ignoring 'at least one student chose all three subjects' (x >= 1) sets x = 0, k = 19, giving the trap answer 75 - 38 = 37 (or if k=20 -> 35).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/10_modern_math_pnc_probability_set_theory.md",
+      "insights/topic_summaries/dilr/05_venn_diagrams_and_4set_maxima_minima.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q05",
@@ -92,7 +122,14 @@
     "mental_trigger": "In isosceles triangle ABC (AB = AC) with E on the circumcircle (angle ACB = angle AEB), ALWAYS use AB^2 = AD * AE!",
     "first_principles_method": "Since AB = AC, angle ABD = angle ACB. Given angle ACB = angle AEB, we have angle ABD = angle AEB. With common angle BAD = angle EAB, triangle ABD is similar to triangle AEB by AA similarity. Therefore AB/AE = AD/AB => AE = 12^2 / 8 = 18.",
     "speed_shortcut": "Direct theorem: AB^2 = AD * AE => 144 = 8 * AE => AE = 18.",
-    "boundary_conditions_and_traps": "Do not confuse AE (18) with DE = AE - AD = 10."
+    "boundary_conditions_and_traps": "Do not confuse AE (18) with DE = AE - AD = 10.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/07_geometry_triangles_circles_polygons.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q06",
@@ -111,7 +148,14 @@
     "mental_trigger": "Use S_7 = S_3 * S_4 - S_1 and check ONLY the units digit of the coefficient of sqrt(3): 72 * 623 - 3 ends in 6 - 3 = 3!",
     "first_principles_method": "Let S_k = x^k + 1/x^k. Given S_2 = 25 => S_1 = sqrt(25 + 2) = 3*sqrt(3). Next, S_3 = S_1^3 - 3*S_1 = 81*sqrt(3) - 9*sqrt(3) = 72*sqrt(3), and S_4 = S_2^2 - 2 = 623. Using S_7 = S_3*S_4 - S_1 gives (72*623 - 3)*sqrt(3) = 44853*sqrt(3).",
     "speed_shortcut": "Units digit check on (72 * 623 - 3): 2 * 3 - 3 = 3 -> immediately selects (B) 44853*sqrt(3) without multiplying 72 * 623!",
-    "boundary_conditions_and_traps": "Forgetting to subtract S_1 = 3*sqrt(3) in S_3 * S_4 = S_7 + S_1 gives the trap answer (D) 44856*sqrt(3)!"
+    "boundary_conditions_and_traps": "Forgetting to subtract S_1 = 3*sqrt(3) in S_3 * S_4 = S_7 + S_1 gives the trap answer (D) 44856*sqrt(3)!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q07",
@@ -130,7 +174,14 @@
     "mental_trigger": "Equate remaining distance D = Delta_t1 * v(v + s1)/s1 = Delta_t2 * v(v + s2)/s2 => (v + s1)/s1 * Delta_t1 = (v + s2)/s2 * Delta_t2!",
     "first_principles_method": "Let remaining distance after the stop be D. Saving 20 min requires +3 km/h, and saving 30 min (20 + 10) requires +5 km/h: D = (20/60)*v(v+3)/3 = (30/60)*v(v+5)/5 => 20(v+3)/3 = 30(v+5)/5 => (v+3)/9 = (v+5)/10 => v = 15.",
     "speed_shortcut": "(v + 3)/9 = (v + 5)/10 => v = 15 in 10 seconds (notice the 5 pm to 11 pm window is completely extraneous!).",
-    "boundary_conditions_and_traps": "'10 minutes more' means total stop = 20 + 10 = 30 minutes (not 10 minutes)."
+    "boundary_conditions_and_traps": "'10 minutes more' means total stop = 20 + 10 = 30 minutes (not 10 minutes).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/03_arithmetic_time_work_tsd_races_circular_tracks.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q08",
@@ -149,7 +200,14 @@
     "mental_trigger": "Before applying Vieta sum of roots (which gives the trap answer 3!), ALWAYS enforce log base > 0 => x > 3!",
     "first_principles_method": "Domain requires x - 3 > 0, x - 3 != 1, x^2 - 9 > 0, x + 1 > 0 => x > 3, x != 4. Then x^2 - 9 = (x + 1)(x - 3)^2 => x + 3 = x^2 - 2x - 3 => x^2 - 3x - 6 = 0. Roots are (3 + sqrt(33))/2 approx 4.37 > 3 (valid) and (3 - sqrt(33))/2 approx -1.37 < 3 (rejected). Thus the only real root is (3 + sqrt(33))/2.",
     "speed_shortcut": "Spot that one root of x^2 - 3x - 6 = 0 is negative (product = -6 < 0) and must be rejected by x > 3, leaving only the single positive root (3 + sqrt(33))/2 (Option C).",
-    "boundary_conditions_and_traps": "Blindly taking Vieta's sum of roots -b/a = 3 without rejecting the negative root (3 - sqrt(33))/2 falls straight into trap (D) 3!"
+    "boundary_conditions_and_traps": "Blindly taking Vieta's sum of roots -b/a = 3 without rejecting the negative root (3 - sqrt(33))/2 falls straight into trap (D) 3!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/05_algebra_functions_graphs_logs_surds.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q09",
@@ -168,7 +226,14 @@
     "mental_trigger": "Equate total units before and after internal transfer: 17+7 = 24, 37+20 = 57; LCM(24, 57) = 456 (since 24=3*8, 57=3*19), and 1:1 target is 456/2 = 228 units!",
     "first_principles_method": "(17x - 108)/(7x + 108) = 37/20 => 81x = 6156 => x = 76. Total coins = 24 * 76 = 1824, so 1:1 means 912 coins each. Box A currently has 17(76) - 108 = 1184 coins, so 1184 - 912 = 272 more coins must be shifted.",
     "speed_shortcut": "In 456-unit scale: A drops from 323 -> 296 (27 units = 108 => 1 unit = 4 coins) and needs to reach 228 (68 units * 4 = 272 coins).",
-    "boundary_conditions_and_traps": "The question asks how many coins need to be shifted FURTHER (272), not total shifted from the start (108 + 272 = 380)."
+    "boundary_conditions_and_traps": "The question asks how many coins need to be shifted FURTHER (272), not total shifted from the start (108 + 272 = 380).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q10",
@@ -187,7 +252,14 @@
     "mental_trigger": "Convert 15 hours to 900 minutes first, then multiply by 4 / (4 + 9 + 36) = 4/49.",
     "first_principles_method": "Total time in minutes = (15 * 60) * 4 / (4 + 9 + 36) = 3600 / 49 = 73.469 minutes, nearest to 73.",
     "speed_shortcut": "3600 / 49 = 73 + 23/49 -> 73.",
-    "boundary_conditions_and_traps": "Pay attention to unit conversion from hours (15 h) to minutes (900 min)."
+    "boundary_conditions_and_traps": "Pay attention to unit conversion from hours (15 h) to minutes (900 min).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/03_arithmetic_time_work_tsd_races_circular_tracks.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q11",
@@ -206,7 +278,14 @@
     "mental_trigger": "Take Total Work = LCM(5*40, 8*50, 10*4) = LCM(200, 400, 40) = 400 units so each B-member has efficiency = 1 unit/hour!",
     "first_principles_method": "Set Total Work = 400 units. Individual efficiencies: a = 400/200 = 2, b = 400/400 = 1, c = 400/40 = 10 units/hr. In 23 hours, (2a + 3b + c) completes 23*(4 + 3 + 10) = 391 units. Remaining 9 units in 1 hour require 2a + (3 + x)b = 4 + 3 + x = 9 => x = 2 additional B-members.",
     "speed_shortcut": "1 member of C (rate 10) equals 10 members of B (rate 1). Over 24 hours, 2A + 3B + 1C would do 24*17 = 408 units (8 units excess). Removing 1C in the last hour loses 10 units, leaving a net deficit of 10 - 8 = 2 units = 2 B-members!",
-    "boundary_conditions_and_traps": "The question asks for ADDITIONAL members from Team B (2), not the total members from Team B (3 + 2 = 5)."
+    "boundary_conditions_and_traps": "The question asks for ADDITIONAL members from Team B (2), not the total members from Team B (3 + 2 = 5).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/03_arithmetic_time_work_tsd_races_circular_tracks.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q12",
@@ -225,7 +304,14 @@
     "mental_trigger": "Since v_run / v_walk = 7/5, multiply by 7/5 to convert Run time -> Walk time, and by 5/7 to convert Walk time -> Run time!",
     "first_principles_method": "3 hours 30 minutes = 210 minutes. Since running speed is 7/5 of walking speed, time taken is inversely proportional (5/7). Thus Walk(AB) = (7/5)*Run(BA) = (7/5)*210 = 294 min, and Run(BC) = (5/7)*Walk(BC) = (5/7)*210 = 150 min. Total = 294 + 150 = 444 min.",
     "speed_shortcut": "210 * (7/5 + 5/7) = 210 * (74/35) = 6 * 74 = 444 minutes!",
-    "boundary_conditions_and_traps": "Keep all times in minutes (3 hr 30 min = 210 min)."
+    "boundary_conditions_and_traps": "Keep all times in minutes (3 hr 30 min = 210 min).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/03_arithmetic_time_work_tsd_races_circular_tracks.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q13",
@@ -244,7 +330,14 @@
     "mental_trigger": "Decompose every composite base (12, 4, 8, 20, 243) into primes {2, 3, 5} and equate exponents of 3 first to find x!",
     "first_principles_method": "Comparing exponents of 3: 12x = 5(3x - 6) => 3x = 30 => x = 10. Comparing exponents of 5: 2y = 12x = 120 => y = 60. Comparing exponents of 2: 24x + 2(24x + 12) = 12z + 24x => 12z = 48x + 24 = 504 => z = 42. Therefore x + y + z = 10 + 60 + 42 = 112.",
     "speed_shortcut": "In base 2, cancel 24x (from 12^(12x) and 20^(12x)) on both sides before expanding: 4^(24x+12) = 8^(4z) => 48x + 24 = 12z => z = 4x + 2 = 42!",
-    "boundary_conditions_and_traps": "Cancelling 4^(12x) from 12^(12x) and 20^(12x) immediately saves half the exponent arithmetic."
+    "boundary_conditions_and_traps": "Cancelling 4^(12x) from 12^(12x) and 20^(12x) immediately saves half the exponent arithmetic.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/05_algebra_functions_graphs_logs_surds.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q14",
@@ -263,7 +356,14 @@
     "mental_trigger": "10^25 - 123 has 25 digits: (25 - 3) = 22 nines followed by (1000 - 123) = 877; 10^50 just adds a single digit '1' at the front!",
     "first_principles_method": "10^25 - 123 = 99...9877 (with twenty-two 9s and 877). Since 10^50 is at the 51st place, 10^50 + (10^25 - 123) has non-zero digits: one 1, twenty-two 9s, one 8, and two 7s. Digit sum = 1 + 22(9) + 8 + 7 + 7 = 221.",
     "speed_shortcut": "Mod 9 check: 10^50 + 10^25 - 123 == 1 + 1 - 6 = -4 == 5 (mod 9). Among (A) 21 (3), (B) 221 (5), (C) 324 (0), (D) 255 (3), ONLY (B) 221 leaves remainder 5 mod 9!",
-    "boundary_conditions_and_traps": "Digital-root / Modulo-9 invariant solves this question in 5 seconds without counting how many 9s appear!"
+    "boundary_conditions_and_traps": "Digital-root / Modulo-9 invariant solves this question in 5 seconds without counting how many 9s appear!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/09_number_system_divisibility_factors_hcflcm_remainders_bases.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q15",
@@ -282,7 +382,14 @@
     "mental_trigger": "u(u + 2) + 1 = (u + 1)^2, so sqrt(f(x) + 1) = |x^2 + 3x + 1|; check which branch has real roots!",
     "first_principles_method": "Since (x^2 + 3x)(x^2 + 3x + 2) + 1 = (x^2 + 3x + 1)^2, the equation becomes |x^2 + 3x + 1| = 9701. Branch 1: x^2 + 3x - 9700 = 0 has two real roots with sum -3. Branch 2: x^2 + 3x + 9702 = 0 has discriminant 9 - 4(9702) < 0 (no real roots). Thus the sum of all real roots is -3.",
     "speed_shortcut": "The parabola x^2 + 3x + 1 is symmetric about x = -3/2; only the upper horizontal line y = 9701 intersects it (in 2 real points), whose sum is 2*(-3/2) = -3 (Option B).",
-    "boundary_conditions_and_traps": "Adding the non-real roots of the second branch gives the classic trap answer (C) -6."
+    "boundary_conditions_and_traps": "Adding the non-real roots of the second branch gives the classic trap answer (C) -6.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q16",
@@ -301,7 +408,14 @@
     "mental_trigger": "Cross-multiply y = P(x)/Q(x) into a quadratic in x and set Discriminant Delta(y) >= 0, factoring out common binomials before expanding!",
     "first_principles_method": "Rearranging into a quadratic in x yields 2y*x^2 + 2(2y - 1)x + 3(1 - 2y) = 0. For real x, Delta/4 = (2y - 1)^2 - 6y(1 - 2y) = (2y - 1)(2y - 1 + 6y) = (2y - 1)(8y - 1) >= 0, yielding y <= 1/8 or y >= 1/2.",
     "speed_shortcut": "Factor (2y - 1) out of the discriminant immediately: (2y - 1)[(2y - 1) + 6y] = (2y - 1)(8y - 1) >= 0 -> critical points are 1/8 and 1/2 (Option B).",
-    "boundary_conditions_and_traps": "Never expand (2y - 1)^2 and 6y(2y - 1) separately when (2y - 1) is a common factor!"
+    "boundary_conditions_and_traps": "Never expand (2y - 1)^2 and 6y(2y - 1) separately when (2y - 1) is a common factor!",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/05_algebra_functions_graphs_logs_surds.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q17",
@@ -320,7 +434,14 @@
     "mental_trigger": "Notice monthly sales (120, 135, 150, 165) form an AP with mean 142.5 (total = 4 * 142.5 = 570), and effective MP coefficient is 96 + 121.5 + 142.5 + 165 = 525!",
     "first_principles_method": "Total Cost = (120 + 135 + 150 + 165) * 240 = 570 * 240 = 136800. Total Revenue = 136800 + 138825 = 275625. Also Total Revenue = MP * (120*0.80 + 135*0.90 + 150*0.95 + 165*1.00) = 525 * MP. Hence MP = 275625 / 525 = 525.",
     "speed_shortcut": "Since 525 * MP = 275625 ends in 25 and 525 = 21 * 25, test MP = 525: 525^2 = (52 * 53) concatenated with 25 = 275625! Exact match!",
-    "boundary_conditions_and_traps": "Recognizing 275625 = 525^2 via the (n*10 + 5)^2 shortcut makes the final division instantaneous."
+    "boundary_conditions_and_traps": "Recognizing 275625 = 525^2 via the (n*10 + 5)^2 shortcut makes the final division instantaneous.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/01_arithmetic_percentages_pl_sici.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q18",
@@ -339,7 +460,14 @@
     "mental_trigger": "Split the 50-50-80 triangle into two 30-40-50 right triangles; then h_b = h_c = (80 * 30)/50 = 48!",
     "first_principles_method": "Drop altitude h_a to BC = 80: by Pythagoras on half-base 40 and hypotenuse 50, h_a = 30 cm. By area invariance, 50 * h_b = 50 * h_c = 80 * 30 = 2400 => h_b = h_c = 48 cm. Sum = 30 + 48 + 48 = 126 cm.",
     "speed_shortcut": "h_a = 30, h_b = h_c = 48 -> 30 + 96 = 126.",
-    "boundary_conditions_and_traps": "Remember there are THREE altitudes (count both equal altitudes of length 48)."
+    "boundary_conditions_and_traps": "Remember there are THREE altitudes (count both equal altitudes of length 48).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/07_geometry_triangles_circles_polygons.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q19",
@@ -358,7 +486,14 @@
     "mental_trigger": "Convert 0.3q <= p <= 0.7q into fractions of S = p + q: (3/13)S <= p <= (7/17)S! Notice 416 = 900 - 484 is divisible by 13, and 731 = 900 - 169 is divisible by 17!",
     "first_principles_method": "Since p + q = 900 - r and 3/10 <= p/q <= 7/10, p/(p+q) lies in [3/13, 7/17]. For r in {13^2=169, ..., 22^2=484}: to minimize p, take largest r = 484 (p+q = 416), giving p_min = (3/13)*416 = 96. To maximize p, take smallest r = 169 (p+q = 731), giving p_max = (7/17)*731 = 301. Sum = 96 + 301 = 397.",
     "speed_shortcut": "900 - 22^2 = 416 = 13 * 32 => p_min = 3 * 32 = 96; 900 - 13^2 = 731 = 17 * 43 => p_max = 7 * 43 = 301. Sum = 397.",
-    "boundary_conditions_and_traps": "The divisibility of 416 by 13 and 731 by 17 confirms you have the exact intended boundary squares (484 and 169)."
+    "boundary_conditions_and_traps": "The divisibility of 416 by 13 and 731 by 17 confirms you have the exact intended boundary squares (484 and 169).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q20",
@@ -377,7 +512,14 @@
     "mental_trigger": "If a 20% raise for managers produces a 5% raise in the overall mean, managers hold 5/20 = 25% of the total wage pool, so engineers hold 75% of the total wage pool!",
     "first_principles_method": "Total initial salary = 30 * 60000 = 1800000. Increase = 5% of 1800000 = 90000 = 20% of managers' total salary => managers' total = 450000. Engineers' total = 1800000 - 450000 = 1350000 across 25 engineers => average = 1350000 / 25 = 54000.",
     "speed_shortcut": "Engineers get 75% of total pay while being 25/30 = 5/6 of the headcount, so their average is (3/4) / (5/6) * 60000 = (9/10) * 60000 = 54000!",
-    "boundary_conditions_and_traps": "None; 15-second sitter."
+    "boundary_conditions_and_traps": "None; 15-second sitter.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q21",
@@ -396,7 +538,14 @@
     "mental_trigger": "Take Rs 1000 (Arts fee) as the assumed baseline: total fee 15,50,000 exceeds 1500 * 1000 by +50,000, so +100*S - 200*C = 50,000 => S - 2C = 500!",
     "first_principles_method": "Deviation from Rs 1000/student: 100S + 0A - 200C = 50000 => S = 500 + 2C. Since S + A + C = 1500 and S <= A, we have 2S + C <= 1500 => 2(500 + 2C) + C <= 1500 => 5C <= 500 => C <= 100. Thus max S = 500 + 2(100) = 700.",
     "speed_shortcut": "To maximize S with S <= A, set S = A: then 2S + C = 1500 and S - 2C = 500 => C = 100, S = 700.",
-    "boundary_conditions_and_traps": "'Not more than' means S <= A (equality S = A = 700 is permitted)."
+    "boundary_conditions_and_traps": "'Not more than' means S <= A (equality S = A = 700 is permitted).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S3_QA_Q22",
@@ -415,6 +564,13 @@
     "mental_trigger": "T4 + T7 + T10 = 3*T7 gives T7 = 33 immediately; S14/14 = 35.5 = T7 + 0.5d gives 0.5d = 2.5 => d = 5!",
     "first_principles_method": "From T4 + T7 + T10 = 3(a + 6d) = 99, a + 6d = 33. From S14 = 7(2a + 13d) = 497, 2a + 13d = 71. Solving gives d = 5 and a = 3. Finally, S5 = 5(a + 2d) = 5(3 + 10) = 65.",
     "speed_shortcut": "Average of first 14 terms is T_7.5 = 497/14 = 35.5. Since T_7 = 99/3 = 33, half-step 0.5d = 2.5 => d = 5! Then T_3 = T_7 - 4d = 33 - 20 = 13, and S_5 = 5 * T_3 = 65!",
-    "boundary_conditions_and_traps": "Using S_{2k-1} = (2k-1)*T_k avoids computing the first term a."
+    "boundary_conditions_and_traps": "Using S_{2k-1} = (2k-1)*T_k avoids computing the first term a.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/06_algebra_sequences_series_maxima_minima.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   }
 ]

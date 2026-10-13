@@ -176,3 +176,78 @@ A: Exterior angle = 180 - 156 = 24 degrees -> n = 360 / 24 = 15 sides. Number of
 <details><summary>Q10: A triangle has sides 13, 14, and 15. Find its inradius r and circumradius R.</summary>
 A: Semi-perimeter s = 21. Area = sqrt(21 * 8 * 7 * 6) = 84. Thus r = Area / s = 84 / 21 = 4, and R = abc / (4 * Area) = (13 * 14 * 15) / (4 * 84) = 65 / 8 = 8.125.
 </details>
+
+---
+
+## CAT 2025 PYQ Edge Examples & Newly Surfaced Patterns
+
+### Newly Surfaced Sub-Topic Variants & Pattern Triggers (CAT 2025)
+- **Third-Tangent Center Angle Theorem (`CAT_2025_QA_Slot_2` / `CAT2025_S2_QA_Q02`)**: A tangent segment $AB$ intercepted between two tangents $PA, PB$ from external point $P$ to a circle with center $O$ subtends $\angle AOB = 90^\circ - \frac{1}{2}\angle APB$.
+- **Tangential Right-Trapezium Pitot Identity (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q02`)**: A trapezium with an inscribed circle satisfies $AB + CD = AD + BC$ and height $h = 2r$; if right-angled at $A$ and $D$, the inclined leg is $BC = a + b - 2r$.
+- **Circumcircle Secant Similarity in Isosceles Triangles (`CAT_2025_QA_Slot_3` / `CAT2025_S3_QA_Q05`)**: Extending median/cevian $AD$ to meet the circumcircle at $E$ gives $\triangle ABD \sim \triangle AEB \implies AB^2 = AD \cdot AE$.
+
+### Solved CAT 2025 PYQ Edge Exemplars
+
+#### CAT2025_S1_QA_Q12 (`CAT_2025_QA_Slot_1` | MCQ | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Circles — *Parallel chords on opposite sides of a circle center and trapezium area*
+- **Verified Answer**: `(A) 20(3 + sqrt(14))` (Radius R = 6*sqrt(2). In isosceles triangle PCQ with angle PQC = 45 deg, perp distance d1 = R*sin(45) = 6 cm and chord PQ = 12 cm. Since d1:d2 = 3:2, d2 = 4 cm. Half-chord of SR = sqrt(72 - 16) = 2*sqrt(14) => SR = 4*sqrt(14). Area of trapezium PQRS = (1/2)*(12 + 4*sqrt(14))*(6 + 4) = 20(3 + sqrt(14)).)
+- **Mental Trigger (`See X -> Do Y`)**: Separated by a diameter means the two parallel chords lie on opposite sides of center C, so trapezium height h = d1 + d2 (not |d1 - d2|).
+- **First-Principles Method**: In triangle CPQ, CP = CQ = 6*sqrt(2) and angle PQC = 45 deg, so angle PCQ = 90 deg, distance d1 = 6, and PQ = 12. From d1 : d2 = 3 : 2, d2 = 4. Then SR = 2*sqrt((6*sqrt(2))^2 - 4^2) = 4*sqrt(14). Since PQ and SR are separated by a diameter, height = d1 + d2 = 10, so Area = 0.5*(12 + 4*sqrt(14))*10 = 20(3 + sqrt(14)).
+- **30-Second Exam-Hall Speed Shortcut**: Once d2 = 4 and R^2 = 72 give sqrt(72 - 16) = sqrt(56) = 2*sqrt(14), only Options (A) and (C) contain sqrt(14); since h = 6 + 4 = 10 (not 6 - 4 = 2), Option (A) with factor 20 wins.
+- **Trap Alert & Boundary Condition**: Taking height as d1 - d2 = 2 instead of d1 + d2 = 10 gives the trap answer (C) 4(3 + sqrt(14)).
+
+#### CAT2025_S1_QA_Q18 (`CAT_2025_QA_Slot_1` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Quadrilaterals & Polygons — *Rhombus diagonal-side identity d1^2 + d2^2 = 4a^2 and area (1/2)d1*d2*
+- **Verified Answer**: `60` (In a rhombus, d1^2 + d2^2 = 4a^2 = 4*(36^2) = 5184 and d1*d2 = 2*Area = 792. Thus (d1 - d2)^2 = 5184 - 2(792) = 3600 => |d1 - d2| = 60.)
+- **Mental Trigger (`See X -> Do Y`)**: Whenever rhombus side a and area A are given, use |d1 - d2| = sqrt(4a^2 - 4A) directly without solving for d1 and d2 separately.
+- **First-Principles Method**: Since diagonals of a rhombus bisect each other at 90 deg, (d1/2)^2 + (d2/2)^2 = a^2 => d1^2 + d2^2 = 4a^2 = 5184. Also (1/2)d1*d2 = 396 => 2d1*d2 = 1584. Hence (d1 - d2)^2 = 5184 - 1584 = 3600 => |d1 - d2| = 60.
+- **30-Second Exam-Hall Speed Shortcut**: |d1 - d2| = 2*sqrt(a^2 - A) = 2*sqrt(1296 - 396) = 2*sqrt(900) = 60.
+- **Trap Alert & Boundary Condition**: Memorize |d1 - d2| = 2*sqrt(a^2 - Area) and d1 + d2 = 2*sqrt(a^2 + Area) for any rhombus.
+
+#### CAT2025_S2_QA_Q02 (`CAT_2025_QA_Slot_2` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Circles — *Third-tangent theorem for angle subtended at the center of a circle*
+- **Verified Answer**: `80` (Let AB touch the circle at M. Then OA bisects angle QOM and OB bisects angle ROM, so angle QOR = 2 * angle AOB = 100 deg. In quadrilateral PQOR, angle OQP = angle ORP = 90 deg, so angle APB = 180 - angle QOR = 80 deg.)
+- **Mental Trigger (`See X -> Do Y`)**: When tangent segment AB intercepted between two tangents PQ and PR subtends angle AOB at center O, use angle AOB = 90 - (1/2) angle APB => angle APB = 180 - 2 * angle AOB.
+- **First-Principles Method**: Let AB touch the circle at M. By tangent symmetry, triangle OQA is congruent to triangle OMA and triangle ORB is congruent to triangle OMB. Thus angle QOR = 2 * angle AOB = 100 deg. Since OQ perp PQ and OR perp PR, angle APB = 180 - 100 = 80 deg.
+- **30-Second Exam-Hall Speed Shortcut**: Apply the standard identity angle APB = 180 - 2(50) = 80 in 5 seconds.
+- **Trap Alert & Boundary Condition**: Do not confuse angle AOB (50 deg) with angle QOR (100 deg); taking 180 - 50 = 130 is the classic trap.
+
+#### CAT2025_S2_QA_Q03 (`CAT_2025_QA_Slot_2` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Quadrilaterals & Polygons — *Regular hexagon decomposition into equilateral triangles and midline scaling*
+- **Verified Answer**: `(B) 5 : 24` (Set regular hexagon side = 2. Area(ABCDEF) = 6 * sqrt(3). In trapezium PBCQ, BC = 2, PB = QC = 1, interior angles at B and C are 120 deg, so PQ = 2 + 2*(1*cos 60) = 3 and height h = 1*sin 60 = sqrt(3)/2. Area(PBCQ) = 0.5*(2 + 3)*(sqrt(3)/2) = (5/4)*sqrt(3). Ratio = (5/4) : 6 = 5 : 24.)
+- **Mental Trigger (`See X -> Do Y`)**: In a regular hexagon of side 2a, the long diagonal CF has length 4a; since P and Q are midpoints of AB and CD, PQ is the mid-segment of trapezium ABCF, so PQ = (2a + 4a)/2 = 3a!
+- **First-Principles Method**: Half the hexagon (trapezium ABCF) has parallel sides AB = 2a and CF = 4a, and area = 3 equilateral triangles = 12 sub-triangles. Since P and Q are midpoints of the slant sides AB and CD (symmetric to BC and AD), PQ has length (2a + 3a)... wait: BC = 2a, AD = 4a, and P, Q are midpoints of AB, CD, so PQ is the midline of trapezium ABCD! Thus PQ = (BC + AD)/2 = 3a, height is half the height of ABCD, and Area(PBCQ)/Area(ABCD) = ((2a + 3a)/2) / ((2a + 4a)/2) * (1/2) = 5/12 of half-hexagon = 5/24 of full hexagon!
+- **30-Second Exam-Hall Speed Shortcut**: Trapezium ABCD is half the hexagon (12/24). Midline PQ divides trapezium ABCD (bases 2 and 4, midline 3) into two strips of area ratio (2+3) : (3+4) = 5 : 7. So PBCQ is (5/12) * (1/2) = 5/24 of the hexagon!
+- **Trap Alert & Boundary Condition**: Remember trapezium ABCD is HALF the hexagon (not the whole hexagon), so multiply 5/12 by 1/2 to get 5/24.
+
+#### CAT2025_S2_QA_Q19 (`CAT_2025_QA_Slot_2` | MCQ | Medium | `Round_2_Doable`)
+- **Sub-Topic**: Lines, Angles & Triangles — *Mass Point Geometry / Menelaus theorem on intersecting cevians*
+- **Verified Answer**: `(B) 11 : 4` (AT : TD = 3 : 1 and BT : TE = 4 : 1. By Mass Point Geometry on triangle ABC with cevians AD and BE intersecting at T: m_A : (m_B + m_C) = 1 : 3 and m_B : (m_A + m_C) = 1 : 4. Setting m_A = 4 gives m_B + m_C = 12 and 4m_B = 4 + m_C => m_B = 16/5, m_C = 44/5. Thus BD : CD = m_C : m_B = 44 : 16 = 11 : 4.)
+- **Mental Trigger (`See X -> Do Y`)**: Intersecting cevians AD and BE with given internal ratios AT:TD and BT:TE -> apply Mass Point Geometry (note that point F with DF || BE is a red herring!).
+- **First-Principles Method**: Since DF || BE, by Thales theorem in triangle BCE, EF : FC = BD : CD, and in triangle ADF, TE || DF gives AT : TD = AE : EF = 3 : 1. Alternatively by Mass Points: AT/TD = (m_B + m_C)/m_A = 3/1 and BT/TE = (m_A + m_C)/m_B = 4/1. Solving gives m_A : m_B : m_C = 20 : 16 : 44 = 5 : 4 : 11, so BD : CD = m_C : m_B = 11 : 4.
+- **30-Second Exam-Hall Speed Shortcut**: Using DF || BE: let AT = 3, TD = 1 => AE = 3x, EF = x. Then in triangle BCE, DF / BE = 1/3? No, in triangle ADF, TE/DF = AT/AD = 3/4, and BT/TE = 4/1 => BT : TE : DF = 12 : 3 : 4 => BE : DF = 15 : 4 => BC : DC = 15 : 4 => BD : CD = (15 - 4) : 4 = 11 : 4!
+- **Trap Alert & Boundary Condition**: BC : CD is 15 : 4 (distractor A), whereas the question asks for BD : CD = (15 - 4) : 4 = 11 : 4 (Option B)!
+
+#### CAT2025_S3_QA_Q02 (`CAT_2025_QA_Slot_3` | MCQ | Medium | `Round_1_Sitter`)
+- **Sub-Topic**: Quadrilaterals & Polygons — *Tangential right-trapezium properties (Pitot's theorem AB + CD = AD + BC)*
+- **Verified Answer**: `(C) 48` (Height AD = 2r = 6 cm. Let DC = x, AB = 3x. By Pitot's theorem for tangential quadrilateral ABCD, BC + AD = AB + DC => BC = 4x - 6. By Pythagoras on right triangle with legs 6 and 2x: (4x - 6)^2 = 36 + 4x^2 => 12x^2 - 48x = 0 => x = 4. Area = 0.5*(4 + 12)*6 = 48.)
+- **Mental Trigger (`See X -> Do Y`)**: In ANY right trapezium circumscribing a circle of radius r with parallel bases a and b, the perpendicular leg is h = 2r and harmonic mean of bases is 2ab/(a+b) = 2r? Even faster: Drop tangents from C and B to get r + x? Wait: at right angles A and D, tangent lengths from A and D along AB and DC are r = 3! So DC = 3 + t1 and AB = 3 + t2 with t1*t2 = r^2 = 9!
+- **First-Principles Method**: Height AD = 2r = 6. Let DC = x and AB = 3x. Since a circle is inscribed in ABCD, opposite sides sum equally: AB + DC = AD + BC => 4x = 6 + BC => BC = 4x - 6. Dropping an altitude from C to AB gives (4x - 6)^2 = 6^2 + (2x)^2 => 12x^2 = 48x => x = 4. Area = 0.5*(16)*6 = 48.
+- **30-Second Exam-Hall Speed Shortcut**: Since AD perp AB and DC, tangent segments at A and D have length r = 3. Let remaining tangent segments at C and B be t1, t2; then t1*t2 = r^2 = 9, DC = 3 + t1, AB = 3 + t2 = 3(3 + t1) => t1 = 1, t2 = 9 => DC = 4, AB = 12 => Area = 8 * 6 = 48!
+- **Trap Alert & Boundary Condition**: Remember the identity t1 * t2 = r^2 for the two non-perpendicular corners of a right tangential trapezium.
+
+#### CAT2025_S3_QA_Q05 (`CAT_2025_QA_Slot_3` | MCQ | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Lines, Angles & Triangles — *Circumcircle chord-secant similarity (AB^2 = AD * AE in isosceles triangle)*
+- **Verified Answer**: `(A) 18` (Since AB = AC = 12, angle ABC = angle ACB = angle AEB. In triangles ABD and AEB, angle BAE is common and angle ABD = angle AEB. Thus triangle ABD ~ triangle AEB, giving AB/AE = AD/AB => AE = AB^2 / AD = 144 / 8 = 18.)
+- **Mental Trigger (`See X -> Do Y`)**: In isosceles triangle ABC (AB = AC) with E on the circumcircle (angle ACB = angle AEB), ALWAYS use AB^2 = AD * AE!
+- **First-Principles Method**: Since AB = AC, angle ABD = angle ACB. Given angle ACB = angle AEB, we have angle ABD = angle AEB. With common angle BAD = angle EAB, triangle ABD is similar to triangle AEB by AA similarity. Therefore AB/AE = AD/AB => AE = 12^2 / 8 = 18.
+- **30-Second Exam-Hall Speed Shortcut**: Direct theorem: AB^2 = AD * AE => 144 = 8 * AE => AE = 18.
+- **Trap Alert & Boundary Condition**: Do not confuse AE (18) with DE = AE - AD = 10.
+
+#### CAT2025_S3_QA_Q18 (`CAT_2025_QA_Slot_3` | TITA | Easy | `Round_1_Sitter`)
+- **Sub-Topic**: Lines, Angles & Triangles — *Altitudes of an isosceles triangle via area invariance (a*h_a = b*h_b = c*h_c = 2*Area)*
+- **Verified Answer**: `126` (In isosceles triangle ABC (50, 50, 80), altitude to base 80 is sqrt(50^2 - 40^2) = 30 cm, and Area = 0.5 * 80 * 30 = 1200 sq cm. Altitudes to the two equal sides of 50 cm are each 2*1200 / 50 = 48 cm. Sum of altitudes = 30 + 48 + 48 = 126 cm.)
+- **Mental Trigger (`See X -> Do Y`)**: Split the 50-50-80 triangle into two 30-40-50 right triangles; then h_b = h_c = (80 * 30)/50 = 48!
+- **First-Principles Method**: Drop altitude h_a to BC = 80: by Pythagoras on half-base 40 and hypotenuse 50, h_a = 30 cm. By area invariance, 50 * h_b = 50 * h_c = 80 * 30 = 2400 => h_b = h_c = 48 cm. Sum = 30 + 48 + 48 = 126 cm.
+- **30-Second Exam-Hall Speed Shortcut**: h_a = 30, h_b = h_c = 48 -> 30 + 96 = 126.
+- **Trap Alert & Boundary Condition**: Remember there are THREE altitudes (count both equal altitudes of length 48).

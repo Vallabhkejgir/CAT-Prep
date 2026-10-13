@@ -16,7 +16,14 @@
     "mental_trigger": "When two components have a fixed ratio (Bonds : Gold = 1 : 4), combine them into a single composite asset with weighted return (1*6% + 4*8%)/5 = 7.6% and apply Alligation against Stocks (10%).",
     "first_principles_method": "Set B = 0.25G => G = 4B and S = 100000 - 5B. Substitute into 0.10S + 0.06B + 0.08G = 8200 to get 10000 - 0.12B = 8200 => B = 15000, so gain from bonds = 0.06 * 15000 = 900.",
     "speed_shortcut": "Composite rate of (Bonds+Gold) in 1:4 ratio is (6+32)/5 = 7.6%. Overall rate is 8.2%. By Alligation between Stocks (10%) and (B+G) (7.6%): weight of (B+G) is (10 - 8.2)/(10 - 7.6) = 1.8/2.4 = 3/4 of 100000 = 75000. Bonds = 1/5 of 75000 = 15000; 6% of 15000 = 900.",
-    "boundary_conditions_and_traps": "Do not report the bond principal (15000) instead of the bond gain (900). Always re-read the final noun phrase in TITA questions."
+    "boundary_conditions_and_traps": "Do not report the bond principal (15000) instead of the bond gain (900). Always re-read the final noun phrase in TITA questions.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/01_arithmetic_percentages_pl_sici.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q02",
@@ -35,7 +42,14 @@
     "mental_trigger": "When 2 equations have 3 variables (a, b, c) and the coefficients of b and c maintain a constant ratio (-6:6 = 3:-3 = -1:1), collapse (3b - 3c) into a single block variable Y.",
     "first_principles_method": "Define Y = 3b - 3c. The system becomes a - 2Y = 4 and 6a + Y = 50. Multiply the second equation by 2 and add: 13a = 104 => a = 8, Y = 2. Thus 2a + Y = 16 + 2 = 18.",
     "speed_shortcut": "Set c = 0 immediately (since the system holds for all real b, c satisfying the linear relation). Solve a - 6b = 4 and 6a + 3b = 50 => a = 8, 3b = 2 => 2a + 3b = 18.",
-    "boundary_conditions_and_traps": "Never waste time trying to solve for b and c individually; in indeterminate systems, setting one free variable to 0 is valid whenever the target expression is invariant."
+    "boundary_conditions_and_traps": "Never waste time trying to solve for b and c individually; in indeterminate systems, setting one free variable to 0 is valid whenever the target expression is invariant.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q03",
@@ -54,7 +68,14 @@
     "mental_trigger": "When 3 vertices of parallelogram PQRS are given in cyclic order, immediately use P + R = Q + S => S = P + R - Q.",
     "first_principles_method": "Midpoint of PR equals midpoint of QS, so S = (-3 + 9 - 1, -2 + 1 - (-5)) = (5, 4). The equation of line QS through (1, -5) and (5, 4) is (y + 5)/(4 + 5) = (x - 1)/(5 - 1). At y = 0, (x - 1)/4 = 5/9 => x = 29/9.",
     "speed_shortcut": "Since y_Q = -5 and y_S = 4, the x-axis (y = 0) divides segment QS internally in the ratio 5 : 4. Thus a = (5*x_S + 4*x_Q)/(5 + 4) = (5*5 + 4*1)/9 = 29/9.",
-    "boundary_conditions_and_traps": "Preserve cyclic vertex order P-Q-R-S: opposite vertices are (P, R) and (Q, S), NOT (P, Q)."
+    "boundary_conditions_and_traps": "Preserve cyclic vertex order P-Q-R-S: opposite vertices are (P, R) and (Q, S), NOT (P, Q).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/08_geometry_mensuration_3d_coordinate_trig.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q04",
@@ -73,7 +94,14 @@
     "mental_trigger": "Difference of two SI amounts divided by difference of times gives annual SI; then for 4 periods at 7.5%, use two successive 2-period effective rates: 7.5 + 7.5 + 0.5625 = 15.5625%, then 15.5625*2 + (15.5625)^2/100 = 33.547%.",
     "first_principles_method": "SI_1yr = (18960 - 13920)/(6.5 - 3) = 5040/3.5 = 1440. Principal P = 13920 - 3*1440 = 9600. Rate R = (1440/9600)*100 = 15% p.a. Under 6-monthly compounding for 2 years (n=4, r=7.5%), CI = 9600*((1.075)^4 - 1) = 3220.50375, nearest to 3221.",
     "speed_shortcut": "4-period SI at 7.5% is 2880. Add 6*P*r^2 = 6*9600*(0.075)^2 = 324 -> 3204. Add 4*P*r^3 = 4*9600*(0.00422) = 16.2 -> 3220.2, plus r^4 term ~0.3 -> 3220.5 -> 3221.",
-    "boundary_conditions_and_traps": "6 years and 6 months is 6.5 years (not 6.6 years). Compounding every 6 months for 2 years means 4 compounding periods at 7.5%, not 2 periods at 15%."
+    "boundary_conditions_and_traps": "6 years and 6 months is 6.5 years (not 6.6 years). Compounding every 6 months for 2 years means 4 compounding periods at 7.5%, not 2 periods at 15%.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/01_arithmetic_percentages_pl_sici.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q05",
@@ -92,7 +120,14 @@
     "mental_trigger": "For x > 0 with [x] = n, [x^2] = [x]^2 holds if and only if n^2 <= x^2 < n^2 + 1, i.e., x in [n, sqrt(n^2 + 1)) with a strict open right bracket!",
     "first_principles_method": "Decompose [3, 6] into [3, 4), [4, 5), [5, 6), and {6}. On [n, n+1), [x] = n so [x^2] = n^2 requires x^2 < n^2 + 1 => x in [n, sqrt(n^2+1)). Hence S = [3, sqrt(10)) U [4, sqrt(17)) U [5, sqrt(26)) U {6}. Only Option (A) avoids the excluded right endpoints sqrt(10), sqrt(17), sqrt(26).",
     "speed_shortcut": "Test x = sqrt(10): [x^2] = 10 while [x]^2 = 3^2 = 9 (fails!). This immediately eliminates Options (C) and (D). Test x = sqrt(26.5) in Option (B): [x^2] = 26 != 25 (fails!). Only Option (A) remains.",
-    "boundary_conditions_and_traps": "The right endpoint sqrt(n^2 + 1) is ALWAYS open because at x = sqrt(n^2 + 1), x^2 jumps to n^2 + 1 while [x] is still n."
+    "boundary_conditions_and_traps": "The right endpoint sqrt(n^2 + 1) is ALWAYS open because at x = sqrt(n^2 + 1), x^2 jumps to n^2 + 1 while [x] is still n.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/05_algebra_functions_graphs_logs_surds.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q06",
@@ -111,7 +146,14 @@
     "mental_trigger": "When sum of integer roots is fixed (r1 + r2 = 5) and product k = r1*r2 >= 0, enumerate unordered non-negative integer pairs summing to 5.",
     "first_principles_method": "By Vieta relations, r1 + r2 = 5 and r1*r2 = k. Since k >= 0 and r1 + r2 > 0, both r1, r2 >= 0. Unordered integer pairs are {0, 5} (k = 0), {1, 4} (k = 4), and {2, 3} (k = 6), giving 3 values of k.",
     "speed_shortcut": "Discriminant 25 - 4k must be a perfect square s^2 with 0 <= 4k <= 25 and s odd: s in {1, 3, 5} => k in {6, 4, 0} -> 3 values.",
-    "boundary_conditions_and_traps": "The phrase non-negative integer values of k includes k = 0 (roots 0 and 5). Forgetting k = 0 gives the trap answer 2."
+    "boundary_conditions_and_traps": "The phrase non-negative integer values of k includes k = 0 (roots 0 and 5). Forgetting k = 0 gives the trap answer 2.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q07",
@@ -130,7 +172,14 @@
     "mental_trigger": "Giving 13 articles for the price of 12 multiplies effective SP per article by 12/13. Apply: CP * (1 + Profit%) = MP * (1 - Discount%) * (12/13).",
     "first_principles_method": "For 13 chairs, total CP = 13 * 100 = 1300 and required revenue = 1300 * 1.26 = 1638. Revenue equals 12 chairs at 22% discount: 12 * (0.78 * MP) = 1638 => MP = 175.",
     "speed_shortcut": "100 * (126/100) = MP * (78/100) * (12/13) => MP = (126 * 13) / (78 * 12) * 100 = (21 * 13) / (13 * 12) * 100 = (21/12) * 100 = 175.",
-    "boundary_conditions_and_traps": "Giving 13 chairs for the price of 12 means the shopkeeper parts with 13 chairs (denominator is 13, not 12)."
+    "boundary_conditions_and_traps": "Giving 13 chairs for the price of 12 means the shopkeeper parts with 13 chairs (denominator is 13, not 12).",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/01_arithmetic_percentages_pl_sici.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q08",
@@ -149,7 +198,14 @@
     "mental_trigger": "'Optionally add up to 2 out of 6 sauces' means 0, 1, or 2 sauces: C(6,0) + C(6,1) + C(6,2) = 1 + 6 + 15 = 22.",
     "first_principles_method": "Choices for sandwich type = 5, bread = 4, size = 2. For sauces, 'up to 2' includes 0 sauces (1 way), 1 sauce (6 ways), or 2 sauces (15 ways), totaling 22 ways. Total orders = 5 * 4 * 2 * 22 = 880.",
     "speed_shortcut": "Since 1 + 6 + 15 = 22 is a multiple of 11, the total number of orders must be divisible by 11. Among (A) 600, (B) 840, (C) 880, (D) 800, only 880 is divisible by 11!",
-    "boundary_conditions_and_traps": "Forgetting the 0-sauce case ('Optionally... up to 2') gives 40 * 21 = 840 (distractor B)."
+    "boundary_conditions_and_traps": "Forgetting the 0-sauce case ('Optionally... up to 2') gives 40 * 21 = 840 (distractor B).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/10_modern_math_pnc_probability_set_theory.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q09",
@@ -168,7 +224,14 @@
     "mental_trigger": "When log base is between 0 and 1 (here 1/4), reverse the inequality sign AND enforce argument > 0.",
     "first_principles_method": "Flipping the inequality for base 1/4 < 1 gives n^2 - 7n + 11 < 1 => n^2 - 7n + 10 < 0 => (n - 2)(n - 5) < 0, which has 2 integers (n = 3, 4); if the inequality in the original exam was >= 0, then 0 < n^2 - 7n + 11 <= 1 yields n in {2, 5}, which also gives exactly 2 integers.",
     "speed_shortcut": "Since base 1/4 < 1 bounds the upward-opening parabola n^2 - 7n + 11 from above, the solution set is bounded (eliminating D) and narrow around vertex 3.5, giving 2 integers (Option B).",
-    "boundary_conditions_and_traps": "If you forget to flip the inequality sign for base 1/4 < 1, you get n^2 - 7n + 10 > 0, leading to the trap answer (D) infinite."
+    "boundary_conditions_and_traps": "If you forget to flip the inequality sign for base 1/4 < 1, you get n^2 - 7n + 10 > 0, leading to the trap answer (D) infinite.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/05_algebra_functions_graphs_logs_surds.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q10",
@@ -187,7 +250,14 @@
     "mental_trigger": "(a_k)^k with a_k = 3^k produces exponent k^2; equate base-3 exponents using sum(k^2) = n(n+1)(2n+1)/6.",
     "first_principles_method": "Compare exponents of 3: LHS = 20*21*41/6 = 2870. RHS = sum_{j=1}^m (20 + j) = 20m + m(m+1)/2 = m(m+41)/2. We need m(m+41) > 5740. Testing m = 57 gives 57*98 = 5586; testing m = 58 gives 58*99 = 5742 > 5740.",
     "speed_shortcut": "Write m(m+41) = (m+20.5)^2 - 420.25 > 5740 => (m+20.5)^2 > 6160.25. Since 78.5^2 = 78*79 + 0.25 = 6162.25, m + 20.5 = 78.5 => m = 58!",
-    "boundary_conditions_and_traps": "Strict inequality (<) means even if LHS == RHS, you would need the next integer; here 58*99/2 = 2871 exceeds 2870 by exactly 1."
+    "boundary_conditions_and_traps": "Strict inequality (<) means even if LHS == RHS, you would need the next integer; here 58*99/2 = 2871 exceeds 2870 by exactly 1.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/06_algebra_sequences_series_maxima_minima.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q11",
@@ -206,7 +276,14 @@
     "mental_trigger": "Slice by the smaller integer variable y >= 3: for each y, x ranges from y+1 to 13-y, so count is (13 - 2y) decreasing by 2 each step.",
     "first_principles_method": "For each integer y >= 3, x satisfies y + 1 <= x <= 13 - y, giving (13 - 2y) solutions whenever 2y < 13 (i.e., y in {3, 4, 5, 6}). Summing gives 7 + 5 + 3 + 1 = 16.",
     "speed_shortcut": "Sum of first 4 odd numbers (1 + 3 + 5 + 7) = 4^2 = 16.",
-    "boundary_conditions_and_traps": "Notice x > y is strict while y >= 3 is weak, and x + y < 14 means x + y <= 13 for integers."
+    "boundary_conditions_and_traps": "Notice x > y is strict while y >= 3 is weak, and x + y < 14 means x + y <= 13 for integers.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q12",
@@ -225,7 +302,14 @@
     "mental_trigger": "Separated by a diameter means the two parallel chords lie on opposite sides of center C, so trapezium height h = d1 + d2 (not |d1 - d2|).",
     "first_principles_method": "In triangle CPQ, CP = CQ = 6*sqrt(2) and angle PQC = 45 deg, so angle PCQ = 90 deg, distance d1 = 6, and PQ = 12. From d1 : d2 = 3 : 2, d2 = 4. Then SR = 2*sqrt((6*sqrt(2))^2 - 4^2) = 4*sqrt(14). Since PQ and SR are separated by a diameter, height = d1 + d2 = 10, so Area = 0.5*(12 + 4*sqrt(14))*10 = 20(3 + sqrt(14)).",
     "speed_shortcut": "Once d2 = 4 and R^2 = 72 give sqrt(72 - 16) = sqrt(56) = 2*sqrt(14), only Options (A) and (C) contain sqrt(14); since h = 6 + 4 = 10 (not 6 - 4 = 2), Option (A) with factor 20 wins.",
-    "boundary_conditions_and_traps": "Taking height as d1 - d2 = 2 instead of d1 + d2 = 10 gives the trap answer (C) 4(3 + sqrt(14))."
+    "boundary_conditions_and_traps": "Taking height as d1 - d2 = 2 instead of d1 + d2 = 10 gives the trap answer (C) 4(3 + sqrt(14)).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/07_geometry_triangles_circles_polygons.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q13",
@@ -244,7 +328,14 @@
     "mental_trigger": "Subtract fixed component A (1200) first, then apply Alligation on the remaining 20 shares at average price 2100/20 = 105 between B (90) and C (150).",
     "first_principles_method": "10*120 + 90b + 150(20 - b) = 3300 => 4200 - 60b = 3300 => b = 15.",
     "speed_shortcut": "If all 20 shares were C (150), value would be 3000. Excess = 3000 - 2100 = 900. Each swap from C to B saves 60, so B = 900 / 60 = 15.",
-    "boundary_conditions_and_traps": "None; straightforward 20-second sitter."
+    "boundary_conditions_and_traps": "None; straightforward 20-second sitter.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q14",
@@ -263,7 +354,14 @@
     "mental_trigger": "Minimum of x^2 + bx + d is d - b^2/4; maximum of -x^2 + bx + d is d + b^2/4.",
     "first_principles_method": "Complete the square: f(x) = (x - 2c)^2 + 8c - 4c^2 has min 8c - 4c^2; g(x) = -(x - 1.5c)^2 + 2.25c^2 - 2c has max 2.25c^2 - 2c. Solving 8c - 4c^2 > 2.25c^2 - 2c gives 6.25c^2 < 10c => 0 < c < 1.6. Hence c = 1/2.",
     "speed_shortcut": "For any negative c, 8c - 4c^2 < 0 while 2.25c^2 - 2c > 0, immediately eliminating (B) and (C). Between c = 2 and c = 1/2, at c = 2, f_min = 0 < g_max = 5, so c = 1/2 wins.",
-    "boundary_conditions_and_traps": "Watch the sign of the squared term when completing the square on g(x) = -x^2 + 3cx - 2c."
+    "boundary_conditions_and_traps": "Watch the sign of the squared term when completing the square on g(x) = -x^2 + 3cx - 2c.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/06_algebra_sequences_series_maxima_minima.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q15",
@@ -282,7 +380,14 @@
     "mental_trigger": "Convert 224 km to 224000 m and 3 hours to 180 minutes immediately so units match 960 m/min and 30 min.",
     "first_principles_method": "Since 4 times in AP sum to 180 min with t1 = 30, 2(30 + t4) = 180 => t4 = 60 min, so times are 30, 40, 50, 60 min. Then 30(960) + 40(960+d) + 50(960+2d) + 60(960+3d) = 224000 => 172800 + 320d = 224000 => d = 160. Distance in 4th part = (960 + 3*160)*60 = 1440*60 = 86400 m.",
     "speed_shortcut": "Base distance at constant speed 960 m/min for 180 min is 172800 m. Extra distance = 224000 - 172800 = 51200 m over (0*30 + 1*40 + 2*50 + 3*60) = 320 d-units => d = 160 => s4*t4 = 1440*60 = 86400.",
-    "boundary_conditions_and_traps": "Do not assume average speed equals the arithmetic mean of the 4 speeds because the time intervals (30, 40, 50, 60) are unequal."
+    "boundary_conditions_and_traps": "Do not assume average speed equals the arithmetic mean of the 4 speeds because the time intervals (30, 40, 50, 60) are unequal.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/03_arithmetic_time_work_tsd_races_circular_tracks.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q16",
@@ -301,7 +406,14 @@
     "mental_trigger": "Filter digits 1..9 by removing squares {1, 4, 9}, leaving primes {2, 3, 5, 7} and composites {6, 8}.",
     "first_principles_method": "Non-zero digits not perfect squares: {2, 3, 5, 6, 7, 8}. Four are prime ({2, 3, 5, 7}) and only two are non-prime ({6, 8}). Since N has 3 distinct digits and only one prime, N must use both 6 and 8 plus one prime. To minimize N, pick prime 2 in hundreds place: N = 268 = 4 * 67 = 2^2 * 67. Number of factors = 3 * 2 = 6.",
     "speed_shortcut": "Once composites are forced to be {6, 8}, smallest hundreds digit is 2 => 268 = 4 * 67 => 3 * 2 = 6 factors.",
-    "boundary_conditions_and_traps": "Remember 1 is a perfect square (1^2 = 1) and is NOT prime."
+    "boundary_conditions_and_traps": "Remember 1 is a perfect square (1^2 = 1) and is NOT prime.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/09_number_system_divisibility_factors_hcflcm_remainders_bases.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q17",
@@ -320,7 +432,14 @@
     "mental_trigger": "New students join in ratio 3 : 8, so total new students MUST be a multiple of 3 + 8 = 11 (eliminating B=12). Also internal transfer keeps total students constant!",
     "first_principles_method": "(13x - 21)/(9x + 21) = 19/14 => x = 63, so shifts have 798 and 588 students. Next, (798 + 3m)/(588 + 8m) = 5/4 => 3192 + 12m = 2940 + 40m => 28m = 252 => m = 9. Total new students = 11m = 99.",
     "speed_shortcut": "Scale 13:9 (sum 22) by 3 -> 39:27 (sum 66) and 19:14 (sum 33) by 2 -> 38:28 (sum 66). 1 unit = 21 students! Then 38*21 = 798, 28*21 = 588, and 11m = 99.",
-    "boundary_conditions_and_traps": "Report 11m = 99 (total new students), not m = 9."
+    "boundary_conditions_and_traps": "Report 11m = 99 (total new students), not m = 9.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q18",
@@ -339,7 +458,15 @@
     "mental_trigger": "Whenever rhombus side a and area A are given, use |d1 - d2| = sqrt(4a^2 - 4A) directly without solving for d1 and d2 separately.",
     "first_principles_method": "Since diagonals of a rhombus bisect each other at 90 deg, (d1/2)^2 + (d2/2)^2 = a^2 => d1^2 + d2^2 = 4a^2 = 5184. Also (1/2)d1*d2 = 396 => 2d1*d2 = 1584. Hence (d1 - d2)^2 = 5184 - 1584 = 3600 => |d1 - d2| = 60.",
     "speed_shortcut": "|d1 - d2| = 2*sqrt(a^2 - A) = 2*sqrt(1296 - 396) = 2*sqrt(900) = 60.",
-    "boundary_conditions_and_traps": "Memorize |d1 - d2| = 2*sqrt(a^2 - Area) and d1 + d2 = 2*sqrt(a^2 + Area) for any rhombus."
+    "boundary_conditions_and_traps": "Memorize |d1 - d2| = 2*sqrt(a^2 - Area) and d1 + d2 = 2*sqrt(a^2 + Area) for any rhombus.",
+    "is_new_subtopic_or_variant": false,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/07_geometry_triangles_circles_polygons.md",
+      "insights/topic_summaries/quant/08_geometry_mensuration_3d_coordinate_trig.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q19",
@@ -358,7 +485,14 @@
     "mental_trigger": "Sum of first m odd numbers is m^2; balancing prefix and suffix sums gives (m-1)^2 + m^2 = N^2 = 29^2 -> immediately recall the (20, 21, 29) Pythagorean triple!",
     "first_principles_method": "The set {1, 3, ..., 57} has N = (57+1)/2 = 29 terms. Let k = 2m - 1 be the m-th term. Sum of elements < k is (m-1)^2; sum of elements > k is 29^2 - m^2. Equating gives (m-1)^2 + m^2 = 29^2 => m = 21 => k = 2(21) - 1 = 41.",
     "speed_shortcut": "Spot 29^2 = 20^2 + 21^2 instantly -> m = 21 -> k = 2(21) - 1 = 41.",
-    "boundary_conditions_and_traps": "The m-th odd number is 2m - 1 (41), not 2m (42) or 2(m-1) - 1 (39, distractor C)."
+    "boundary_conditions_and_traps": "The m-th odd number is 2m - 1 (41), not 2m (42) or 2(m-1) - 1 (39, distractor C).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/06_algebra_sequences_series_maxima_minima.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q20",
@@ -377,7 +511,14 @@
     "mental_trigger": "When replacing with pure acid, track WATER fraction (which gets multiplied by 0.9), or add 10% directly to 0.9 * c_acid; ignore the 200L volume completely!",
     "first_principles_method": "Start with c0 = 30%. Step 1 (replace 20% with water): c1 = 30% * 0.8 = 24%. Step 2 (replace 10% with 100% acid): c2 = 24% * 0.9 + 100% * 0.1 = 31.6%. Step 3 (replace 15% with water): c3 = 31.6% * 0.85 = 26.86%, nearest to 27.",
     "speed_shortcut": "Never multiply by 200 litres; work purely in percentages: 30 -> 24 -> 31.6 -> 26.86 -> 27.",
-    "boundary_conditions_and_traps": "In Step 2, replacing 10% of solution with pure acid does NOT multiply acid by 1.10 (which would give 26.4 * 0.85 = 22.44 -> trap D=23)."
+    "boundary_conditions_and_traps": "In Step 2, replacing 10% of solution with pure acid does NOT multiply acid by 1.10 (which would give 26.4 * 0.85 = 22.44 -> trap D=23).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/02_arithmetic_ratios_averages_mixtures_alligations.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q21",
@@ -396,7 +537,14 @@
     "mental_trigger": "Rank workers by Cost per Complete Task (Daily Wage * Days Alone): Tarun (32400) < Varun (50400) < Arun (51840), and max out the cheapest worker for all 10 days.",
     "first_principles_method": "To minimize cost within 10 days, employ Tarun (lowest cost per unit work: 32400/task) for the maximum 10 days, completing 10/15 = 2/3 of the task for Rs 21600. For the remaining 1/3 task, Varun needs exactly 7 days (7/21 = 1/3) costing 7*2400 = 16800, whereas Arun needs 8 days (8/24 = 1/3) costing 8*2160 = 17280 (and mixing them requires partial days billed as full days, costing >= 17040). Thus minimum total cost = 21600 + 16800 = 38400.",
     "speed_shortcut": "Tarun 10 days (2/3 work, Rs 21600) + Varun 7 days (1/3 work, Rs 16800) = Rs 38400 with zero wasted partial-day billing.",
-    "boundary_conditions_and_traps": "Choosing Arun over Varun because Arun has a lower daily wage (2160 vs 2400) is a classic trap: Arun is slower (24 days vs 21 days), so Arun costs 17280 for 1/3 work -> 38880 (distractor D)."
+    "boundary_conditions_and_traps": "Choosing Arun over Varun because Arun has a lower daily wage (2160 vs 2400) is a classic trap: Arun is slower (24 days vs 21 days), so Arun costs 17280 for 1/3 work -> 38880 (distractor D).",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/03_arithmetic_time_work_tsd_races_circular_tracks.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   },
   {
     "question_id": "CAT2025_S1_QA_Q22",
@@ -415,6 +563,13 @@
     "mental_trigger": "40% (2/5) and 60% (3/5) of people must be integers, so let B = 5b (with b >= 3 since B > 10) and G = 5g.",
     "first_principles_method": "Let B = 5b (b >= 3) and G = 5g. Remaining girls = 3g, remaining boys = 2b. Given 3g - 2b = 8 => 3g = 2b + 8. Testing b = 3 (14), b = 4 (16), b = 5 (18 = 3*6 => g = 6). Thus B = 25, G = 30, and B + G = 55.",
     "speed_shortcut": "In 3g - 2b = 8 with b >= 3, b must be 2 mod 3 => smallest b >= 3 is b = 5 => g = 6 => 5(5 + 6) = 55.",
-    "boundary_conditions_and_traps": "Ignoring B > 10 gives b = 2 (B = 10, G = 20, total = 30), violating 'more than 10 boys'."
+    "boundary_conditions_and_traps": "Ignoring B > 10 gives b = 2 (B = 10, G = 20, total = 30), violating 'more than 10 boys'.",
+    "is_new_subtopic_or_variant": true,
+    "is_mistake_or_trap_worthy": true,
+    "is_edge_example": true,
+    "target_insight_files": [
+      "insights/topic_summaries/quant/04_algebra_equations_polynomials_inequalities_modulus.md",
+      "insights/mistakes_and_edge_cases/quant_pitfalls.md"
+    ]
   }
 ]
