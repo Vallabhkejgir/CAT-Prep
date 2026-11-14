@@ -2,7 +2,8 @@
 
 **Canonical Taxonomy Mapping**: `QA > Geometry & Mensuration > 3D Mensuration & Solids`, `Coordinate Geometry & Trigonometry`  
 **Weightage**: ~6–10% of QA (1–2 questions per slot)  
-**Priority Tier**: Tier 2 (High-Accuracy Scorer)
+**Priority Tier**: Tier 2 (High-Accuracy Scorer)  
+**Intuitive Examples Companion**: [`../../quant_concept_examples/08_geometry_mensuration_3d_coordinate_trig_examples.md`](../../quant_concept_examples/08_geometry_mensuration_3d_coordinate_trig_examples.md) *(Plain-English explanations & clean single-concept walkthroughs for every formula below)* | [`CAT Study Roadmap`](../../CAT_Study_Roadmap_and_Flow.md)
 
 ---
 

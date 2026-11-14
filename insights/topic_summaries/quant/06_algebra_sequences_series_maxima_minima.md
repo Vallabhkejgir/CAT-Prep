@@ -2,7 +2,8 @@
 
 **Canonical Taxonomy Mapping**: `QA > Algebra > Sequences & Series`, `Maxima & Minima`  
 **Weightage**: ~8–12% of QA (2–3 questions per slot)  
-**Priority Tier**: Tier 1 (High-Yield Core)
+**Priority Tier**: Tier 1 (High-Yield Core)  
+**Intuitive Examples Companion**: [`../../quant_concept_examples/06_algebra_sequences_series_maxima_minima_examples.md`](../../quant_concept_examples/06_algebra_sequences_series_maxima_minima_examples.md) *(Plain-English explanations & clean single-concept walkthroughs for every formula below)* | [`CAT Study Roadmap`](../../CAT_Study_Roadmap_and_Flow.md)
 
 ---
 

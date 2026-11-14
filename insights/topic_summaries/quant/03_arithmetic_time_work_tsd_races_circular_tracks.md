@@ -2,7 +2,8 @@
 
 **Canonical Taxonomy Mapping**: `QA > Arithmetic > Time & Work, Pipes & Cisterns`, `Time, Speed & Distance (TSD)`  
 **Weightage**: ~12–15% of QA (3–4 questions per slot)  
-**Priority Tier**: Tier 1 (High-Yield Core)
+**Priority Tier**: Tier 1 (High-Yield Core)  
+**Intuitive Examples Companion**: [`../../quant_concept_examples/03_arithmetic_time_work_tsd_races_circular_tracks_examples.md`](../../quant_concept_examples/03_arithmetic_time_work_tsd_races_circular_tracks_examples.md) *(Plain-English explanations & clean single-concept walkthroughs for every formula below)* | [`CAT Study Roadmap`](../../CAT_Study_Roadmap_and_Flow.md)
 
 ---
 

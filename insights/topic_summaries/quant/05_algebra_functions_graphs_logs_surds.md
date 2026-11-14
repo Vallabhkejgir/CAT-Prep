@@ -2,7 +2,8 @@
 
 **Canonical Taxonomy Mapping**: `QA > Algebra > Logarithms, Surds & Indices`, `Functions, Graphs & Functional Equations`  
 **Weightage**: ~10–14% of QA (2–3 questions per slot)  
-**Priority Tier**: Tier 1 (High-Yield Core)
+**Priority Tier**: Tier 1 (High-Yield Core)  
+**Intuitive Examples Companion**: [`../../quant_concept_examples/05_algebra_functions_graphs_logs_surds_examples.md`](../../quant_concept_examples/05_algebra_functions_graphs_logs_surds_examples.md) *(Plain-English explanations & clean single-concept walkthroughs for every formula below)* | [`CAT Study Roadmap`](../../CAT_Study_Roadmap_and_Flow.md)
 
 ---
 
