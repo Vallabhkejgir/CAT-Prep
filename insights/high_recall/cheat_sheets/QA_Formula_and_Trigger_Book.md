@@ -1,5 +1,11 @@
 # Last-Mile Rapid-Revision Cheat Sheet: QA Formula & Trigger Book
 
+> **Want Plain-English Intuition & Clean Step-by-Step Examples for Every Formula Below?**
+> Open the [**Intuitive Quant Concept & Formula Examples Bank (`../../quant_concept_examples/README.md`)**](../../quant_concept_examples/README.md) or follow the [**Master CAT Study Roadmap (`../../CAT_Study_Roadmap_and_Flow.md`)**](../../CAT_Study_Roadmap_and_Flow.md):
+> - **Arithmetic**: [01 Percentages, P&L, SI/CI](../../quant_concept_examples/01_arithmetic_percentages_pl_sici_examples.md) | [02 Ratios, Averages, Mixtures](../../quant_concept_examples/02_arithmetic_ratios_averages_mixtures_alligations_examples.md) | [03 Work, TSD, Races, Tracks](../../quant_concept_examples/03_arithmetic_time_work_tsd_races_circular_tracks_examples.md)
+> - **Algebra**: [04 Equations, Quadratics, Modulus](../../quant_concept_examples/04_algebra_equations_polynomials_inequalities_modulus_examples.md) | [05 Functions, Logs, Surds](../../quant_concept_examples/05_algebra_functions_graphs_logs_surds_examples.md) | [06 Sequences, Series, Max/Min](../../quant_concept_examples/06_algebra_sequences_series_maxima_minima_examples.md)
+> - **Geometry, Numbers & Modern Math**: [07 Triangles, Circles, Polygons](../../quant_concept_examples/07_geometry_triangles_circles_polygons_examples.md) | [08 3D Mensuration, Coord, Trig](../../quant_concept_examples/08_geometry_mensuration_3d_coordinate_trig_examples.md) | [09 Number System](../../quant_concept_examples/09_number_system_divisibility_factors_hcflcm_remainders_examples.md) | [10 P&C, Probability, Sets](../../quant_concept_examples/10_modern_math_pnc_probability_set_theory_examples.md)
+
 Ultra-dense, single-pass reference of every high-yield CAT Quantitative Ability formula, identity, number triplet, and **`IF YOU SEE [X] -> IMMEDIATELY DO [Y]`** trigger.
 
 ---

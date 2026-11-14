@@ -2,7 +2,8 @@
 
 **Canonical Taxonomy Mapping**: `QA > Algebra > Linear Equations & Indeterminate Systems`, `Quadratic & Higher-Degree Polynomials`, `Inequalities & Modulus`  
 **Weightage**: ~12–15% of QA (3–4 questions per slot)  
-**Priority Tier**: Tier 1 (High-Yield Core)
+**Priority Tier**: Tier 1 (High-Yield Core)  
+**Intuitive Examples Companion**: [`../../quant_concept_examples/04_algebra_equations_polynomials_inequalities_modulus_examples.md`](../../quant_concept_examples/04_algebra_equations_polynomials_inequalities_modulus_examples.md) *(Plain-English explanations & clean single-concept walkthroughs for every formula below)* | [`CAT Study Roadmap`](../../CAT_Study_Roadmap_and_Flow.md)
 
 ---
 

@@ -1,5 +1,9 @@
 # CAT-Prep: High-Recall CAT Exam Preparation & PYQ Synthesis Pipeline
 
+> **Start Here — Student Study Roadmap & Intuitive Examples**:
+> - [**Master CAT Study Roadmap, Learning Loop & Diagnostic Flow (`insights/CAT_Study_Roadmap_and_Flow.md`)**](insights/CAT_Study_Roadmap_and_Flow.md) — Complete 4-step topic learning loop, ROI-ordered module sequence across QA/DILR/VARC, 3-track study plans (16-week / 8-week / 30-day), daily study block blueprints, and a post-mock diagnostic decision tree.
+> - [**Intuitive Quant Concept & Formula Examples (`insights/quant_concept_examples/`)**](insights/quant_concept_examples/README.md) — Plain-English explanations, clean-number general examples, two-way walkthroughs (Formula vs. Common-Sense Ratio Intuition), and #1 trap warnings for every Quantitative Ability formula across all 10 modules.
+
 End-to-end, zero-loss extraction and synthesis pipeline that transforms **CAT Past Year Papers (PYQs)** and syllabus documents into **100%-coverage, high-recall study notes, pattern-recognition triggers, mistake taxonomies, and rapid-revision assets** across **Quantitative Ability (QA)**, **Data Interpretation & Logical Reasoning (DILR)**, and **Verbal Ability & Reading Comprehension (VARC)**.
 
 ---
@@ -11,9 +15,11 @@ End-to-end, zero-loss extraction and synthesis pipeline that transforms **CAT Pa
    - Automatically flags pages containing embedded images or vector drawings (`[VISUAL_DIAGRAM_OR_CHART_PRESENT - INSPECT IMAGE]`) and emits a JSON page manifest.
 2. **100% Canonical CAT Syllabus Taxonomy (`docs/syllabus/canonical_taxonomy.md`)**
    - Complete canonical blueprint across QA (Arithmetic, Algebra, Geometry & Mensuration, Number System, Modern Math), DILR (Quantitative DI, Arrangements/Grids, Games & Tournaments, 3/4-Set Venn Optimization, Networks/Flows, Algorithmic Puzzles), and VARC (RC Genre Playbooks, 7 Deadly Distractor Traps, VA TITA/MCQ Frameworks).
-3. **40-Minute Sectional Execution & Self-Audit Checklist (`insights/CAT_Self_Audit_Checklist.md`)**
+3. **Structured Study Roadmap & Intuitive Quant Examples (`insights/CAT_Study_Roadmap_and_Flow.md`, `insights/quant_concept_examples/`)**
+   - Step-by-step guidance from plain-English concept intuition and clean single-concept general examples (`insights/quant_concept_examples/01..10_*_examples.md`) to exam-hall speed triggers (`insights/topic_summaries/`), trap inoculation (`insights/mistakes_and_edge_cases/`), and spaced-repetition mastery (`insights/high_recall/`).
+4. **40-Minute Sectional Execution & Self-Audit Checklist (`insights/CAT_Self_Audit_Checklist.md`)**
    - Ready-to-use exam-hall timing blueprints, DILR 4-minute set-selection & 6-minute bail-out rules, VARC 2-option tie-breaker checklist, and QA A-B-C round strategy + domain/boundary checks.
-4. **High-Recall Cognitive Design**
+5. **High-Recall Cognitive Design**
    - Structured around `IF YOU SEE [Trigger] -> THINK [Shortcut/Method]` tables, dual-method solutions (First-Principles vs. 30-Second Exam-Hall Shortcut), boundary/trap callouts, and spaced-repetition flashcards.
 
 ---
@@ -33,8 +39,11 @@ CAT-Prep/
 │   ├── page_images/                       # Rendered 200-DPI page PNGs per paper
 │   └── structured_pyqs/                   # Pass 1 question-level JSON inventories + delta triage flags
 ├── insights/
+│   ├── CAT_Study_Roadmap_and_Flow.md      # Master student study roadmap, 4-step learning loop & mock diagnostic tree
 │   ├── CAT_Self_Audit_Checklist.md        # 40-minute sectional strategy & pre-lock audit checklist
+│   ├── CAT_2025_Detailed_Analytics_Report.md # Official CAT 2025 3-slot weightage & difficulty benchmark
 │   ├── coverage_matrix.md                 # Pass 2 canonical syllabus coverage & PYQ frequency matrix
+│   ├── quant_concept_examples/            # Intuitive plain-English QA concept & formula general examples (10 modules + index)
 │   ├── topic_summaries/
 │   │   ├── quant/                         # Pass 3A QA master notes + embedded PYQ edge examples (10 modules)
 │   │   ├── dilr/                          # Pass 3B DILR playbooks + embedded PYQ sets (6 modules)

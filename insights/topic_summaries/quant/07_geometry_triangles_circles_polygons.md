@@ -2,7 +2,8 @@
 
 **Canonical Taxonomy Mapping**: `QA > Geometry & Mensuration > Lines, Angles & Triangles`, `Circles`, `Quadrilaterals & Polygons`  
 **Weightage**: ~10–14% of QA (2–3 questions per slot)  
-**Priority Tier**: Tier 1 (High-Yield Core)
+**Priority Tier**: Tier 1 (High-Yield Core)  
+**Intuitive Examples Companion**: [`../../quant_concept_examples/07_geometry_triangles_circles_polygons_examples.md`](../../quant_concept_examples/07_geometry_triangles_circles_polygons_examples.md) *(Plain-English explanations & clean single-concept walkthroughs for every formula below)* | [`CAT Study Roadmap`](../../CAT_Study_Roadmap_and_Flow.md)
 
 ---
 

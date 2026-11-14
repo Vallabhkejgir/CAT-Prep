@@ -2,7 +2,8 @@
 
 **Canonical Taxonomy Mapping**: `QA > Arithmetic > Ratio, Proportion, Variation & Partnerships`, `Averages, Mixtures & Alligations`  
 **Weightage**: ~12–15% of QA (2–4 questions per slot)  
-**Priority Tier**: Tier 1 (High-Yield Core)
+**Priority Tier**: Tier 1 (High-Yield Core)  
+**Intuitive Examples Companion**: [`../../quant_concept_examples/02_arithmetic_ratios_averages_mixtures_alligations_examples.md`](../../quant_concept_examples/02_arithmetic_ratios_averages_mixtures_alligations_examples.md) *(Plain-English explanations & clean single-concept walkthroughs for every formula below)* | [`CAT Study Roadmap`](../../CAT_Study_Roadmap_and_Flow.md)
 
 ---
 
