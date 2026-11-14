@@ -41,7 +41,6 @@ CAT-Prep/
 ├── insights/
 │   ├── CAT_Study_Roadmap_and_Flow.md      # Master student study roadmap, 4-step learning loop & mock diagnostic tree
 │   ├── CAT_Self_Audit_Checklist.md        # 40-minute sectional strategy & pre-lock audit checklist
-│   ├── CAT_2025_Detailed_Analytics_Report.md # Official CAT 2025 3-slot weightage & difficulty benchmark
 │   ├── coverage_matrix.md                 # Pass 2 canonical syllabus coverage & PYQ frequency matrix
 │   ├── quant_concept_examples/            # Intuitive plain-English QA concept & formula general examples (10 modules + index)
 │   ├── topic_summaries/
