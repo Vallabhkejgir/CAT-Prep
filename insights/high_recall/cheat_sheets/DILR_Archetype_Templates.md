@@ -1,5 +1,10 @@
 # Last-Mile Rapid-Revision Cheat Sheet: DILR Archetype Templates & Invariants
 
+> **Want Plain-English Intuition & Step-by-Step Grid Evolution for Every DILR Template Below?**
+> Open the [**Intuitive DILR Concept & Grid-Evolution Examples Bank (`../../dilr_concept_examples/README.md`)**](../../dilr_concept_examples/README.md) or follow the [**Master CAT Study Roadmap (`../../CAT_Study_Roadmap_and_Flow.md`)**](../../CAT_Study_Roadmap_and_Flow.md):
+> - [01 Set Selection & 4-Min Scanning](../../dilr_concept_examples/01_set_selection_and_5min_scanning_examples.md) | [02 Quantitative DI & Growth Traps](../../dilr_concept_examples/02_quantitative_di_tables_charts_and_growth_traps_examples.md) | [03 Arrangements, Matrices & Scheduling](../../dilr_concept_examples/03_arrangements_matrix_grids_and_scheduling_examples.md)
+> - [04 Games & Tournaments](../../dilr_concept_examples/04_games_and_tournaments_knockout_and_round_robin_examples.md) | [05 Venn & 4-Set Optimization](../../dilr_concept_examples/05_venn_diagrams_and_4set_maxima_minima_examples.md) | [06 Networks, Flows & Quant-LR](../../dilr_concept_examples/06_networks_routes_flows_and_quant_lr_puzzles_examples.md)
+
 Draw these exact scratchpad templates and invariant equations in the first 60 seconds of each DILR set.
 
 ---

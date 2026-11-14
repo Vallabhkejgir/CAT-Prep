@@ -1,5 +1,10 @@
 # Last-Mile Rapid-Revision Cheat Sheet: VARC Elimination & VA Rules
 
+> **Want Bite-Sized 1-Paragraph Examples & Step-by-Step Elimination Walkthroughs?**
+> Open the [**Intuitive VARC Concept & Elimination Examples Bank (`../../varc_concept_examples/README.md`)**](../../varc_concept_examples/README.md) or follow the [**Master CAT Study Roadmap (`../../CAT_Study_Roadmap_and_Flow.md`)**](../../CAT_Study_Roadmap_and_Flow.md):
+> - [01 RC Architecture & Genre Guides](../../varc_concept_examples/01_rc_reading_architecture_and_genre_guides_examples.md) | [02 RC Question Types & 7 Traps](../../varc_concept_examples/02_rc_question_types_and_7_distractor_traps_examples.md)
+> - [03 TITA Para-Jumbles & Odd-One-Out](../../varc_concept_examples/03_va_parajumbles_and_odd_one_out_tita_mastery_examples.md) | [04 Para-Summary & Sentence Placement](../../varc_concept_examples/04_va_parasummary_and_sentence_placement_examples.md)
+
 Ultra-dense exam-hall execution guide for the 40-minute VARC section (**26 min for 4 RC Passages + 14 min for 8 VA Questions**).
 
 ---
