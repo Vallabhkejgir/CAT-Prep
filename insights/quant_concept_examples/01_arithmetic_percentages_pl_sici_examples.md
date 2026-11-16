@@ -75,10 +75,8 @@ If a value goes up by $+x\%$ and then drops by $-x\%$ (or vice versa), the $+x$ 
 ### 1. Concept & Formula in Plain English
 Whenever two quantities multiply to give a total ($\text{Price} \times \text{Consumption} = \text{Expenditure}$, or $\text{Speed} \times \text{Time} = \text{Distance}$):
 - **Constant Total**: If $A$ increases by fraction $\frac{a}{b}$ (becoming $\frac{b+a}{b}$ of original), $B$ must be multiplied by the reciprocal $\frac{b}{b+a}$ (a decrease of $\frac{a}{b+a}$) so their product stays $1$.
-- **Shifted Total**: If Price rises by $p$ and Expenditure is allowed to rise by $k$, then:
-$$
-\text{MF}_{\text{Price}} \times \text{MF}_{\text{Consumption}} = \text{MF}_{\text{Expenditure}} \implies \text{MF}_{\text{Consumption}} = \frac{100 + k}{100 + p}
-$$
+- **Shifted Total:** If Price rises by $p$ and Expenditure is allowed to rise by $k$, then: $\text{MF}_{\text{Price}} \times \text{MF}_{\text{Consumption}} = \text{MF}_{\text{Expenditure}} \implies \text{MF}_{\text{Consumption}} = \frac{100 + k}{100 + p}$
+
 
 
 ### 2. When to Use It (Question Cue)
