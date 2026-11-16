@@ -78,6 +78,7 @@ Whenever two quantities multiply to give a total ($\text{Price} \times \text{Con
 - **Shifted Total**: If Price rises by $p\%$ and Expenditure is allowed to rise by $k\%$, then:
   $$\text{MF}_{\text{Price}} \times \text{MF}_{\text{Consumption}} = \text{MF}_{\text{Expenditure}} \implies \text{MF}_{\text{Consumption}} = \frac{100 + k}{100 + p}$$
 
+
 ### 2. When to Use It (Question Cue)
 - *"Petrol price rises by $25\%$. By what percentage must a car owner reduce consumption so expenditure remains unchanged (or rises by only $10\%$)?"*
 
